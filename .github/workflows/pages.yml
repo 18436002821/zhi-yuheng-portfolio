@@ -28,6 +28,7 @@ jobs:
         run: |
           mkdir -p _site
           unzip -q zhi-portfolio-pages.zip -d _site
+          if [ -d site-patch ]; then cp -a site-patch/. _site/; fi
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload site artifact
