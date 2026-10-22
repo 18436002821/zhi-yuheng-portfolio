@@ -289,5 +289,206 @@
       }
     ],
     "pending": "制作时间、具体分工、使用工具与制作流程待补充。"
+  },
+  {
+    "id": "xingchengli-culture-wall",
+    "title": "星橙里 · “小社区大幸福”文化墙",
+    "category": "重点项目 / 社区品牌视觉",
+    "tags": [
+      "brand",
+      "visual"
+    ],
+    "bg": "#f0ece3",
+    "intro": "以“小社区大幸福、微服务聚温情”为主题，设计社区文化墙标识与版面，并结合现场照片与空间效果图呈现设计成果。项目画面曾出现在新闻报道中。",
+    "focus": [
+      "社区文化墙",
+      "主题标识与版式",
+      "新闻报道画面"
+    ],
+    "assets": [
+      {
+        "src": "assets/xingchengli/culture-wall-news.webp",
+        "width": 1500,
+        "height": 846,
+        "caption": "文化墙现场｜新闻报道画面"
+      },
+      {
+        "src": "assets/xingchengli/culture-wall-render-room.webp",
+        "width": 1340,
+        "height": 780,
+        "caption": "文化墙空间整体效果图"
+      },
+      {
+        "src": "assets/xingchengli/culture-wall-render-detail.webp",
+        "width": 1390,
+        "height": 910,
+        "caption": "标识与版面效果细节"
+      }
+    ],
+    "pending": "项目时间与具体职责分工待补充。"
+  },
+  {
+    "id": "xingchengli-space",
+    "title": "星橙里 · 空间标识与门店视觉",
+    "category": "空间视觉 / 门店应用",
+    "tags": [
+      "brand",
+      "visual"
+    ],
+    "bg": "#f7e7d8",
+    "intro": "围绕橙色品牌识别，整理公寓门店外立面标识与配套便利店玻璃贴视觉。",
+    "focus": [
+      "外立面标识",
+      "橱窗玻璃贴",
+      "线下空间应用"
+    ],
+    "assets": [
+      {
+        "src": "assets/xingchengli/community-store-sign.webp",
+        "width": 1400,
+        "height": 520,
+        "caption": "门店外立面标识"
+      },
+      {
+        "src": "assets/xingchengli/convenience-window-graphics.webp",
+        "width": 1400,
+        "height": 791,
+        "caption": "便利店玻璃贴视觉"
+      }
+    ],
+    "pending": "项目时间与具体职责分工待补充。"
+  },
+  {
+    "id": "xingchengli-brand",
+    "title": "星橙里 · 社区品牌视觉延展",
+    "category": "品牌视觉 / 应用延展",
+    "tags": [
+      "brand",
+      "visual"
+    ],
+    "bg": "#f3eadf",
+    "intro": "将品牌识别和“小社区大幸福”主题延展至手提袋、社区宣传版面与空间横幅。",
+    "focus": [
+      "品牌应用",
+      "社区宣传版面",
+      "空间横幅"
+    ],
+    "assets": [
+      {
+        "src": "assets/xingchengli/brand-bag.webp",
+        "width": 803,
+        "height": 1100,
+        "caption": "星橙里品牌手提袋"
+      },
+      {
+        "src": "assets/xingchengli/community-board.webp",
+        "width": 1500,
+        "height": 850,
+        "caption": "社区风采宣传版面"
+      },
+      {
+        "src": "assets/xingchengli/community-slogan.webp",
+        "width": 1500,
+        "height": 484,
+        "caption": "主题宣传横幅"
+      }
+    ],
+    "pending": "项目时间与具体职责分工待补充。"
+  },
+  {
+    "id": "xingchengli-festival",
+    "title": "星橙里 · 节庆活动视觉",
+    "category": "节日活动 / 平面设计",
+    "tags": [
+      "visual"
+    ],
+    "bg": "#faeee2",
+    "intro": "围绕新年与中秋节点，整理活动横幅与节日海报，呈现节日主题在不同版式与空间物料中的延展。",
+    "focus": [
+      "新年主题横幅",
+      "中秋活动横幅",
+      "节日海报"
+    ],
+    "assets": [
+      {
+        "src": "assets/xingchengli/new-year-banner.webp",
+        "width": 1500,
+        "height": 654,
+        "caption": "新年主题横幅"
+      },
+      {
+        "src": "assets/xingchengli/midautumn-banner.webp",
+        "width": 1500,
+        "height": 843,
+        "caption": "中秋活动横幅"
+      },
+      {
+        "src": "assets/xingchengli/midautumn-poster.webp",
+        "width": 900,
+        "height": 1200,
+        "caption": "中秋节日海报"
+      }
+    ],
+    "pending": "项目时间与具体职责分工待补充。"
+  },
+  {
+    "id": "xingchengli-services",
+    "title": "星橙里 · 社区生活服务宣传",
+    "category": "社区运营 / 信息设计",
+    "tags": [
+      "visual"
+    ],
+    "bg": "#f0efe5",
+    "intro": "为屋顶菜园与共享卫浴等社区服务设计宣传海报，将服务说明与生活场景整合呈现。",
+    "focus": [
+      "社区服务宣传",
+      "信息层级",
+      "住户阅读体验"
+    ],
+    "assets": [
+      {
+        "src": "assets/xingchengli/rooftop-garden-poster.webp",
+        "width": 919,
+        "height": 1300,
+        "caption": "屋顶菜园宣传海报｜二维码已模糊处理"
+      },
+      {
+        "src": "assets/xingchengli/shared-bathroom-poster.webp",
+        "width": 919,
+        "height": 1300,
+        "caption": "共享卫浴服务宣传海报"
+      }
+    ],
+    "pending": "项目时间与具体职责分工待补充。"
+  },
+  {
+    "id": "xingchengli-rollups",
+    "title": "星橙里 · 公寓招租易拉宝",
+    "category": "线下推广 / 招租物料",
+    "tags": [
+      "visual"
+    ],
+    "bg": "#fae9dc",
+    "intro": "整理两款公寓线下展示物料，保留房型与配套信息，裁去底部联系信息区域。",
+    "focus": [
+      "公寓招租宣传",
+      "配套信息整理",
+      "竖版物料设计"
+    ],
+    "assets": [
+      {
+        "src": "assets/xingchengli/standee-1.webp",
+        "width": 1100,
+        "height": 2037,
+        "caption": "招租易拉宝 A｜底部联系信息已裁除"
+      },
+      {
+        "src": "assets/xingchengli/standee-2.webp",
+        "width": 1100,
+        "height": 2037,
+        "caption": "招租易拉宝 B｜底部联系信息已裁除"
+      }
+    ],
+    "pending": "项目时间与具体职责分工待补充。"
   }
 ]
