@@ -278,46 +278,47 @@
     ],
     "assets": [
       {
+        "src": "assets/xingchengli/community-slogan.webp",
+        "width": 1665,
+        "height": 685,
+        "caption": "01 · 平面设计 / 小社区大幸福主题画面"
+      },
+      {
         "src": "assets/xingchengli/culture-wall-news.webp",
         "width": 1500,
         "height": 846,
-        "caption": "01 · 文化墙设计 / 新闻报道现场"
+        "caption": "01 · 实景落地 / 文化墙新闻报道现场"
       },
       {
         "src": "assets/xingchengli/culture-wall-render-detail.webp",
         "width": 1390,
         "height": 910,
-        "caption": "01 · 文化墙设计 / 标识与版面细节"
-      },
-      {
-        "src": "assets/xingchengli/community-store-sign.webp",
-        "width": 1400,
-        "height": 520,
-        "caption": "02 · 品牌与空间 / 门店外立面标识"
-      },
-      {
-        "src": "assets/xingchengli/convenience-window-graphics.webp",
-        "width": 1400,
-        "height": 791,
-        "caption": "02 · 品牌与空间 / 便利店玻璃贴视觉"
+        "caption": "01 · 空间方案 / 文化墙标识与版面细节"
       },
       {
         "src": "assets/xingchengli/community-board.webp",
         "width": 1500,
         "height": 850,
-        "caption": "02 · 品牌与空间 / 社区宣传版面"
+        "caption": "02 · 平面设计 / 社区宣传版面"
       },
       {
-        "src": "assets/xingchengli/community-slogan.webp",
-        "width": 1500,
-        "height": 484,
-        "caption": "02 · 品牌与空间 / 小社区大幸福主题横幅"
+        "src": "assets/xingchengli/community-store-sign.webp",
+        "width": 1400,
+        "height": 520,
+        "caption": "02 · 实景落地 / 门店外立面标识"
+      },
+      {
+        "src": "assets/xingchengli/convenience-window-graphics.webp",
+        "width": 1400,
+        "height": 791,
+        "caption": "02 · 实景落地 / 便利店玻璃贴应用"
       },
       {
         "src": "assets/xingchengli/brand-bag.webp",
-        "width": 803,
-        "height": 1100,
-        "caption": "02 · 品牌与空间 / 品牌手提袋应用"
+        "width": 1614,
+        "height": 1149,
+        "caption": "02 · 平面设计 / 星橙里购物袋包装视觉",
+        "layout": "compact"
       },
       {
         "src": "assets/xingchengli/new-year-banner.webp",
@@ -335,31 +336,36 @@
         "src": "assets/xingchengli/midautumn-poster.webp",
         "width": 900,
         "height": 1200,
-        "caption": "03 · 活动与社区内容 / 中秋主题海报"
+        "caption": "03 · 活动与社区内容 / 中秋主题海报",
+        "layout": "poster"
       },
       {
         "src": "assets/xingchengli/rooftop-garden-poster.webp",
         "width": 919,
         "height": 1300,
-        "caption": "03 · 活动与社区内容 / 屋顶菜园宣传海报"
+        "caption": "03 · 活动与社区内容 / 屋顶菜园宣传海报",
+        "layout": "poster"
       },
       {
         "src": "assets/xingchengli/shared-bathroom-poster.webp",
         "width": 919,
         "height": 1300,
-        "caption": "03 · 活动与社区内容 / 共享卫浴服务海报"
+        "caption": "03 · 活动与社区内容 / 共享卫浴服务海报",
+        "layout": "poster"
       },
       {
         "src": "assets/xingchengli/standee-1.webp",
         "width": 1100,
         "height": 2037,
-        "caption": "04 · 公寓推广 / 招租易拉宝 A"
+        "caption": "04 · 公寓推广 / 招租易拉宝 A",
+        "layout": "poster"
       },
       {
         "src": "assets/xingchengli/standee-2.webp",
         "width": 1100,
         "height": 2037,
-        "caption": "04 · 公寓推广 / 招租易拉宝 B"
+        "caption": "04 · 公寓推广 / 招租易拉宝 B",
+        "layout": "poster"
       },
       {
         "src": "assets/works/work-04.png",
