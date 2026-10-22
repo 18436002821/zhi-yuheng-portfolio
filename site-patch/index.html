@@ -554,7 +554,8 @@ const projects=[
     ],
     "pending": "项目执行时间、本人具体职责与现场制作分工待补充。"
   }
-]const cards=[...document.querySelectorAll('[data-project]')];
+];
+const cards=[...document.querySelectorAll('[data-project]')];
 const filterButtons=[...document.querySelectorAll('[data-filter]')];
 function setFilter(key){filterButtons.forEach(b=>{const active=b.dataset.filter===key;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active))});document.querySelectorAll('[data-side]').forEach(a=>a.classList.toggle('selected',a.dataset.side===key));let visible=0;cards.forEach(c=>{c.hidden=key!=='all'&&!c.dataset.tags.split(' ').includes(key);if(!c.hidden)visible++});document.querySelector('#ai-empty').hidden=key!=='ai';document.querySelector('#project-count').textContent=key==='all'?'9 个项目 · 35 张精选作品':key==='ai'?'AI 创作案例待补充':visible+' 个项目';}
 filterButtons.forEach(b=>b.addEventListener('click',()=>setFilter(b.dataset.filter)));
