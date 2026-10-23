@@ -251,14 +251,15 @@
       "social"
     ],
     "bg": "#fff3e8",
-    "intro": "本项目围绕星橙里公寓的社区品牌视觉展开，涵盖文化墙、党建空间、购物袋与门店腰线，并延展至居住服务信息、年度活动、中秋节庆及屋顶菜园招募。整体呈现品牌视觉在空间应用、活动传播与社区运营场景中的多元落地。",
+    "intro": "本项目围绕星橙里公寓的社区品牌视觉展开，涵盖文化墙、党建空间、购物袋与门店腰线，并延展至居住服务信息、年度活动、中秋节庆、屋顶菜园招募与公众号推文排版。整体呈现品牌视觉在空间应用、活动传播与社区运营场景中的多元落地。",
     "focus": [
       "社区文化墙设计与落地",
       "党建主题空间视觉",
       "品牌包装与门店应用",
       "居住服务信息视觉",
       "年度活动与节庆传播",
-      "社区活动招募视觉"
+      "社区活动招募视觉",
+      "公众号内容与图文排版"
     ],
     "assets": [
       {
@@ -317,8 +318,41 @@
         "height": 1400,
         "caption": "屋顶菜园社区海报｜展板与移动端应用展示（二维码已遮盖）",
         "layout": "poster"
+      },
+      {
+        "src": "assets/xingchengli/wechat-apartment-introduction.webp",
+        "width": 1462,
+        "height": 1500,
+        "caption": "公众号推文排版｜公寓介绍、配套信息与房型内容设计"
+      },
+      {
+        "src": "assets/xingchengli/wechat-autumn-community.webp",
+        "width": 1462,
+        "height": 1500,
+        "caption": "公众号推文排版｜秋日社区内容与租住福利主题设计"
       }
     ],
-    "pending": "项目执行时间、本人具体职责与现场制作分工待补充。"
+    "pending": "项目执行时间、本人具体职责与现场制作分工待补充。",
+    "categoryOrder": {
+      "brand": [
+        "smile-community-wall.webp",
+        "party-building-wall.webp",
+        "community-shopping-bag.webp",
+        "convenience-store-waistband.webp"
+      ],
+      "visual": [
+        "xingchengli-dormitory-upgrade.webp",
+        "xingchengli-annual-gala.webp",
+        "xingchengli-mid-autumn.webp",
+        "xingchengli-mid-autumn-banner.webp"
+      ],
+      "social": [
+        "wechat-apartment-introduction.webp",
+        "wechat-autumn-community.webp",
+        "xingchengli-rooftop-garden.webp",
+        "xingchengli-mid-autumn-banner.webp",
+        "xingchengli-mid-autumn.webp"
+      ]
+    }
   }
 ]
