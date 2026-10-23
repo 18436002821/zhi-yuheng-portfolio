@@ -111,17 +111,17 @@
   },
   {
     "id": "xingzhixuan",
-    "title": "行知轩 · 教育招生系列",
-    "category": "平面设计",
+    "title": "行知轩 · 教育与儿童成长视觉",
+    "category": "教育视觉 / 系列平面设计",
     "tags": [
       "visual"
     ],
     "bg": "#e5eff9",
-    "intro": "围绕托管、书法与住宿服务展开招生宣传。蓝色插画、书法主题和图文分区分别回应不同课程与服务的信息需求。",
+    "intro": "围绕托管招生、书法课程、住宿服务与儿童体能训练需求，整合招生海报、服务说明与场景应用。通过差异化配色、清晰的标题层级与信息分区，让多种教育服务保持统一识别，也便于读者快速获取重点。",
     "focus": [
-      "招生海报",
-      "字体与插画",
-      "服务信息排版"
+      "招生宣传",
+      "课程信息编排",
+      "系列视觉统一"
     ],
     "assets": [
       {
@@ -141,25 +141,7 @@
         "width": 1054,
         "height": 1492,
         "caption": "住宿服务介绍海报"
-      }
-    ],
-    "pending": "制作时间、具体分工、使用工具与制作流程待补充。"
-  },
-  {
-    "id": "fitness",
-    "title": "行知轩 · 儿童体能宣传",
-    "category": "平面设计 / 应用展示",
-    "tags": [
-      "visual"
-    ],
-    "bg": "#e9e8df",
-    "intro": "以青绿与黄色建立运动主题识别，通过标签、分栏和清单梳理较密集的课程信息，并用双海报样机呈现应用效果。",
-    "focus": [
-      "信息设计",
-      "系列配色",
-      "场景应用"
-    ],
-    "assets": [
+      },
       {
         "src": "assets/works/work-17.png",
         "width": 1448,
@@ -173,7 +155,7 @@
         "caption": "儿童体能宣传单幅设计"
       }
     ],
-    "pending": "制作时间、具体分工、使用工具与制作流程待补充。"
+    "pending": "项目时间、本人具体职责与实际投放效果待补充。"
   },
   {
     "id": "anniversary",
@@ -269,115 +251,37 @@
       "social"
     ],
     "bg": "#fff3e8",
-    "intro": "围绕社区品牌建设，完成文化墙设计与现场落地，并延展至空间标识、社区服务宣传、节庆活动及新媒体内容，形成覆盖空间与传播场景的系列视觉应用。文化墙项目获新闻报道。",
+    "intro": "本项目围绕星橙里社区视觉，涵盖社区文化墙、党建文化墙、品牌购物袋与便利店玻璃腰线四类应用。作品呈现从平面方案到空间落地的设计延展。",
     "focus": [
-      "文化墙设计与落地",
-      "空间标识与品牌应用",
-      "节庆活动与社区服务",
-      "新媒体内容设计"
+      "社区文化墙设计与落地",
+      "党建主题空间视觉",
+      "品牌购物袋设计与应用",
+      "便利店腰线设计与实景"
     ],
     "assets": [
       {
-        "src": "assets/xingchengli/community-slogan.webp",
-        "width": 1665,
-        "height": 685,
-        "caption": "01 · 平面设计 / 小社区大幸福主题画面"
-      },
-      {
-        "src": "assets/xingchengli/culture-wall-news.webp",
+        "src": "assets/xingchengli/smile-community-wall.webp",
         "width": 1500,
-        "height": 846,
-        "caption": "01 · 实景落地 / 文化墙新闻报道现场"
+        "height": 852,
+        "caption": "社区文化墙｜主题视觉设计与实景落地"
       },
       {
-        "src": "assets/xingchengli/culture-wall-render-detail.webp",
-        "width": 1390,
-        "height": 910,
-        "caption": "01 · 空间方案 / 文化墙标识与版面细节"
-      },
-      {
-        "src": "assets/xingchengli/community-board.webp",
+        "src": "assets/xingchengli/party-building-wall.webp",
         "width": 1500,
-        "height": 850,
-        "caption": "02 · 平面设计 / 社区宣传版面"
+        "height": 852,
+        "caption": "党建文化墙｜版式设计与空间应用"
       },
       {
-        "src": "assets/xingchengli/community-store-sign.webp",
-        "width": 1400,
-        "height": 520,
-        "caption": "02 · 实景落地 / 门店外立面标识"
-      },
-      {
-        "src": "assets/xingchengli/convenience-window-graphics.webp",
-        "width": 1400,
-        "height": 791,
-        "caption": "02 · 实景落地 / 便利店玻璃贴应用"
-      },
-      {
-        "src": "assets/xingchengli/brand-bag.webp",
-        "width": 1614,
-        "height": 1149,
-        "caption": "02 · 平面设计 / 星橙里购物袋包装视觉",
-        "layout": "compact"
-      },
-      {
-        "src": "assets/xingchengli/new-year-banner.webp",
+        "src": "assets/xingchengli/community-shopping-bag.webp",
         "width": 1500,
-        "height": 654,
-        "caption": "03 · 活动与社区内容 / 新年主题横幅"
+        "height": 852,
+        "caption": "品牌包装｜购物袋平面设计与效果展示"
       },
       {
-        "src": "assets/xingchengli/midautumn-banner.webp",
+        "src": "assets/xingchengli/convenience-store-waistband.webp",
         "width": 1500,
-        "height": 843,
-        "caption": "03 · 活动与社区内容 / 中秋活动横幅"
-      },
-      {
-        "src": "assets/xingchengli/midautumn-poster.webp",
-        "width": 900,
-        "height": 1200,
-        "caption": "03 · 活动与社区内容 / 中秋主题海报",
-        "layout": "poster"
-      },
-      {
-        "src": "assets/xingchengli/rooftop-garden-poster.webp",
-        "width": 919,
-        "height": 1300,
-        "caption": "03 · 活动与社区内容 / 屋顶菜园宣传海报",
-        "layout": "poster"
-      },
-      {
-        "src": "assets/xingchengli/shared-bathroom-poster.webp",
-        "width": 919,
-        "height": 1300,
-        "caption": "03 · 活动与社区内容 / 共享卫浴服务海报",
-        "layout": "poster"
-      },
-      {
-        "src": "assets/xingchengli/standee-1.webp",
-        "width": 1100,
-        "height": 2037,
-        "caption": "04 · 公寓推广 / 招租易拉宝 A",
-        "layout": "poster"
-      },
-      {
-        "src": "assets/xingchengli/standee-2.webp",
-        "width": 1100,
-        "height": 2037,
-        "caption": "04 · 公寓推广 / 招租易拉宝 B",
-        "layout": "poster"
-      },
-      {
-        "src": "assets/works/work-04.png",
-        "width": 1239,
-        "height": 1270,
-        "caption": "05 · 新媒体内容 / 秋日公众号视觉样机"
-      },
-      {
-        "src": "assets/works/work-05.jpg",
-        "width": 1996,
-        "height": 2048,
-        "caption": "05 · 新媒体内容 / 秋日主题长图排版"
+        "height": 852,
+        "caption": "空间品牌应用｜便利店腰线设计与门店实景"
       }
     ],
     "pending": "项目执行时间、本人具体职责与现场制作分工待补充。"
