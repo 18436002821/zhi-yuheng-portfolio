@@ -286,12 +286,6 @@
         "caption": "空间品牌应用｜便利店腰线设计与门店实景"
       },
       {
-        "src": "assets/xingchengli/xingchengli-dormitory-upgrade.webp",
-        "width": 989,
-        "height": 1400,
-        "caption": "居住服务信息视觉｜四人间卫生间分区与中央热水系统"
-      },
-      {
         "src": "assets/xingchengli/xingchengli-annual-gala.webp",
         "width": 1400,
         "height": 611,
@@ -304,16 +298,25 @@
         "caption": "节庆活动主视觉｜居信地产 × 星橙里公寓中秋主题"
       },
       {
+        "src": "assets/xingchengli/xingchengli-dormitory-upgrade.webp",
+        "width": 989,
+        "height": 1400,
+        "caption": "公寓配套宣传｜四人间住宿升级与三分离卫生间视觉展示",
+        "layout": "poster"
+      },
+      {
         "src": "assets/xingchengli/xingchengli-mid-autumn-banner.webp",
         "width": 1050,
         "height": 1400,
-        "caption": "中秋节日海报｜花好月圆，人间团圆"
+        "caption": "中秋佳节主题海报｜节日主视觉与移动端应用展示",
+        "layout": "poster"
       },
       {
         "src": "assets/xingchengli/xingchengli-rooftop-garden.webp",
         "width": 989,
         "height": 1400,
-        "caption": "社区活动招募视觉｜屋顶菜园开放宣传（二维码已模糊处理）"
+        "caption": "屋顶菜园社区海报｜展板与移动端应用展示（二维码已遮盖）",
+        "layout": "poster"
       }
     ],
     "pending": "项目执行时间、本人具体职责与现场制作分工待补充。"
