@@ -251,12 +251,14 @@
       "social"
     ],
     "bg": "#fff3e8",
-    "intro": "本项目围绕星橙里社区视觉，涵盖社区文化墙、党建文化墙、品牌购物袋与便利店玻璃腰线四类应用。作品呈现从平面方案到空间落地的设计延展。",
+    "intro": "本项目围绕星橙里公寓的社区品牌视觉展开，涵盖文化墙、党建空间、购物袋与门店腰线，并延展至居住服务信息、年度活动、中秋节庆及屋顶菜园招募。整体呈现品牌视觉在空间应用、活动传播与社区运营场景中的多元落地。",
     "focus": [
       "社区文化墙设计与落地",
       "党建主题空间视觉",
-      "品牌购物袋设计与应用",
-      "便利店腰线设计与实景"
+      "品牌包装与门店应用",
+      "居住服务信息视觉",
+      "年度活动与节庆传播",
+      "社区活动招募视觉"
     ],
     "assets": [
       {
@@ -282,6 +284,36 @@
         "width": 1500,
         "height": 852,
         "caption": "空间品牌应用｜便利店腰线设计与门店实景"
+      },
+      {
+        "src": "assets/xingchengli/xingchengli-dormitory-upgrade.webp",
+        "width": 989,
+        "height": 1400,
+        "caption": "居住服务信息视觉｜四人间卫生间分区与中央热水系统"
+      },
+      {
+        "src": "assets/xingchengli/xingchengli-annual-gala.webp",
+        "width": 1400,
+        "height": 611,
+        "caption": "年度活动主视觉｜2025 年度总结表彰暨 2026 迎春晚会横幅"
+      },
+      {
+        "src": "assets/xingchengli/xingchengli-mid-autumn.webp",
+        "width": 1400,
+        "height": 787,
+        "caption": "节庆活动主视觉｜居信地产 × 星橙里公寓中秋主题"
+      },
+      {
+        "src": "assets/xingchengli/xingchengli-mid-autumn-banner.webp",
+        "width": 1050,
+        "height": 1400,
+        "caption": "中秋节日海报｜花好月圆，人间团圆"
+      },
+      {
+        "src": "assets/xingchengli/xingchengli-rooftop-garden.webp",
+        "width": 989,
+        "height": 1400,
+        "caption": "社区活动招募视觉｜屋顶菜园开放宣传（二维码已模糊处理）"
       }
     ],
     "pending": "项目执行时间、本人具体职责与现场制作分工待补充。"
