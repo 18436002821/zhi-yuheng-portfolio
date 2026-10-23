@@ -135,13 +135,44 @@
       "visual"
     ],
     "bg": "#e5eff9",
-    "intro": "围绕托管招生、书法课程、住宿服务与儿童体能训练需求，整合招生海报、服务说明与场景应用。通过差异化配色、清晰的标题层级与信息分区，让多种教育服务保持统一识别，也便于读者快速获取重点。",
+    "intro": "围绕行知轩儿童成长中心的品牌传播需求，整合宣传画册、招生海报与课程视觉。画册以蓝色为主调，结合明亮的辅助色与真实教学影像，通过目录、品牌介绍和课程跨页建立清晰的信息阅读路径；延展物料保持一致的视觉语言，兼顾品牌识别与招生信息传达。",
     "focus": [
-      "招生宣传",
-      "课程信息编排",
-      "系列视觉统一"
+      "画册版式设计",
+      "教育品牌视觉",
+      "招生宣传物料"
     ],
     "assets": [
+      {
+        "type": "book",
+        "src": "assets/xingzhixuan/brochure-01.webp",
+        "caption": "行知轩儿童成长中心 · 品牌宣传画册",
+        "pages": [
+          {
+            "src": "assets/xingzhixuan/brochure-01.webp",
+            "caption": "封面与封底"
+          },
+          {
+            "src": "assets/xingzhixuan/brochure-02.webp",
+            "caption": "目录与品牌介绍"
+          },
+          {
+            "src": "assets/xingzhixuan/brochure-03.webp",
+            "caption": "课程内容编排"
+          },
+          {
+            "src": "assets/xingzhixuan/brochure-04.webp",
+            "caption": "托管服务跨页"
+          },
+          {
+            "src": "assets/xingzhixuan/brochure-05.webp",
+            "caption": "画册装帧展示"
+          },
+          {
+            "src": "assets/xingzhixuan/brochure-06.webp",
+            "caption": "内页应用展示"
+          }
+        ]
+      },
       {
         "src": "assets/works/work-08.png",
         "width": 1054,
