@@ -354,5 +354,31 @@
         "xingchengli-mid-autumn.webp"
       ]
     }
+  },
+  {
+    "id": "ai-campus-short",
+    "title": "暮光校园 · AI 动态短片",
+    "category": "AI 创作 / 动态影像",
+    "tags": [
+      "ai"
+    ],
+    "bg": "#e9e4f1",
+    "intro": "以夕阳下的校园为场景，通过动漫人物、暖色光影与视角变化，呈现校园日常的氛围。视频时长约 5 秒。",
+    "focus": [
+      "AI 动态影像",
+      "校园场景",
+      "氛围与镜头运动"
+    ],
+    "assets": [
+      {
+        "type": "video",
+        "src": "assets/ai/ai-creative-short.mp4",
+        "poster": "assets/ai/ai-creative-short-poster.webp",
+        "width": 854,
+        "height": 480,
+        "caption": "暮光校园｜AI 动态影像练习"
+      }
+    ],
+    "pending": "具体创作时间、提示词与生成流程待补充。"
   }
 ]
