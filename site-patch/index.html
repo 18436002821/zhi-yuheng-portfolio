@@ -492,7 +492,7 @@ const projects=[
         "layout": "poster"
       },
       {
-        "src": "assets/xingchengli/wechat-apartment-introduction.webp",
+        "src": "assets/xingchengli/wechat-apartment-introduction-clean.webp",
         "width": 1462,
         "height": 1500,
         "caption": "公众号推文排版｜公寓介绍、配套信息与房型内容设计"
@@ -519,7 +519,7 @@ const projects=[
         "xingchengli-mid-autumn-banner.webp"
       ],
       "social": [
-        "wechat-apartment-introduction.webp",
+        "wechat-apartment-introduction-clean.webp",
         "wechat-autumn-community.webp",
         "xingchengli-rooftop-garden.webp",
         "xingchengli-mid-autumn-banner.webp",
@@ -534,7 +534,7 @@ let activeFilter='all';
 function orderedProjectAssets(p){const order=p.categoryOrder&&p.categoryOrder[activeFilter];if(!order)return p.assets;const rank=a=>{const i=order.indexOf(a.src.split('/').pop());return i<0?order.length:i};return p.assets.slice().sort((a,b)=>rank(a)-rank(b))}
 function updateXingchengliCover(key){
 const card=cards.find(c=>c.dataset.project==='xingchengli-culture-wall');if(!card)return;
-const covers={all:['smile-community-wall.webp','星橙里社区文化墙设计与实景落地',1500,852,'社区品牌建设 / 空间视觉与传播应用'],brand:['smile-community-wall.webp','星橙里社区文化墙设计与实景落地',1500,852,'品牌视觉 / 社区文化墙与空间应用'],visual:['xingchengli-dormitory-upgrade.webp','星橙里公寓配套宣传海报样机',1120,1400,'平面设计 / 公寓配套宣传与信息视觉'],social:['wechat-apartment-introduction.webp','星橙里公众号推文排版与公寓介绍',1462,1500,'新媒体 / 社区活动海报与移动端传播']};
+const covers={all:['smile-community-wall.webp','星橙里社区文化墙设计与实景落地',1500,852,'社区品牌建设 / 空间视觉与传播应用'],brand:['smile-community-wall.webp','星橙里社区文化墙设计与实景落地',1500,852,'品牌视觉 / 社区文化墙与空间应用'],visual:['xingchengli-dormitory-upgrade.webp','星橙里公寓配套宣传海报样机',1120,1400,'平面设计 / 公寓配套宣传与信息视觉'],social:['wechat-apartment-introduction-clean.webp','星橙里公众号推文排版与公寓介绍',1462,1500,'新媒体 / 社区活动海报与移动端传播']};
 const data=covers[key]||covers.all;const cover=card.querySelector('.xc-cover');const img=cover.querySelector('img');
 img.src='assets/xingchengli/'+data[0];img.alt=data[1];img.width=data[2];img.height=data[3];
 cover.classList.toggle('is-category-poster',key==='visual'||key==='social');
