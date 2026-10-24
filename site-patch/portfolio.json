@@ -144,32 +144,74 @@
     "assets": [
       {
         "type": "book",
-        "src": "assets/xingzhixuan/brochure-01.webp",
+        "src": "assets/xingzhixuan/flat-spread-01.webp",
         "caption": "行知轩儿童成长中心 · 品牌宣传画册",
         "pages": [
           {
-            "src": "assets/xingzhixuan/brochure-01.webp",
-            "caption": "封面与封底"
+            "src": "assets/xingzhixuan/flat-spread-01.webp",
+            "mobilePreview": "assets/xingzhixuan/flat-spread-01-mobile.webp",
+            "caption": "封面与封底 · 品牌第一印象",
+            "description": "以蓝色建立稳定的品牌识别，黄色与青色波形增加儿童教育主题的亲和力。封面用活动照片与醒目标题建立视觉焦点，封底集中呈现标志与品牌主张，形成完整的首尾呼应。",
+            "keywords": [
+              "品牌配色",
+              "封面构图",
+              "视觉识别"
+            ]
           },
           {
-            "src": "assets/xingzhixuan/brochure-02.webp",
-            "caption": "目录与品牌介绍"
+            "src": "assets/xingzhixuan/flat-spread-02.webp",
+            "mobilePreview": "assets/xingzhixuan/flat-spread-02-mobile.webp",
+            "caption": "目录与品牌介绍 · 建立阅读路径",
+            "description": "左页通过清晰的目录层级与页码引导阅读，纵向 CONTENTS 形成醒目的视觉分区。右页以标题、问答式正文和蓝底信息区划分内容，兼顾机构介绍的完整性与阅读节奏。",
+            "keywords": [
+              "目录导航",
+              "信息层级",
+              "蓝白对比"
+            ]
           },
           {
-            "src": "assets/xingzhixuan/brochure-03.webp",
-            "caption": "课程内容编排"
+            "src": "assets/xingzhixuan/flat-spread-03.webp",
+            "mobilePreview": "assets/xingzhixuan/flat-spread-03-mobile.webp",
+            "caption": "早午晚托服务 · 场景化信息表达",
+            "description": "跨页分别呈现教学活动与餐食安排，将服务内容转化为可直观看到的日常场景。照片组合配合分栏文字与蓝色标题条，让课程流程、生活照护和餐食信息各有重点。",
+            "keywords": [
+              "图文分栏",
+              "服务说明",
+              "场景呈现"
+            ]
           },
           {
-            "src": "assets/xingzhixuan/brochure-04.webp",
-            "caption": "托管服务跨页"
+            "src": "assets/xingzhixuan/flat-spread-04.webp",
+            "mobilePreview": "assets/xingzhixuan/flat-spread-04-mobile.webp",
+            "caption": "综合训练馆 · 课程与师资展示",
+            "description": "左页以训练照片和课程说明建立内容主线，右页集中呈现师资背景与资质素材。统一的蓝色标题带贯穿跨页，数字信息、照片与文字分区组织，增强阅读顺序与信息辨识度。",
+            "keywords": [
+              "跨页统筹",
+              "师资信息",
+              "模块编排"
+            ]
           },
           {
-            "src": "assets/xingzhixuan/brochure-05.webp",
-            "caption": "画册装帧展示"
+            "src": "assets/xingzhixuan/flat-spread-05.webp",
+            "mobilePreview": "assets/xingzhixuan/flat-spread-05-mobile.webp",
+            "caption": "专业书法班 · 课程气质表达",
+            "description": "书法主题采用书写感标题、淡墨文字底纹与较大的留白，呼应课程内容。左页突出教师形象与教学介绍，右页将荣誉素材整齐归组，在品牌体系内形成具有课程特色的视觉变化。",
+            "keywords": [
+              "书法字体",
+              "留白节奏",
+              "课程差异化"
+            ]
           },
           {
-            "src": "assets/xingzhixuan/brochure-06.webp",
-            "caption": "内页应用展示"
+            "src": "assets/xingzhixuan/flat-spread-06.webp",
+            "mobilePreview": "assets/xingzhixuan/flat-spread-06-mobile.webp",
+            "caption": "少儿英语启蒙 · 学习体系可视化",
+            "description": "以活动照片连接课程介绍，通过明确的左右分区呈现教学场景与学习体系。右页的数字标题、条目和图片形成互补，让体系构成与课程特点更容易被快速浏览和理解。",
+            "keywords": [
+              "条目归纳",
+              "照片叙事",
+              "阅读效率"
+            ]
           }
         ]
       },
