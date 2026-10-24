@@ -515,5 +515,129 @@
       }
     ],
     "pending": "具体创作时间、提示词与生成流程待补充。"
+  },
+  {
+    "id": "bead-groupbuy",
+    "title": "皇家迪智尼 · 拼豆门店团购视觉",
+    "category": "新媒体视觉 / 团购推广",
+    "tags": [
+      "social",
+      "visual"
+    ],
+    "bg": "#e9f4fc",
+    "intro": "围绕拼豆门店的团购推广需求，设计系列商品展示图与宣传横幅。以蓝、黄两套配色统一视觉风格，结合卡通角色、拼豆成品和材料展示，分层呈现产品选择、体验服务与门店卖点，兼顾画面吸引力和信息阅读效率。",
+    "focus": [
+      "团购主图设计",
+      "蓝黄系列延展",
+      "推广信息编排"
+    ],
+    "assets": [
+      {
+        "src": "assets/bead-groupbuy/freedom-blue.webp",
+        "mobilePreview": "assets/bead-groupbuy/freedom-blue-mobile.webp",
+        "preview": "assets/bead-groupbuy/freedom-blue.webp",
+        "width": 1600,
+        "height": 900,
+        "caption": "拼豆自由 · 蓝色主图",
+        "layout": "bead-pair"
+      },
+      {
+        "src": "assets/bead-groupbuy/freedom-yellow.webp",
+        "mobilePreview": "assets/bead-groupbuy/freedom-yellow-mobile.webp",
+        "preview": "assets/bead-groupbuy/freedom-yellow.webp",
+        "width": 1600,
+        "height": 800,
+        "caption": "拼豆自由 · 黄色主图",
+        "layout": "bead-pair"
+      },
+      {
+        "src": "assets/bead-groupbuy/materials-blue.webp",
+        "mobilePreview": "assets/bead-groupbuy/materials-blue-mobile.webp",
+        "preview": "assets/bead-groupbuy/materials-blue.webp",
+        "width": 1600,
+        "height": 900,
+        "caption": "烘焙布与材料选择 · 蓝色主图",
+        "layout": "bead-pair"
+      },
+      {
+        "src": "assets/bead-groupbuy/materials-yellow.webp",
+        "mobilePreview": "assets/bead-groupbuy/materials-yellow-mobile.webp",
+        "preview": "assets/bead-groupbuy/materials-yellow.webp",
+        "width": 1600,
+        "height": 800,
+        "caption": "烘焙布与材料选择 · 黄色主图",
+        "layout": "bead-pair"
+      },
+      {
+        "src": "assets/bead-groupbuy/experience-blue.webp",
+        "mobilePreview": "assets/bead-groupbuy/experience-blue-mobile.webp",
+        "preview": "assets/bead-groupbuy/experience-blue.webp",
+        "width": 1600,
+        "height": 900,
+        "caption": "体验服务 · 蓝色主图",
+        "layout": "bead-pair"
+      },
+      {
+        "src": "assets/bead-groupbuy/experience-yellow.webp",
+        "mobilePreview": "assets/bead-groupbuy/experience-yellow-mobile.webp",
+        "preview": "assets/bead-groupbuy/experience-yellow.webp",
+        "width": 1600,
+        "height": 900,
+        "caption": "体验服务 · 黄色主图",
+        "layout": "bead-pair"
+      },
+      {
+        "src": "assets/bead-groupbuy/capacity-blue.webp",
+        "mobilePreview": "assets/bead-groupbuy/capacity-blue-mobile.webp",
+        "preview": "assets/bead-groupbuy/capacity-blue.webp",
+        "width": 1600,
+        "height": 410,
+        "caption": "门店容量 · 蓝色横幅",
+        "layout": "bead-banner"
+      },
+      {
+        "src": "assets/bead-groupbuy/capacity-yellow.webp",
+        "mobilePreview": "assets/bead-groupbuy/capacity-yellow-mobile.webp",
+        "preview": "assets/bead-groupbuy/capacity-yellow.webp",
+        "width": 1600,
+        "height": 311,
+        "caption": "门店容量 · 黄色横幅",
+        "layout": "bead-banner"
+      },
+      {
+        "src": "assets/bead-groupbuy/service-banner.webp",
+        "mobilePreview": "assets/bead-groupbuy/service-banner-mobile.webp",
+        "preview": "assets/bead-groupbuy/service-banner.webp",
+        "width": 1600,
+        "height": 230,
+        "caption": "全天畅玩 · 服务卖点横幅",
+        "layout": "bead-banner"
+      }
+    ],
+    "presentation": "bead-case",
+    "sections": [
+      {
+        "index": 0,
+        "title": "01 / 团购主图 · 拼豆自由",
+        "description": "以角色、拼豆成品与材料盒建立视觉焦点，将色系选择作为主要信息，蓝黄两版保持相同的传播主题。"
+      },
+      {
+        "index": 2,
+        "title": "02 / 产品选择 · 材料与玩法",
+        "description": "将材质与烘焙布选项组织为清晰标签，结合工具、成品和角色动作，帮助观众快速理解可体验的内容。"
+      },
+      {
+        "index": 4,
+        "title": "03 / 体验服务 · 消费场景",
+        "description": "以情侣、亲子、团建等场景组织体验卖点，搭配器材与服务信息，让展示从产品延伸到门店体验。"
+      },
+      {
+        "index": 6,
+        "title": "04 / 横幅延展 · 门店卖点",
+        "description": "横向物料突出座位、营业时间与服务承诺，保留原比例展示。图中内容为设计稿所载宣传信息。"
+      }
+    ],
+    "summary": "通过统一的角色、蓝黄配色、云朵与格纹元素，形成可识别的系列视觉；再以主标题、标签和辅助说明建立信息层级，让不同主题与横幅尺寸保持连贯。该项目重点展示商业推广画面的信息提炼与多尺寸延展能力。",
+    "pending": "项目时间、投放平台、本人具体职责及素材制作方式待补充；暂不展示未经提供的投放效果数据。"
   }
 ]
