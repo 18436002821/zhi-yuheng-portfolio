@@ -2,60 +2,122 @@
   {
     "id": "rongyao-xian-2025",
     "title": "戎耀三秦 · 退役军人就业服务活动",
-    "category": "省级项目 / 活动视觉",
+    "category": "省级活动项目 / 视觉设计与现场应用",
     "tags": [
       "visual"
     ],
     "bg": "#e8f2ff",
-    "intro": "为陕西省 2025 年退役军人人力资源交流活动打造“戎耀三秦·职等你来”主题视觉。从主视觉与延展海报，到会场主屏和入口装置应用，呈现设计从平面创作到现场落地的完整过程。",
+    "intro": "以“戎耀三秦 · 职等你来”为主题，参与陕西省 2025 年退役军人人力资源交流活动的视觉设计与现场应用。围绕活动识别、会场传播与招聘信息展示，串联主视觉、横向背景、展板版式和倒计时海报，并通过现场照片呈现作品从平面文件到真实会场的应用过程。",
     "focus": [
-      "活动主视觉",
-      "系列宣传海报",
-      "现场应用落地"
+      "活动视觉统筹",
+      "多尺寸物料延展",
+      "招聘信息编排",
+      "现场应用配合"
     ],
     "assets": [
       {
         "src": "assets/works/work-21-identity.webp",
         "width": 1454,
         "height": 1100,
-        "caption": "活动主视觉｜戎耀三秦 · 职等你来",
+        "caption": "活动主视觉 · 戎耀三秦 · 职等你来",
         "mobilePreview": "assets/optimized/work-21-identity-thumb.jpg",
-        "preview": "assets/preview/detail-work-21-identity.webp"
+        "preview": "assets/preview/detail-work-21-identity.webp",
+        "layout": "xian-main"
       },
       {
         "src": "assets/works/work-21-stage-visual.webp",
         "width": 2048,
         "height": 716,
-        "caption": "会场主屏视觉延展",
+        "caption": "主会场横向背景设计",
         "mobilePreview": "assets/optimized/work-21-stage-visual-thumb.jpg",
-        "preview": "assets/preview/detail-work-21-stage-visual.webp"
-      },
-      {
-        "src": "assets/works/work-21-countdown-clean.webp",
-        "width": 948,
-        "height": 1760,
-        "caption": "活动倒计时海报｜报名二维码已遮除",
-        "mobilePreview": "assets/optimized/work-21-countdown-clean-thumb.jpg",
-        "preview": "assets/preview/detail-work-21-countdown-clean.webp"
+        "preview": "assets/preview/detail-work-21-stage-visual.webp",
+        "layout": "xian-banner"
       },
       {
         "src": "assets/works/work-21-venue.webp",
         "width": 1255,
         "height": 880,
-        "caption": "主会场背景板落地",
+        "caption": "主会场背景板 · 正面落地视角",
         "mobilePreview": "assets/optimized/work-21-venue-thumb.jpg",
-        "preview": "assets/preview/detail-work-21-venue.webp"
+        "preview": "assets/preview/detail-work-21-venue.webp",
+        "layout": "xian-pair"
       },
       {
         "src": "assets/works/work-21-entry.webp",
         "width": 1190,
         "height": 1045,
-        "caption": "活动入口装置现场应用",
+        "caption": "会场环境与背景板 · 侧面视角",
         "mobilePreview": "assets/optimized/work-21-entry-thumb.jpg",
-        "preview": "assets/preview/detail-work-21-entry.webp"
+        "preview": "assets/preview/detail-work-21-entry.webp",
+        "layout": "xian-pair"
+      },
+      {
+        "src": "assets/xian-case/layout-files.webp",
+        "preview": "assets/xian-case/layout-files.webp",
+        "mobilePreview": "assets/xian-case/layout-files-mobile.webp",
+        "width": 1600,
+        "height": 1000,
+        "caption": "招聘展板文件 · 多版式编排记录",
+        "layout": "xian-main"
+      },
+      {
+        "src": "assets/xian-case/recruitment-boards.webp",
+        "preview": "assets/xian-case/recruitment-boards.webp",
+        "mobilePreview": "assets/xian-case/recruitment-boards-mobile.webp",
+        "width": 1080,
+        "height": 1440,
+        "caption": "招聘展板 · 会场成列展示",
+        "layout": "xian-portrait"
+      },
+      {
+        "src": "assets/works/work-21-countdown-clean.webp",
+        "width": 948,
+        "height": 1760,
+        "caption": "倒计时海报 · 活动宣传延展",
+        "mobilePreview": "assets/optimized/work-21-countdown-clean-thumb.jpg",
+        "preview": "assets/preview/detail-work-21-countdown-clean.webp",
+        "layout": "xian-portrait"
+      },
+      {
+        "src": "assets/xian-case/production.webp",
+        "preview": "assets/xian-case/production.webp",
+        "mobilePreview": "assets/xian-case/production-mobile.webp",
+        "width": 1200,
+        "height": 1600,
+        "caption": "现场工作记录 · 设计文件与会场物料",
+        "layout": "xian-portrait"
       }
     ],
-    "pending": "项目地点：陕西西安　｜　项目时间：2025 年 4 月　｜　项目内容：视觉设计与现场落地"
+    "pending": "项目地点：陕西西安　｜　项目时间：2025 年 4 月　｜　参与内容：活动视觉设计与现场应用配合",
+    "presentation": "xian-case",
+    "sections": [
+      {
+        "index": 0,
+        "title": "01 / 主题识别 · 活动主视觉",
+        "description": "以蓝色建立活动的整体识别，结合金色主题文字与城市轮廓元素，明确传递活动名称、时间和地点。"
+      },
+      {
+        "index": 1,
+        "title": "02 / 设计 → 落地 · 主会场应用",
+        "description": "横向背景延续主视觉的色彩与标题层级。下方以正面和侧面现场照片对应展示，呈现画面在舞台、座席与真实空间中的应用关系。"
+      },
+      {
+        "index": 4,
+        "title": "03 / 招聘展板 · 从版式到现场",
+        "description": "将企业介绍、招聘岗位与服务信息纳入统一的蓝色版式。先展示多版文件的工作记录，再对应会场成列的展板实景，体现信息编排与系列应用。"
+      },
+      {
+        "index": 6,
+        "title": "04 / 宣传延展 · 倒计时海报",
+        "description": "将活动识别延展到竖版传播画面，以大数字建立视觉焦点，在不同画幅中保持主题、配色与信息风格一致。"
+      },
+      {
+        "index": 7,
+        "title": "05 / 现场工作记录",
+        "description": "保留设计文件、工作证与现场物料同框的真实照片，作为项目实践过程的补充记录。"
+      }
+    ],
+    "summary": "本项目围绕同一活动建立统一的视觉语言，再根据主会场背景、竖版宣传与招聘展板的阅读距离和信息密度调整版式。设计稿与现场照片对应呈现，重点展示多尺寸延展、信息整理，以及配合现场应用的实践能力。"
   },
   {
     "id": "jiuzhangmen",
