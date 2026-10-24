@@ -216,44 +216,68 @@
         ]
       },
       {
-        "src": "assets/works/work-08.png",
-        "width": 1054,
-        "height": 1492,
-        "caption": "中学生托管主题海报",
-        "mobilePreview": "assets/optimized/work-08-thumb.jpg",
-        "preview": "assets/optimized/work-08-screen.jpg"
+        "src": "assets/xingzhixuan/showcase-01.webp",
+        "preview": "assets/xingzhixuan/showcase-01.webp",
+        "mobilePreview": "assets/xingzhixuan/showcase-01-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "书法招生折页 · 文化视觉与版式"
       },
       {
-        "src": "assets/works/work-18.png",
-        "width": 992,
-        "height": 1586,
-        "caption": "少年书法课程海报",
-        "mobilePreview": "assets/optimized/work-18-thumb.jpg",
-        "preview": "assets/optimized/work-18-screen.jpg"
+        "src": "assets/xingzhixuan/showcase-02.webp",
+        "preview": "assets/xingzhixuan/showcase-02.webp",
+        "mobilePreview": "assets/xingzhixuan/showcase-02-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "儿童成长中心 · 品牌展示"
       },
       {
-        "src": "assets/works/work-10.png",
-        "width": 1054,
-        "height": 1492,
-        "caption": "住宿服务介绍海报",
-        "mobilePreview": "assets/optimized/work-10-thumb.jpg",
-        "preview": "assets/optimized/work-10-screen.jpg"
+        "src": "assets/xingzhixuan/showcase-03.webp",
+        "preview": "assets/xingzhixuan/showcase-03.webp",
+        "mobilePreview": "assets/xingzhixuan/showcase-03-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "少年书法招生 · 易拉宝设计"
       },
       {
-        "src": "assets/works/work-17.png",
-        "width": 1448,
-        "height": 1086,
-        "caption": "双海报场景应用展示",
-        "mobilePreview": "assets/optimized/work-17-thumb.jpg",
-        "preview": "assets/optimized/work-17-screen.jpg"
+        "src": "assets/xingzhixuan/showcase-04.webp",
+        "preview": "assets/xingzhixuan/showcase-04.webp",
+        "mobilePreview": "assets/xingzhixuan/showcase-04-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "中学生精品托管 · 招生视觉"
       },
       {
-        "src": "assets/works/work-06.png",
-        "width": 1054,
-        "height": 1492,
-        "caption": "儿童体能宣传单幅设计",
-        "mobilePreview": "assets/optimized/work-06-thumb.jpg",
-        "preview": "assets/optimized/work-06-screen.jpg"
+        "src": "assets/xingzhixuan/showcase-05.webp",
+        "preview": "assets/xingzhixuan/showcase-05.webp",
+        "mobilePreview": "assets/xingzhixuan/showcase-05-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "儿童体适能 · 课程推广"
+      },
+      {
+        "src": "assets/xingzhixuan/showcase-06.webp",
+        "preview": "assets/xingzhixuan/showcase-06.webp",
+        "mobilePreview": "assets/xingzhixuan/showcase-06-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "优质住宿 · 服务视觉"
+      },
+      {
+        "src": "assets/xingzhixuan/showcase-07.webp",
+        "preview": "assets/xingzhixuan/showcase-07.webp",
+        "mobilePreview": "assets/xingzhixuan/showcase-07-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "精品托管 · 品牌折页"
+      },
+      {
+        "src": "assets/xingzhixuan/showcase-08.webp",
+        "preview": "assets/xingzhixuan/showcase-08.webp",
+        "mobilePreview": "assets/xingzhixuan/showcase-08-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "初中托班 · 精品小班招生"
       }
     ],
     "pending": "项目时间、本人具体职责与实际投放效果待补充。"
