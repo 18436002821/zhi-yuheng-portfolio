@@ -263,7 +263,23 @@
       }
     ],
     "pending": "制作时间、具体分工、使用工具与制作流程待补充。",
-    "presentation": "petbox-case"
+    "presentation": "petbox-case",
+    "sections": [
+      {
+        "id": "wechat",
+        "title": "公众号视觉",
+        "subtitle": "WECHAT EDITORIAL",
+        "description": "店铺官宣、服务保障与猫咪指南，以系列长图呈现品牌内容与移动端阅读设计。",
+        "prefix": "assets/petbox-wechat/"
+      },
+      {
+        "id": "groupbuy",
+        "title": "团购与价目表",
+        "subtitle": "GROUP BUYING & PRICE LIST",
+        "description": "狗狗洗护、猫咪洗护与撸猫体验，将门店价格信息和线上团购详情配套展示。",
+        "prefix": "assets/petbox-groupbuy/"
+      }
+    ]
   },
   {
     "id": "xingzhixuan",
