@@ -155,12 +155,12 @@
       "visual"
     ],
     "bg": "#f6eedf",
-    "intro": "围绕萌宠盒子的品牌传播，整合公众号长图、团购详情、门店价目牌与招聘视觉。以橙色品牌识别贯穿不同场景，并根据服务展示、科普阅读与价格查询的需求调整配色、图文层级和信息密度，呈现统一而有变化的品牌内容视觉。",
+    "intro": "围绕萌宠盒子的品牌传播，整合公众号长图、小红书系列内容、团购详情与门店价目牌。以橙色品牌识别贯穿不同场景，并根据品牌介绍、科普阅读、服务展示与价格查询的需求调整图文层级和信息密度，呈现统一而有变化的内容视觉。",
     "focus": [
       "品牌视觉延展",
       "公众号图文排版",
-      "团购详情设计",
-      "价格信息编排"
+      "小红书系列内容",
+      "团购与价目表设计"
     ],
     "assets": [
       {
@@ -201,6 +201,66 @@
         "height": 1024,
         "caption": "科普内容 · 本命小猫适配指南",
         "description": "以猫咪品种卡片组织科普信息，统一标题、图片与说明的层级，让不同品种之间的对比更便于浏览。",
+        "layout": "petbox-spread"
+      },
+      {
+        "src": "assets/petbox-social/brand-intro.webp",
+        "preview": "assets/petbox-social/brand-intro.webp",
+        "mobilePreview": "assets/petbox-social/brand-intro-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "品牌介绍 · 门店形象与服务内容",
+        "description": "以品牌橙色统筹门店形象、空间照片与服务内容，通过分屏编排建立品牌认知和信息层级。",
+        "layout": "petbox-spread"
+      },
+      {
+        "src": "assets/petbox-social/grand-opening.webp",
+        "preview": "assets/petbox-social/grand-opening.webp",
+        "mobilePreview": "assets/petbox-social/grand-opening-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "开业宣传 · 品种与门店亮点",
+        "description": "围绕新店开业组织品种介绍和门店亮点，以卡片分组与醒目标题承载多主题推广内容。",
+        "layout": "petbox-spread"
+      },
+      {
+        "src": "assets/petbox-social/health-guarantees.webp",
+        "preview": "assets/petbox-social/health-guarantees.webp",
+        "mobilePreview": "assets/petbox-social/health-guarantees-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "健康保障 · 检测与服务信息",
+        "description": "以图标矩阵和橙色信息卡片梳理检测项目、服务保障与品牌理念，让密集内容形成清晰的浏览路径。",
+        "layout": "petbox-spread"
+      },
+      {
+        "src": "assets/petbox-social/pet-matching.webp",
+        "preview": "assets/petbox-social/pet-matching.webp",
+        "mobilePreview": "assets/petbox-social/pet-matching-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "猫狗适配 · 品种选择指南",
+        "description": "按猫咪与狗狗分区展示品种信息，通过统一卡片和移动端样机，呈现系列科普内容的编排方式。",
+        "layout": "petbox-spread"
+      },
+      {
+        "src": "assets/petbox-social/bathing-guide.webp",
+        "preview": "assets/petbox-social/bathing-guide.webp",
+        "mobilePreview": "assets/petbox-social/bathing-guide-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "洗澡教学 · 流程与护理提示",
+        "description": "以清单、分步流程和场景照片组织洗护教学内容，利用蓝绿辅助色区分步骤与护理提示。",
+        "layout": "petbox-spread"
+      },
+      {
+        "src": "assets/petbox-social/beginner-guide.webp",
+        "preview": "assets/petbox-social/beginner-guide.webp",
+        "mobilePreview": "assets/petbox-social/beginner-guide-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "新手养宠 · 避坑知识系列",
+        "description": "用对照符号、主题分栏和用品图片梳理新手养宠知识，强化系列封面识别与内容阅读节奏。",
         "layout": "petbox-spread"
       },
       {
@@ -252,14 +312,6 @@
         "caption": "撸猫体验 · 团购内容展示",
         "description": "采用明亮橙黄色突出互动体验，将预约规则、安全提醒和现场环境组合展示，形成从兴趣吸引到体验说明的阅读路径。",
         "layout": "petbox-spread"
-      },
-      {
-        "src": "assets/works/work-12.jpg",
-        "width": 1536,
-        "height": 2048,
-        "caption": "宠物主题招聘海报",
-        "mobilePreview": "assets/optimized/work-12-thumb.jpg",
-        "preview": "assets/optimized/work-12-screen.jpg"
       }
     ],
     "pending": "制作时间、具体分工、使用工具与制作流程待补充。",
@@ -271,6 +323,13 @@
         "subtitle": "WECHAT EDITORIAL",
         "description": "店铺官宣、服务保障与猫咪指南，以系列长图呈现品牌内容与移动端阅读设计。",
         "prefix": "assets/petbox-wechat/"
+      },
+      {
+        "id": "xiaohongshu",
+        "title": "小红书视觉",
+        "subtitle": "XIAOHONGSHU CONTENT",
+        "description": "从品牌介绍与开业宣传，到宠物选择、洗护教学和养宠知识，以系列化内容保持品牌识别与阅读节奏。",
+        "prefix": "assets/petbox-social/"
       },
       {
         "id": "groupbuy",
