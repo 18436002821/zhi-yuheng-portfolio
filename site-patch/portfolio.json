@@ -1,150 +1,158 @@
 [
   {
-    "id": "rongyao-xian-2025",
-    "title": "戎耀三秦 · 退役军人就业服务活动",
-    "category": "省级活动项目 / 视觉设计与现场应用",
+    "id": "xingzhixuan",
+    "title": "行知轩 · 教育与儿童成长视觉",
+    "category": "教育视觉 / 系列平面设计",
     "tags": [
       "visual"
     ],
-    "bg": "#e8f2ff",
-    "intro": "以“戎耀三秦 · 职等你来”为主题，参与陕西省 2025 年退役军人人力资源交流活动的视觉设计与现场应用。围绕活动识别、会场传播与招聘信息展示，串联主视觉、横向背景、展板版式和倒计时海报，并通过现场照片呈现作品从平面文件到真实会场的应用过程。",
+    "bg": "#e5eff9",
+    "intro": "围绕行知轩儿童成长中心的品牌传播需求，整合宣传画册、招生海报与课程视觉。画册以蓝色为主调，结合明亮的辅助色与真实教学影像，通过目录、品牌介绍和课程跨页建立清晰的信息阅读路径；延展物料保持一致的视觉语言，兼顾品牌识别与招生信息传达。",
     "focus": [
-      "活动视觉统筹",
-      "多尺寸物料延展",
-      "招聘信息编排",
-      "现场应用配合"
+      "画册版式设计",
+      "教育品牌视觉",
+      "招生宣传物料"
     ],
     "assets": [
       {
-        "src": "assets/works/work-21-identity.webp",
-        "width": 1454,
-        "height": 1100,
-        "caption": "活动主视觉 · 戎耀三秦 · 职等你来",
-        "mobilePreview": "assets/optimized/work-21-identity-thumb.jpg",
-        "preview": "assets/preview/detail-work-21-identity.webp",
-        "layout": "xian-main"
+        "type": "book",
+        "src": "assets/xingzhixuan/flat-spread-01.webp",
+        "caption": "行知轩儿童成长中心 · 品牌宣传画册",
+        "pages": [
+          {
+            "src": "assets/xingzhixuan/flat-spread-01.webp",
+            "mobilePreview": "assets/xingzhixuan/flat-spread-01-mobile.webp",
+            "caption": "封面与封底 · 品牌第一印象",
+            "description": "以蓝色建立稳定的品牌识别，黄色与青色波形增加儿童教育主题的亲和力。封面用活动照片与醒目标题建立视觉焦点，封底集中呈现标志与品牌主张，形成完整的首尾呼应。",
+            "keywords": [
+              "品牌配色",
+              "封面构图",
+              "视觉识别"
+            ]
+          },
+          {
+            "src": "assets/xingzhixuan/flat-spread-02.webp",
+            "mobilePreview": "assets/xingzhixuan/flat-spread-02-mobile.webp",
+            "caption": "目录与品牌介绍 · 建立阅读路径",
+            "description": "左页通过清晰的目录层级与页码引导阅读，纵向 CONTENTS 形成醒目的视觉分区。右页以标题、问答式正文和蓝底信息区划分内容，兼顾机构介绍的完整性与阅读节奏。",
+            "keywords": [
+              "目录导航",
+              "信息层级",
+              "蓝白对比"
+            ]
+          },
+          {
+            "src": "assets/xingzhixuan/flat-spread-03.webp",
+            "mobilePreview": "assets/xingzhixuan/flat-spread-03-mobile.webp",
+            "caption": "早午晚托服务 · 场景化信息表达",
+            "description": "跨页分别呈现教学活动与餐食安排，将服务内容转化为可直观看到的日常场景。照片组合配合分栏文字与蓝色标题条，让课程流程、生活照护和餐食信息各有重点。",
+            "keywords": [
+              "图文分栏",
+              "服务说明",
+              "场景呈现"
+            ]
+          },
+          {
+            "src": "assets/xingzhixuan/flat-spread-04.webp",
+            "mobilePreview": "assets/xingzhixuan/flat-spread-04-mobile.webp",
+            "caption": "综合训练馆 · 课程与师资展示",
+            "description": "左页以训练照片和课程说明建立内容主线，右页集中呈现师资背景与资质素材。统一的蓝色标题带贯穿跨页，数字信息、照片与文字分区组织，增强阅读顺序与信息辨识度。",
+            "keywords": [
+              "跨页统筹",
+              "师资信息",
+              "模块编排"
+            ]
+          },
+          {
+            "src": "assets/xingzhixuan/flat-spread-05.webp",
+            "mobilePreview": "assets/xingzhixuan/flat-spread-05-mobile.webp",
+            "caption": "专业书法班 · 课程气质表达",
+            "description": "书法主题采用书写感标题、淡墨文字底纹与较大的留白，呼应课程内容。左页突出教师形象与教学介绍，右页将荣誉素材整齐归组，在品牌体系内形成具有课程特色的视觉变化。",
+            "keywords": [
+              "书法字体",
+              "留白节奏",
+              "课程差异化"
+            ]
+          },
+          {
+            "src": "assets/xingzhixuan/flat-spread-06.webp",
+            "mobilePreview": "assets/xingzhixuan/flat-spread-06-mobile.webp",
+            "caption": "少儿英语启蒙 · 学习体系可视化",
+            "description": "以活动照片连接课程介绍，通过明确的左右分区呈现教学场景与学习体系。右页的数字标题、条目和图片形成互补，让体系构成与课程特点更容易被快速浏览和理解。",
+            "keywords": [
+              "条目归纳",
+              "照片叙事",
+              "阅读效率"
+            ]
+          }
+        ]
       },
       {
-        "src": "assets/works/work-21-stage-visual.webp",
-        "width": 2048,
-        "height": 716,
-        "caption": "主会场横向背景设计",
-        "mobilePreview": "assets/optimized/work-21-stage-visual-thumb.jpg",
-        "preview": "assets/preview/detail-work-21-stage-visual.webp",
-        "layout": "xian-banner"
+        "src": "assets/xingzhixuan/showcase-01.webp",
+        "preview": "assets/xingzhixuan/showcase-01.webp",
+        "mobilePreview": "assets/xingzhixuan/showcase-01-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "书法招生折页 · 文化视觉与版式"
       },
       {
-        "src": "assets/works/work-21-venue.webp",
-        "width": 1255,
-        "height": 880,
-        "caption": "主会场背景板 · 正面落地视角",
-        "mobilePreview": "assets/optimized/work-21-venue-thumb.jpg",
-        "preview": "assets/preview/detail-work-21-venue.webp",
-        "layout": "xian-pair"
+        "src": "assets/xingzhixuan/showcase-02.webp",
+        "preview": "assets/xingzhixuan/showcase-02.webp",
+        "mobilePreview": "assets/xingzhixuan/showcase-02-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "儿童成长中心 · 品牌展示"
       },
       {
-        "src": "assets/works/work-21-entry.webp",
-        "width": 1190,
-        "height": 1045,
-        "caption": "会场环境与背景板 · 侧面视角",
-        "mobilePreview": "assets/optimized/work-21-entry-thumb.jpg",
-        "preview": "assets/preview/detail-work-21-entry.webp",
-        "layout": "xian-pair"
+        "src": "assets/xingzhixuan/showcase-03.webp",
+        "preview": "assets/xingzhixuan/showcase-03.webp",
+        "mobilePreview": "assets/xingzhixuan/showcase-03-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "少年书法招生 · 易拉宝设计"
       },
       {
-        "src": "assets/xian-case/layout-files.webp",
-        "preview": "assets/xian-case/layout-files.webp",
-        "mobilePreview": "assets/xian-case/layout-files-mobile.webp",
-        "width": 1600,
-        "height": 1000,
-        "caption": "招聘展板文件 · 多版式编排记录",
-        "layout": "xian-main"
+        "src": "assets/xingzhixuan/showcase-04.webp",
+        "preview": "assets/xingzhixuan/showcase-04.webp",
+        "mobilePreview": "assets/xingzhixuan/showcase-04-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "中学生精品托管 · 招生视觉"
       },
       {
-        "src": "assets/xian-case/recruitment-boards.webp",
-        "preview": "assets/xian-case/recruitment-boards.webp",
-        "mobilePreview": "assets/xian-case/recruitment-boards-mobile.webp",
-        "width": 1080,
-        "height": 1440,
-        "caption": "招聘展板 · 会场成列展示",
-        "layout": "xian-portrait"
+        "src": "assets/xingzhixuan/showcase-05.webp",
+        "preview": "assets/xingzhixuan/showcase-05.webp",
+        "mobilePreview": "assets/xingzhixuan/showcase-05-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "儿童体适能 · 课程推广"
       },
       {
-        "src": "assets/works/work-21-countdown-clean.webp",
-        "width": 948,
-        "height": 1760,
-        "caption": "倒计时海报 · 活动宣传延展",
-        "mobilePreview": "assets/optimized/work-21-countdown-clean-thumb.jpg",
-        "preview": "assets/preview/detail-work-21-countdown-clean.webp",
-        "layout": "xian-portrait"
+        "src": "assets/xingzhixuan/showcase-06.webp",
+        "preview": "assets/xingzhixuan/showcase-06.webp",
+        "mobilePreview": "assets/xingzhixuan/showcase-06-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "优质住宿 · 服务视觉"
       },
       {
-        "src": "assets/xian-case/production.webp",
-        "preview": "assets/xian-case/production.webp",
-        "mobilePreview": "assets/xian-case/production-mobile.webp",
-        "width": 1200,
-        "height": 1600,
-        "caption": "现场工作记录 · 设计文件与会场物料",
-        "layout": "xian-portrait"
+        "src": "assets/xingzhixuan/showcase-07.webp",
+        "preview": "assets/xingzhixuan/showcase-07.webp",
+        "mobilePreview": "assets/xingzhixuan/showcase-07-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "精品托管 · 品牌折页"
+      },
+      {
+        "src": "assets/xingzhixuan/showcase-08.webp",
+        "preview": "assets/xingzhixuan/showcase-08.webp",
+        "mobilePreview": "assets/xingzhixuan/showcase-08-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "初中托班 · 精品小班招生"
       }
     ],
-    "pending": "项目地点：陕西西安　｜　项目时间：2025 年 4 月　｜　参与内容：活动视觉设计与现场应用配合",
-    "presentation": "xian-case",
-    "sections": [
-      {
-        "index": 0,
-        "title": "01 / 主题识别 · 活动主视觉",
-        "description": "以蓝色建立活动的整体识别，结合金色主题文字与城市轮廓元素，明确传递活动名称、时间和地点。"
-      },
-      {
-        "index": 1,
-        "title": "02 / 设计 → 落地 · 主会场应用",
-        "description": "横向背景延续主视觉的色彩与标题层级。下方以正面和侧面现场照片对应展示，呈现画面在舞台、座席与真实空间中的应用关系。"
-      },
-      {
-        "index": 4,
-        "title": "03 / 招聘展板 · 从版式到现场",
-        "description": "将企业介绍、招聘岗位与服务信息纳入统一的蓝色版式。先展示多版文件的工作记录，再对应会场成列的展板实景，体现信息编排与系列应用。"
-      },
-      {
-        "index": 6,
-        "title": "04 / 宣传延展 · 倒计时海报",
-        "description": "将活动识别延展到竖版传播画面，以大数字建立视觉焦点，在不同画幅中保持主题、配色与信息风格一致。"
-      },
-      {
-        "index": 7,
-        "title": "05 / 现场工作记录",
-        "description": "保留设计文件、工作证与现场物料同框的真实照片，作为项目实践过程的补充记录。"
-      }
-    ],
-    "summary": "本项目围绕同一活动建立统一的视觉语言，再根据主会场背景、竖版宣传与招聘展板的阅读距离和信息密度调整版式。设计稿与现场照片对应呈现，重点展示多尺寸延展、信息整理，以及配合现场应用的实践能力。"
-  },
-  {
-    "id": "jiuzhangmen",
-    "title": "酒掌门 · 标志与名片视觉",
-    "category": "品牌视觉",
-    "tags": [
-      "brand",
-      "visual"
-    ],
-    "bg": "#f2eeee",
-    "intro": "以红色标志、酒瓶图形与卡通形象建立识别，并延展到名片正反面。展示从标志构成、配色到应用版式的衔接。",
-    "focus": [
-      "标志设计",
-      "品牌配色",
-      "名片应用"
-    ],
-    "assets": [
-      {
-        "src": "assets/works/work-01.png",
-        "width": 1491,
-        "height": 1055,
-        "caption": "标志、色彩与名片应用展示",
-        "mobilePreview": "assets/optimized/work-01-thumb.jpg",
-        "preview": "assets/optimized/work-01-screen.jpg"
-      }
-    ],
-    "pending": "制作时间、具体分工、使用工具与制作流程待补充。"
+    "pending": "项目时间、本人具体职责与实际投放效果待补充。"
   },
   {
     "id": "petbox",
@@ -368,255 +376,6 @@
     ]
   },
   {
-    "id": "xingzhixuan",
-    "title": "行知轩 · 教育与儿童成长视觉",
-    "category": "教育视觉 / 系列平面设计",
-    "tags": [
-      "visual"
-    ],
-    "bg": "#e5eff9",
-    "intro": "围绕行知轩儿童成长中心的品牌传播需求，整合宣传画册、招生海报与课程视觉。画册以蓝色为主调，结合明亮的辅助色与真实教学影像，通过目录、品牌介绍和课程跨页建立清晰的信息阅读路径；延展物料保持一致的视觉语言，兼顾品牌识别与招生信息传达。",
-    "focus": [
-      "画册版式设计",
-      "教育品牌视觉",
-      "招生宣传物料"
-    ],
-    "assets": [
-      {
-        "type": "book",
-        "src": "assets/xingzhixuan/flat-spread-01.webp",
-        "caption": "行知轩儿童成长中心 · 品牌宣传画册",
-        "pages": [
-          {
-            "src": "assets/xingzhixuan/flat-spread-01.webp",
-            "mobilePreview": "assets/xingzhixuan/flat-spread-01-mobile.webp",
-            "caption": "封面与封底 · 品牌第一印象",
-            "description": "以蓝色建立稳定的品牌识别，黄色与青色波形增加儿童教育主题的亲和力。封面用活动照片与醒目标题建立视觉焦点，封底集中呈现标志与品牌主张，形成完整的首尾呼应。",
-            "keywords": [
-              "品牌配色",
-              "封面构图",
-              "视觉识别"
-            ]
-          },
-          {
-            "src": "assets/xingzhixuan/flat-spread-02.webp",
-            "mobilePreview": "assets/xingzhixuan/flat-spread-02-mobile.webp",
-            "caption": "目录与品牌介绍 · 建立阅读路径",
-            "description": "左页通过清晰的目录层级与页码引导阅读，纵向 CONTENTS 形成醒目的视觉分区。右页以标题、问答式正文和蓝底信息区划分内容，兼顾机构介绍的完整性与阅读节奏。",
-            "keywords": [
-              "目录导航",
-              "信息层级",
-              "蓝白对比"
-            ]
-          },
-          {
-            "src": "assets/xingzhixuan/flat-spread-03.webp",
-            "mobilePreview": "assets/xingzhixuan/flat-spread-03-mobile.webp",
-            "caption": "早午晚托服务 · 场景化信息表达",
-            "description": "跨页分别呈现教学活动与餐食安排，将服务内容转化为可直观看到的日常场景。照片组合配合分栏文字与蓝色标题条，让课程流程、生活照护和餐食信息各有重点。",
-            "keywords": [
-              "图文分栏",
-              "服务说明",
-              "场景呈现"
-            ]
-          },
-          {
-            "src": "assets/xingzhixuan/flat-spread-04.webp",
-            "mobilePreview": "assets/xingzhixuan/flat-spread-04-mobile.webp",
-            "caption": "综合训练馆 · 课程与师资展示",
-            "description": "左页以训练照片和课程说明建立内容主线，右页集中呈现师资背景与资质素材。统一的蓝色标题带贯穿跨页，数字信息、照片与文字分区组织，增强阅读顺序与信息辨识度。",
-            "keywords": [
-              "跨页统筹",
-              "师资信息",
-              "模块编排"
-            ]
-          },
-          {
-            "src": "assets/xingzhixuan/flat-spread-05.webp",
-            "mobilePreview": "assets/xingzhixuan/flat-spread-05-mobile.webp",
-            "caption": "专业书法班 · 课程气质表达",
-            "description": "书法主题采用书写感标题、淡墨文字底纹与较大的留白，呼应课程内容。左页突出教师形象与教学介绍，右页将荣誉素材整齐归组，在品牌体系内形成具有课程特色的视觉变化。",
-            "keywords": [
-              "书法字体",
-              "留白节奏",
-              "课程差异化"
-            ]
-          },
-          {
-            "src": "assets/xingzhixuan/flat-spread-06.webp",
-            "mobilePreview": "assets/xingzhixuan/flat-spread-06-mobile.webp",
-            "caption": "少儿英语启蒙 · 学习体系可视化",
-            "description": "以活动照片连接课程介绍，通过明确的左右分区呈现教学场景与学习体系。右页的数字标题、条目和图片形成互补，让体系构成与课程特点更容易被快速浏览和理解。",
-            "keywords": [
-              "条目归纳",
-              "照片叙事",
-              "阅读效率"
-            ]
-          }
-        ]
-      },
-      {
-        "src": "assets/xingzhixuan/showcase-01.webp",
-        "preview": "assets/xingzhixuan/showcase-01.webp",
-        "mobilePreview": "assets/xingzhixuan/showcase-01-mobile.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "书法招生折页 · 文化视觉与版式"
-      },
-      {
-        "src": "assets/xingzhixuan/showcase-02.webp",
-        "preview": "assets/xingzhixuan/showcase-02.webp",
-        "mobilePreview": "assets/xingzhixuan/showcase-02-mobile.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "儿童成长中心 · 品牌展示"
-      },
-      {
-        "src": "assets/xingzhixuan/showcase-03.webp",
-        "preview": "assets/xingzhixuan/showcase-03.webp",
-        "mobilePreview": "assets/xingzhixuan/showcase-03-mobile.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "少年书法招生 · 易拉宝设计"
-      },
-      {
-        "src": "assets/xingzhixuan/showcase-04.webp",
-        "preview": "assets/xingzhixuan/showcase-04.webp",
-        "mobilePreview": "assets/xingzhixuan/showcase-04-mobile.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "中学生精品托管 · 招生视觉"
-      },
-      {
-        "src": "assets/xingzhixuan/showcase-05.webp",
-        "preview": "assets/xingzhixuan/showcase-05.webp",
-        "mobilePreview": "assets/xingzhixuan/showcase-05-mobile.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "儿童体适能 · 课程推广"
-      },
-      {
-        "src": "assets/xingzhixuan/showcase-06.webp",
-        "preview": "assets/xingzhixuan/showcase-06.webp",
-        "mobilePreview": "assets/xingzhixuan/showcase-06-mobile.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "优质住宿 · 服务视觉"
-      },
-      {
-        "src": "assets/xingzhixuan/showcase-07.webp",
-        "preview": "assets/xingzhixuan/showcase-07.webp",
-        "mobilePreview": "assets/xingzhixuan/showcase-07-mobile.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "精品托管 · 品牌折页"
-      },
-      {
-        "src": "assets/xingzhixuan/showcase-08.webp",
-        "preview": "assets/xingzhixuan/showcase-08.webp",
-        "mobilePreview": "assets/xingzhixuan/showcase-08-mobile.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "初中托班 · 精品小班招生"
-      }
-    ],
-    "pending": "项目时间、本人具体职责与实际投放效果待补充。"
-  },
-  {
-    "id": "anniversary",
-    "title": "伊丽莎白 · 35 周年店庆",
-    "category": "平面设计 / 活动视觉",
-    "tags": [
-      "visual"
-    ],
-    "bg": "#fde3ef",
-    "intro": "以粉色庆典视觉统一主海报与套餐宣传页，通过大字号数字、摄影元素和分区排版，区分周年主题与活动信息。",
-    "focus": [
-      "活动主视觉",
-      "数字字体表现",
-      "套餐信息排版"
-    ],
-    "assets": [
-      {
-        "src": "assets/works/work-07.jpg",
-        "width": 1447,
-        "height": 2048,
-        "caption": "35 周年店庆主视觉",
-        "mobilePreview": "assets/optimized/work-07-thumb.jpg",
-        "preview": "assets/optimized/work-07-screen.jpg"
-      },
-      {
-        "src": "assets/works/work-15.jpg",
-        "width": 1449,
-        "height": 2048,
-        "caption": "同系列福利套餐海报",
-        "mobilePreview": "assets/optimized/work-15-thumb.jpg",
-        "preview": "assets/optimized/work-15-screen.jpg"
-      }
-    ],
-    "pending": "制作时间、具体分工、使用工具与制作流程待补充。"
-  },
-  {
-    "id": "restaurant",
-    "title": "蜀渝里 · 新店倒计时",
-    "category": "平面设计 / 系列海报",
-    "tags": [
-      "visual"
-    ],
-    "bg": "#28231f",
-    "intro": "以深色场景、菜品图片与红色立体数字构建开业倒计时。两张同系列作品合并展示，突出数字焦点与统一的画面节奏。",
-    "focus": [
-      "商业合成",
-      "倒计时系列",
-      "对比与层次"
-    ],
-    "assets": [
-      {
-        "src": "assets/works/work-11.jpg",
-        "width": 1264,
-        "height": 2048,
-        "caption": "开业倒计时 · 2 天",
-        "mobilePreview": "assets/optimized/work-11-thumb.jpg",
-        "preview": "assets/optimized/work-11-screen.jpg"
-      },
-      {
-        "src": "assets/works/work-16.jpg",
-        "width": 1264,
-        "height": 2048,
-        "caption": "开业倒计时 · 1 天",
-        "mobilePreview": "assets/optimized/work-16-thumb.jpg",
-        "preview": "assets/optimized/work-16-screen.jpg"
-      }
-    ],
-    "pending": "制作时间、具体分工、使用工具与制作流程待补充。"
-  },
-  {
-    "id": "interior",
-    "title": "吾人设计 · 绿色家装宣传",
-    "category": "平面设计",
-    "tags": [
-      "visual"
-    ],
-    "bg": "#e5eee3",
-    "intro": "以浅绿色、植物元素、拱形空间图片和家具画面建立家装主题氛围，呈现清新配色与空间类商业海报的视觉组织。",
-    "focus": [
-      "商业海报",
-      "空间图像合成",
-      "色彩氛围"
-    ],
-    "assets": [
-      {
-        "src": "assets/works/work-13.jpg",
-        "width": 1447,
-        "height": 2048,
-        "caption": "绿色家装主题海报",
-        "mobilePreview": "assets/optimized/work-13-thumb.jpg",
-        "preview": "assets/optimized/work-13-screen.jpg"
-      }
-    ],
-    "pending": "制作时间、具体分工、使用工具与制作流程待补充。"
-  },
-  {
     "id": "xingchengli-culture-wall",
     "title": "星橙里公寓 · 社区品牌视觉整合",
     "category": "品牌视觉 / 社区项目",
@@ -731,30 +490,124 @@
     }
   },
   {
-    "id": "ai-campus-short",
-    "title": "暮光校园 · AI 动态短片",
-    "category": "AI 创作 / 动态影像",
+    "id": "rongyao-xian-2025",
+    "title": "戎耀三秦 · 退役军人就业服务活动",
+    "category": "省级活动项目 / 视觉设计与现场应用",
     "tags": [
-      "ai"
+      "visual"
     ],
-    "bg": "#e9e4f1",
-    "intro": "以夕阳下的校园为场景，通过动漫人物、暖色光影与视角变化，呈现校园日常的氛围。视频时长约 5 秒。",
+    "bg": "#e8f2ff",
+    "intro": "以“戎耀三秦 · 职等你来”为主题，参与陕西省 2025 年退役军人人力资源交流活动的视觉设计与现场应用。围绕活动识别、会场传播与招聘信息展示，串联主视觉、横向背景、展板版式和倒计时海报，并通过现场照片呈现作品从平面文件到真实会场的应用过程。",
     "focus": [
-      "AI 动态影像",
-      "校园场景",
-      "氛围与镜头运动"
+      "活动视觉统筹",
+      "多尺寸物料延展",
+      "招聘信息编排",
+      "现场应用配合"
     ],
     "assets": [
       {
-        "type": "video",
-        "src": "assets/ai/ai-creative-short.mp4",
-        "poster": "assets/ai/ai-creative-short-poster.webp",
-        "width": 854,
-        "height": 480,
-        "caption": "暮光校园｜AI 动态影像练习"
+        "src": "assets/works/work-21-identity.webp",
+        "width": 1454,
+        "height": 1100,
+        "caption": "活动主视觉 · 戎耀三秦 · 职等你来",
+        "mobilePreview": "assets/optimized/work-21-identity-thumb.jpg",
+        "preview": "assets/preview/detail-work-21-identity.webp",
+        "layout": "xian-main"
+      },
+      {
+        "src": "assets/works/work-21-stage-visual.webp",
+        "width": 2048,
+        "height": 716,
+        "caption": "主会场横向背景设计",
+        "mobilePreview": "assets/optimized/work-21-stage-visual-thumb.jpg",
+        "preview": "assets/preview/detail-work-21-stage-visual.webp",
+        "layout": "xian-banner"
+      },
+      {
+        "src": "assets/works/work-21-venue.webp",
+        "width": 1255,
+        "height": 880,
+        "caption": "主会场背景板 · 正面落地视角",
+        "mobilePreview": "assets/optimized/work-21-venue-thumb.jpg",
+        "preview": "assets/preview/detail-work-21-venue.webp",
+        "layout": "xian-pair"
+      },
+      {
+        "src": "assets/works/work-21-entry.webp",
+        "width": 1190,
+        "height": 1045,
+        "caption": "会场环境与背景板 · 侧面视角",
+        "mobilePreview": "assets/optimized/work-21-entry-thumb.jpg",
+        "preview": "assets/preview/detail-work-21-entry.webp",
+        "layout": "xian-pair"
+      },
+      {
+        "src": "assets/xian-case/layout-files.webp",
+        "preview": "assets/xian-case/layout-files.webp",
+        "mobilePreview": "assets/xian-case/layout-files-mobile.webp",
+        "width": 1600,
+        "height": 1000,
+        "caption": "招聘展板文件 · 多版式编排记录",
+        "layout": "xian-main"
+      },
+      {
+        "src": "assets/xian-case/recruitment-boards.webp",
+        "preview": "assets/xian-case/recruitment-boards.webp",
+        "mobilePreview": "assets/xian-case/recruitment-boards-mobile.webp",
+        "width": 1080,
+        "height": 1440,
+        "caption": "招聘展板 · 会场成列展示",
+        "layout": "xian-portrait"
+      },
+      {
+        "src": "assets/works/work-21-countdown-clean.webp",
+        "width": 948,
+        "height": 1760,
+        "caption": "倒计时海报 · 活动宣传延展",
+        "mobilePreview": "assets/optimized/work-21-countdown-clean-thumb.jpg",
+        "preview": "assets/preview/detail-work-21-countdown-clean.webp",
+        "layout": "xian-portrait"
+      },
+      {
+        "src": "assets/xian-case/production.webp",
+        "preview": "assets/xian-case/production.webp",
+        "mobilePreview": "assets/xian-case/production-mobile.webp",
+        "width": 1200,
+        "height": 1600,
+        "caption": "现场工作记录 · 设计文件与会场物料",
+        "layout": "xian-portrait"
       }
     ],
-    "pending": "具体创作时间、提示词与生成流程待补充。"
+    "pending": "项目地点：陕西西安　｜　项目时间：2025 年 4 月　｜　参与内容：活动视觉设计与现场应用配合",
+    "presentation": "xian-case",
+    "sections": [
+      {
+        "index": 0,
+        "title": "01 / 主题识别 · 活动主视觉",
+        "description": "以蓝色建立活动的整体识别，结合金色主题文字与城市轮廓元素，明确传递活动名称、时间和地点。"
+      },
+      {
+        "index": 1,
+        "title": "02 / 设计 → 落地 · 主会场应用",
+        "description": "横向背景延续主视觉的色彩与标题层级。下方以正面和侧面现场照片对应展示，呈现画面在舞台、座席与真实空间中的应用关系。"
+      },
+      {
+        "index": 4,
+        "title": "03 / 招聘展板 · 从版式到现场",
+        "description": "将企业介绍、招聘岗位与服务信息纳入统一的蓝色版式。先展示多版文件的工作记录，再对应会场成列的展板实景，体现信息编排与系列应用。"
+      },
+      {
+        "index": 6,
+        "title": "04 / 宣传延展 · 倒计时海报",
+        "description": "将活动识别延展到竖版传播画面，以大数字建立视觉焦点，在不同画幅中保持主题、配色与信息风格一致。"
+      },
+      {
+        "index": 7,
+        "title": "05 / 现场工作记录",
+        "description": "保留设计文件、工作证与现场物料同框的真实照片，作为项目实践过程的补充记录。"
+      }
+    ],
+    "summary": "本项目围绕同一活动建立统一的视觉语言，再根据主会场背景、竖版宣传与招聘展板的阅读距离和信息密度调整版式。设计稿与现场照片对应呈现，重点展示多尺寸延展、信息整理，以及配合现场应用的实践能力。"
   },
   {
     "id": "bead-groupbuy",
@@ -879,5 +732,152 @@
     ],
     "summary": "通过统一的角色、蓝黄配色、云朵与格纹元素，形成可识别的系列视觉；再以主标题、标签和辅助说明建立信息层级，让不同主题与横幅尺寸保持连贯。该项目重点展示商业推广画面的信息提炼与多尺寸延展能力。",
     "pending": "项目时间、投放平台、本人具体职责及素材制作方式待补充；暂不展示未经提供的投放效果数据。"
+  },
+  {
+    "id": "jiuzhangmen",
+    "title": "酒掌门 · 标志与名片视觉",
+    "category": "品牌视觉",
+    "tags": [
+      "brand",
+      "visual"
+    ],
+    "bg": "#f2eeee",
+    "intro": "以红色标志、酒瓶图形与卡通形象建立识别，并延展到名片正反面。展示从标志构成、配色到应用版式的衔接。",
+    "focus": [
+      "标志设计",
+      "品牌配色",
+      "名片应用"
+    ],
+    "assets": [
+      {
+        "src": "assets/works/work-01.png",
+        "width": 1491,
+        "height": 1055,
+        "caption": "标志、色彩与名片应用展示",
+        "mobilePreview": "assets/optimized/work-01-thumb.jpg",
+        "preview": "assets/optimized/work-01-screen.jpg"
+      }
+    ],
+    "pending": "制作时间、具体分工、使用工具与制作流程待补充。"
+  },
+  {
+    "id": "anniversary",
+    "title": "伊丽莎白 · 35 周年店庆",
+    "category": "平面设计 / 活动视觉",
+    "tags": [
+      "visual"
+    ],
+    "bg": "#fde3ef",
+    "intro": "以粉色庆典视觉统一主海报与套餐宣传页，通过大字号数字、摄影元素和分区排版，区分周年主题与活动信息。",
+    "focus": [
+      "活动主视觉",
+      "数字字体表现",
+      "套餐信息排版"
+    ],
+    "assets": [
+      {
+        "src": "assets/works/work-07.jpg",
+        "width": 1447,
+        "height": 2048,
+        "caption": "35 周年店庆主视觉",
+        "mobilePreview": "assets/optimized/work-07-thumb.jpg",
+        "preview": "assets/optimized/work-07-screen.jpg"
+      },
+      {
+        "src": "assets/works/work-15.jpg",
+        "width": 1449,
+        "height": 2048,
+        "caption": "同系列福利套餐海报",
+        "mobilePreview": "assets/optimized/work-15-thumb.jpg",
+        "preview": "assets/optimized/work-15-screen.jpg"
+      }
+    ],
+    "pending": "制作时间、具体分工、使用工具与制作流程待补充。"
+  },
+  {
+    "id": "restaurant",
+    "title": "蜀渝里 · 新店倒计时",
+    "category": "平面设计 / 系列海报",
+    "tags": [
+      "visual"
+    ],
+    "bg": "#28231f",
+    "intro": "以深色场景、菜品图片与红色立体数字构建开业倒计时。两张同系列作品合并展示，突出数字焦点与统一的画面节奏。",
+    "focus": [
+      "商业合成",
+      "倒计时系列",
+      "对比与层次"
+    ],
+    "assets": [
+      {
+        "src": "assets/works/work-11.jpg",
+        "width": 1264,
+        "height": 2048,
+        "caption": "开业倒计时 · 2 天",
+        "mobilePreview": "assets/optimized/work-11-thumb.jpg",
+        "preview": "assets/optimized/work-11-screen.jpg"
+      },
+      {
+        "src": "assets/works/work-16.jpg",
+        "width": 1264,
+        "height": 2048,
+        "caption": "开业倒计时 · 1 天",
+        "mobilePreview": "assets/optimized/work-16-thumb.jpg",
+        "preview": "assets/optimized/work-16-screen.jpg"
+      }
+    ],
+    "pending": "制作时间、具体分工、使用工具与制作流程待补充。"
+  },
+  {
+    "id": "interior",
+    "title": "吾人设计 · 绿色家装宣传",
+    "category": "平面设计",
+    "tags": [
+      "visual"
+    ],
+    "bg": "#e5eee3",
+    "intro": "以浅绿色、植物元素、拱形空间图片和家具画面建立家装主题氛围，呈现清新配色与空间类商业海报的视觉组织。",
+    "focus": [
+      "商业海报",
+      "空间图像合成",
+      "色彩氛围"
+    ],
+    "assets": [
+      {
+        "src": "assets/works/work-13.jpg",
+        "width": 1447,
+        "height": 2048,
+        "caption": "绿色家装主题海报",
+        "mobilePreview": "assets/optimized/work-13-thumb.jpg",
+        "preview": "assets/optimized/work-13-screen.jpg"
+      }
+    ],
+    "pending": "制作时间、具体分工、使用工具与制作流程待补充。"
+  },
+  {
+    "id": "ai-campus-short",
+    "title": "暮光校园 · AI 动态短片",
+    "category": "AI 创作 / 动态影像",
+    "tags": [
+      "ai"
+    ],
+    "bg": "#e9e4f1",
+    "intro": "以夕阳下的校园为场景，通过动漫人物、暖色光影与视角变化，呈现校园日常的氛围。视频时长约 5 秒。",
+    "focus": [
+      "AI 动态影像",
+      "校园场景",
+      "氛围与镜头运动"
+    ],
+    "assets": [
+      {
+        "type": "video",
+        "src": "assets/ai/ai-creative-short.mp4",
+        "poster": "assets/ai/ai-creative-short-poster.webp",
+        "width": 854,
+        "height": 480,
+        "caption": "暮光校园｜AI 动态影像练习"
+      }
+    ],
+    "pending": "具体创作时间、提示词与生成流程待补充。"
   }
 ]
