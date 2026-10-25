@@ -155,7 +155,7 @@
       "visual"
     ],
     "bg": "#f6eedf",
-    "intro": "围绕萌宠盒子的品牌传播，按公众号、小红书、团购及海报／易拉宝／展板四个模块整理作品。公众号部分以店铺官宣、服务保障与猫咪指南为主题，通过橙色品牌识别、分屏长图和移动端样机展示，呈现内容策划与图文信息编排。",
+    "intro": "围绕萌宠盒子的品牌传播，将公众号、小红书、团购及海报展板统一整理为一个品牌作品合集。现阶段展示店铺官宣、服务保障、猫咪指南与招聘视觉，通过橙色品牌识别、图文层级和不同画幅的延展，呈现品牌内容的视觉组织。",
     "focus": [
       "公众号长图排版",
       "品牌风格延展",
@@ -171,8 +171,7 @@
         "height": 1024,
         "caption": "店铺官宣 · 活力橙色视觉",
         "description": "以高饱和橙色和醒目标题建立第一视觉，分屏组织门店形象、品牌故事与服务内容，让长图形成清晰的阅读顺序。",
-        "layout": "petbox-spread",
-        "module": "wechat"
+        "layout": "petbox-spread"
       },
       {
         "src": "assets/petbox-wechat/launch-cream.webp",
@@ -182,8 +181,7 @@
         "height": 1024,
         "caption": "店铺官宣 · 奶油暖色视觉",
         "description": "通过奶油暖色、柔和曲线与充足留白营造亲和感，在保持品牌识别的同时呈现另一套内容视觉方案。",
-        "layout": "petbox-spread",
-        "module": "wechat"
+        "layout": "petbox-spread"
       },
       {
         "src": "assets/petbox-wechat/service-guarantees.webp",
@@ -193,8 +191,7 @@
         "height": 1024,
         "caption": "服务内容 · 17 项检测与六大保障",
         "description": "将检测项目、服务场景与保障内容分区呈现，结合图标、摄影和标题层级，梳理信息密度较高的长图内容。",
-        "layout": "petbox-spread",
-        "module": "wechat"
+        "layout": "petbox-spread"
       },
       {
         "src": "assets/petbox-wechat/cat-guide.webp",
@@ -204,8 +201,7 @@
         "height": 1024,
         "caption": "科普内容 · 本命小猫适配指南",
         "description": "以猫咪品种卡片组织科普信息，统一标题、图片与说明的层级，让不同品种之间的对比更便于浏览。",
-        "layout": "petbox-spread",
-        "module": "wechat"
+        "layout": "petbox-spread"
       },
       {
         "src": "assets/works/work-12.jpg",
@@ -213,31 +209,11 @@
         "height": 2048,
         "caption": "宠物主题招聘海报",
         "mobilePreview": "assets/optimized/work-12-thumb.jpg",
-        "preview": "assets/optimized/work-12-screen.jpg",
-        "module": "print"
+        "preview": "assets/optimized/work-12-screen.jpg"
       }
     ],
     "pending": "制作时间、具体分工、使用工具与制作流程待补充。",
-    "presentation": "petbox-case",
-    "modules": [
-      {
-        "id": "wechat",
-        "title": "公众号",
-        "description": "店铺官宣、服务保障与猫咪指南，围绕移动端阅读组织品牌内容。"
-      },
-      {
-        "id": "xiaohongshu",
-        "title": "小红书"
-      },
-      {
-        "id": "groupbuy",
-        "title": "团购"
-      },
-      {
-        "id": "print",
-        "title": "海报 / 易拉宝 / 展板"
-      }
-    ]
+    "presentation": "petbox-case"
   },
   {
     "id": "xingzhixuan",
