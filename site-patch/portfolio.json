@@ -155,7 +155,7 @@
       "visual"
     ],
     "bg": "#f6eedf",
-    "intro": "围绕萌宠盒子的品牌传播，整合公众号长图、小红书系列内容、团购详情与门店价目牌。以橙色品牌识别贯穿不同场景，并根据品牌介绍、科普阅读、服务展示与价格查询的需求调整图文层级和信息密度，呈现统一而有变化的内容视觉。",
+    "intro": "围绕萌宠盒子的品牌传播，整合公众号长图、小红书系列内容、团购与价目表，以及海报易拉宝。以橙色品牌识别贯穿线上内容与线下物料，根据品牌介绍、科普阅读、服务展示及活动宣传需求调整图文层级与信息密度，呈现统一的品牌视觉延展。",
     "focus": [
       "品牌视觉延展",
       "公众号图文排版",
@@ -312,6 +312,26 @@
         "caption": "撸猫体验 · 团购内容展示",
         "description": "采用明亮橙黄色突出互动体验，将预约规则、安全提醒和现场环境组合展示，形成从兴趣吸引到体验说明的阅读路径。",
         "layout": "petbox-spread"
+      },
+      {
+        "src": "assets/petbox-print/opening-banners.webp",
+        "preview": "assets/petbox-print/opening-banners.webp",
+        "mobilePreview": "assets/petbox-print/opening-banners-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "开业活动 · 易拉宝与现场应用",
+        "description": "以橙红渐变强化开业主题，通过大标题、数字编号与白底分区组织活动信息，结合现场照片呈现竖版物料的应用效果。",
+        "layout": "petbox-spread"
+      },
+      {
+        "src": "assets/petbox-print/brand-posters.webp",
+        "preview": "assets/petbox-print/brand-posters.webp",
+        "mobilePreview": "assets/petbox-print/brand-posters-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "品牌宣传与招聘 · 系列海报",
+        "description": "延续品牌橙色与宠物影像，分别呈现体验推广、招聘主视觉与岗位介绍，通过不同信息密度的版式建立系列联系。",
+        "layout": "petbox-spread"
       }
     ],
     "pending": "制作时间、具体分工、使用工具与制作流程待补充。",
@@ -337,6 +357,13 @@
         "subtitle": "GROUP BUYING & PRICE LIST",
         "description": "狗狗洗护、猫咪洗护与撸猫体验，将门店价格信息和线上团购详情配套展示。",
         "prefix": "assets/petbox-groupbuy/"
+      },
+      {
+        "id": "print",
+        "title": "海报与易拉宝",
+        "subtitle": "POSTER & ROLL-UP BANNER",
+        "description": "以开业活动易拉宝、品牌海报与招聘物料展示线下传播应用，结合样机与现场照片呈现视觉延展。",
+        "prefix": "assets/petbox-print/"
       }
     ]
   },
