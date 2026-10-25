@@ -155,12 +155,12 @@
       "visual"
     ],
     "bg": "#f6eedf",
-    "intro": "围绕萌宠盒子的品牌传播，将公众号、小红书、团购及海报展板统一整理为一个品牌作品合集。现阶段展示店铺官宣、服务保障、猫咪指南与招聘视觉，通过橙色品牌识别、图文层级和不同画幅的延展，呈现品牌内容的视觉组织。",
+    "intro": "围绕萌宠盒子的品牌传播，整合公众号长图、团购详情、门店价目牌与招聘视觉。以橙色品牌识别贯穿不同场景，并根据服务展示、科普阅读与价格查询的需求调整配色、图文层级和信息密度，呈现统一而有变化的品牌内容视觉。",
     "focus": [
-      "公众号长图排版",
-      "品牌风格延展",
-      "内容信息分层",
-      "移动端阅读体验"
+      "品牌视觉延展",
+      "公众号图文排版",
+      "团购详情设计",
+      "价格信息编排"
     ],
     "assets": [
       {
@@ -201,6 +201,56 @@
         "height": 1024,
         "caption": "科普内容 · 本命小猫适配指南",
         "description": "以猫咪品种卡片组织科普信息，统一标题、图片与说明的层级，让不同品种之间的对比更便于浏览。",
+        "layout": "petbox-spread"
+      },
+      {
+        "src": "assets/petbox-groupbuy/dog-price.webp",
+        "preview": "assets/petbox-groupbuy/dog-price.webp",
+        "mobilePreview": "assets/petbox-groupbuy/dog-price-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "狗狗洗护 · 门店价目牌",
+        "description": "以橙色品牌元素统一台牌视觉，通过表格与分区标题整理体重、服务和价格信息，兼顾门店展示与快速查阅。",
+        "layout": "petbox-spread"
+      },
+      {
+        "src": "assets/petbox-groupbuy/dog-groupbuy.webp",
+        "preview": "assets/petbox-groupbuy/dog-groupbuy.webp",
+        "mobilePreview": "assets/petbox-groupbuy/dog-groupbuy-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "狗狗洗护 · 团购详情视觉",
+        "description": "以蓝色清洁感串联服务流程、护理场景与购买须知，通过连续分屏梳理团购详情的阅读顺序。",
+        "layout": "petbox-spread"
+      },
+      {
+        "src": "assets/petbox-groupbuy/cat-price.webp",
+        "preview": "assets/petbox-groupbuy/cat-price.webp",
+        "mobilePreview": "assets/petbox-groupbuy/cat-price-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "猫咪洗护 · 门店价目牌",
+        "description": "以浅蓝与暖色细节营造柔和的宠物服务氛围，将猫咪洗护套餐和单项服务分区编排，突出信息对照关系。",
+        "layout": "petbox-spread"
+      },
+      {
+        "src": "assets/petbox-groupbuy/cat-groupbuy.webp",
+        "preview": "assets/petbox-groupbuy/cat-groupbuy.webp",
+        "mobilePreview": "assets/petbox-groupbuy/cat-groupbuy-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "猫咪洗护 · 团购详情视觉",
+        "description": "围绕洗护流程、门店环境与购买须知组织画面，利用摄影、图标和分栏标题建立清晰的内容层级。",
+        "layout": "petbox-spread"
+      },
+      {
+        "src": "assets/petbox-groupbuy/cat-experience.webp",
+        "preview": "assets/petbox-groupbuy/cat-experience.webp",
+        "mobilePreview": "assets/petbox-groupbuy/cat-experience-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "撸猫体验 · 团购内容展示",
+        "description": "采用明亮橙黄色突出互动体验，将预约规则、安全提醒和现场环境组合展示，形成从兴趣吸引到体验说明的阅读路径。",
         "layout": "petbox-spread"
       },
       {
