@@ -862,6 +862,24 @@
     ],
     "assets": [
       {
+        "src": "assets/identity-cases/coffee-packaging.webp",
+        "preview": "assets/identity-cases/coffee-packaging.webp",
+        "mobilePreview": "assets/identity-cases/coffee-packaging-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "包装视觉 · 咖啡杯与包装袋",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/identity-cases/coffee-store.webp",
+        "preview": "assets/identity-cases/coffee-store.webp",
+        "mobilePreview": "assets/identity-cases/coffee-store-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "门店视觉 · 招牌与宣传海报",
+        "layout": "bao-pair"
+      },
+      {
         "src": "assets/works/work-01.png",
         "width": 1491,
         "height": 1055,
@@ -889,24 +907,6 @@
         "layout": "bao-pair"
       },
       {
-        "src": "assets/identity-cases/coffee-packaging.webp",
-        "preview": "assets/identity-cases/coffee-packaging.webp",
-        "mobilePreview": "assets/identity-cases/coffee-packaging-mobile.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "包装视觉 · 咖啡杯与包装袋",
-        "layout": "bao-pair"
-      },
-      {
-        "src": "assets/identity-cases/coffee-store.webp",
-        "preview": "assets/identity-cases/coffee-store.webp",
-        "mobilePreview": "assets/identity-cases/coffee-store-mobile.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "门店视觉 · 招牌与宣传海报",
-        "layout": "bao-pair"
-      },
-      {
         "src": "assets/identity-cases/senior-care.webp",
         "preview": "assets/identity-cases/senior-care.webp",
         "mobilePreview": "assets/identity-cases/senior-care-mobile.webp",
@@ -922,13 +922,13 @@
     "sections": [
       {
         "index": 0,
-        "title": "01 / 酒掌门 · 标志与 IP 应用",
-        "description": "以红色文字标志、酒瓶图形与卡通人物建立品牌识别，并延展至名片、手提袋、杯垫与贴纸。通过平面设计稿与场景样机，呈现标志构成、品牌配色和 IP 在不同物料中的应用关系。"
+        "title": "01 / 咖啡脑袋 · 品牌与包装视觉",
+        "description": "以趣味人物表情为识别元素，结合暖橙、奶油白与深棕色，串联咖啡杯、包装袋、门店招牌和宣传海报。通过样机呈现品牌在包装与空间触点中的视觉延展。"
       },
       {
-        "index": 3,
-        "title": "02 / 咖啡脑袋 · 品牌与包装视觉",
-        "description": "以趣味人物表情为识别元素，结合暖橙、奶油白与深棕色，串联咖啡杯、包装袋、门店招牌和宣传海报。通过样机呈现品牌在包装与空间触点中的视觉延展。"
+        "index": 2,
+        "title": "02 / 酒掌门 · 标志与 IP 应用",
+        "description": "以红色文字标志、酒瓶图形与卡通人物建立品牌识别，并延展至名片、手提袋、杯垫与贴纸。通过平面设计稿与场景样机，呈现标志构成、品牌配色和 IP 在不同物料中的应用关系。"
       },
       {
         "index": 5,
