@@ -734,6 +734,117 @@
     "pending": "项目时间、投放平台、本人具体职责及素材制作方式待补充；暂不展示未经提供的投放效果数据。"
   },
   {
+    "id": "kungfu-bao",
+    "title": "功夫包子 · 门店与团购视觉",
+    "category": "餐饮视觉 / 门店宣传",
+    "tags": [
+      "visual",
+      "social"
+    ],
+    "bg": "#f4eadc",
+    "intro": "围绕功夫包子的门店传播需求，整合前台宣传、团购活动、价目表与五款产品海报。以暖米色、棕红文字和蒸笼食物影像形成统一的视觉语言，通过场景样机展示不同物料在门店环境中的应用关系。",
+    "focus": [
+      "餐饮宣传物料",
+      "菜单信息编排",
+      "产品系列海报",
+      "场景样机呈现"
+    ],
+    "presentation": "bao-case",
+    "assets": [
+      {
+        "src": "assets/kungfu-bao/counter.webp",
+        "preview": "assets/kungfu-bao/counter.webp",
+        "mobilePreview": "assets/kungfu-bao/counter-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "门店前台 · 品牌宣传应用",
+        "layout": "bao-wide"
+      },
+      {
+        "src": "assets/kungfu-bao/groupbuy.webp",
+        "preview": "assets/kungfu-bao/groupbuy.webp",
+        "mobilePreview": "assets/kungfu-bao/groupbuy-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "团购活动 · 海报场景样机",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/kungfu-bao/menu.webp",
+        "preview": "assets/kungfu-bao/menu.webp",
+        "mobilePreview": "assets/kungfu-bao/menu-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "门店价目表 · 菜单信息展示",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/kungfu-bao/egg-chive.webp",
+        "preview": "assets/kungfu-bao/egg-chive.webp",
+        "mobilePreview": "assets/kungfu-bao/egg-chive-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "韭菜鸡蛋包 · 产品海报",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/kungfu-bao/cumin-lamb.webp",
+        "preview": "assets/kungfu-bao/cumin-lamb.webp",
+        "mobilePreview": "assets/kungfu-bao/cumin-lamb-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "孜然羊肉包 · 产品海报",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/kungfu-bao/chicken.webp",
+        "preview": "assets/kungfu-bao/chicken.webp",
+        "mobilePreview": "assets/kungfu-bao/chicken-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "秘制鸡肉包 · 台牌展示",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/kungfu-bao/mushroom.webp",
+        "preview": "assets/kungfu-bao/mushroom.webp",
+        "mobilePreview": "assets/kungfu-bao/mushroom-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "香菇青菜包 · 台牌展示",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/kungfu-bao/spicy-tofu.webp",
+        "preview": "assets/kungfu-bao/spicy-tofu.webp",
+        "mobilePreview": "assets/kungfu-bao/spicy-tofu-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "麻辣豆腐包 · 产品海报",
+        "layout": "bao-pair"
+      }
+    ],
+    "sections": [
+      {
+        "index": 0,
+        "title": "01 / 门店形象 · 前台宣传",
+        "description": "将品牌名称、产品影像与核心宣传语纳入横向画面，以暖色和清晰层级组织门店第一触点。"
+      },
+      {
+        "index": 1,
+        "title": "02 / 消费引导 · 团购与价目表",
+        "description": "团购海报突出活动焦点，价目表按品类组织产品与价格信息，分别服务于推广吸引和门店查阅。"
+      },
+      {
+        "index": 3,
+        "title": "03 / 产品系列 · 五款包子海报",
+        "description": "统一米色底纹、棕红标题、产品近景和促销标记，通过不同口味的食物画面形成系列变化。"
+      }
+    ],
+    "summary": "以一致的字体气质、配色和食物影像串联前台、活动、菜单与产品海报；根据横向宣传、竖版展示和近距离查阅的需求调整信息层级，呈现餐饮门店物料的系列化设计。",
+    "pending": "项目时间与本人具体分工待补充。"
+  },
+  {
     "id": "jiuzhangmen",
     "title": "酒掌门 · 标志与名片视觉",
     "category": "品牌视觉",
