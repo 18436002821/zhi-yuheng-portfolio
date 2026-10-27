@@ -1074,6 +1074,176 @@
     "pending": "制作时间、具体分工、使用工具与制作流程待补充。"
   },
   {
+    "id": "service-area-signage",
+    "title": "服务区 · 导视与公共标识",
+    "category": "环境视觉 / 导视标识",
+    "tags": [
+      "visual"
+    ],
+    "bg": "#eee8de",
+    "intro": "围绕服务区道路通行、停车分流与室内公共设施，整理安全提示、功能门牌和服务信息的视觉层级。以场景效果图呈现标识在不同空间中的应用；画面为应用示意，实际落地情况待补充。",
+    "focus": [
+      "导视系统",
+      "公共信息设计",
+      "空间应用展示"
+    ],
+    "presentation": "identity-case",
+    "overview": "6 张应用效果图 / 环境视觉 / 导视标识。",
+    "assets": [
+      {
+        "src": "assets/service-packaging/service-01.webp",
+        "preview": "assets/service-packaging/service-01.webp",
+        "mobilePreview": "assets/service-packaging/service-01-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "室内服务信息与安全提示 · 应用效果图",
+        "layout": "bao-wide"
+      },
+      {
+        "src": "assets/service-packaging/service-02.webp",
+        "preview": "assets/service-packaging/service-02.webp",
+        "mobilePreview": "assets/service-packaging/service-02-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "匝道安全警示 · 应用效果图",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/service-packaging/service-03.webp",
+        "preview": "assets/service-packaging/service-03.webp",
+        "mobilePreview": "assets/service-packaging/service-03-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "停车场限速与安全提示 · 应用效果图",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/service-packaging/service-04.webp",
+        "preview": "assets/service-packaging/service-04.webp",
+        "mobilePreview": "assets/service-packaging/service-04-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "公共设施门牌与温馨提示 · 应用效果图",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/service-packaging/service-05.webp",
+        "preview": "assets/service-packaging/service-05.webp",
+        "mobilePreview": "assets/service-packaging/service-05-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "停车场分流导视 · 应用效果图",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/service-packaging/service-06.webp",
+        "preview": "assets/service-packaging/service-06.webp",
+        "mobilePreview": "assets/service-packaging/service-06-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "服务区车流提醒 · 应用效果图",
+        "layout": "bao-pair"
+      }
+    ],
+    "sections": [
+      {
+        "index": 0,
+        "title": "01 / 室内公共标识",
+        "description": "以暖米色材质、统一图形与字体层级组织服务信息，融入室内空间。"
+      },
+      {
+        "index": 1,
+        "title": "02 / 道路与停车安全",
+        "description": "以高对比底色、警示图形和分区排版突出通行与停车信息。"
+      },
+      {
+        "index": 3,
+        "title": "03 / 功能识别与动线引导",
+        "description": "展示公共设施识别、停车场分流和车流提醒在不同场景中的应用。"
+      }
+    ],
+    "summary": "从室内近距离阅读到室外远距离识别，结合场景调整信息密度、色彩对比与图形比例，呈现导视与公共标识的系统性。",
+    "pending": "项目时间、具体分工与实施状态待补充。"
+  },
+  {
+    "id": "food-packaging",
+    "title": "食品包装 · 地域风味与礼盒视觉",
+    "category": "包装设计 / 食品与茶饮",
+    "tags": [
+      "visual"
+    ],
+    "bg": "#f1eadf",
+    "intro": "以地域风味和产品特征为线索，将插画、食材图像与品牌文字应用于食品礼盒。通过不同配色与图形语言区分品类，以完整包装效果图呈现系列关系与细节。",
+    "focus": [
+      "食品包装",
+      "插画与图形应用",
+      "系列化视觉"
+    ],
+    "presentation": "identity-case",
+    "overview": "5 张应用效果图 / 包装设计 / 食品与茶饮。",
+    "assets": [
+      {
+        "src": "assets/service-packaging/packaging-01.webp",
+        "preview": "assets/service-packaging/packaging-01.webp",
+        "mobilePreview": "assets/service-packaging/packaging-01-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "云南良品汇 · 红糖、黄冰糖与葛根粉系列包装",
+        "layout": "bao-wide"
+      },
+      {
+        "src": "assets/service-packaging/packaging-02.webp",
+        "preview": "assets/service-packaging/packaging-02.webp",
+        "mobilePreview": "assets/service-packaging/packaging-02-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "梨膏糖 · 包装效果图",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/service-packaging/packaging-03.webp",
+        "preview": "assets/service-packaging/packaging-03.webp",
+        "mobilePreview": "assets/service-packaging/packaging-03-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "黄冰糖 · 包装效果图",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/service-packaging/packaging-04.webp",
+        "preview": "assets/service-packaging/packaging-04.webp",
+        "mobilePreview": "assets/service-packaging/packaging-04-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "迎河柑茶 · 包装效果图",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/service-packaging/packaging-05.webp",
+        "preview": "assets/service-packaging/packaging-05.webp",
+        "mobilePreview": "assets/service-packaging/packaging-05-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "荷花酥 · 包装效果图",
+        "layout": "bao-pair"
+      }
+    ],
+    "sections": [
+      {
+        "index": 0,
+        "title": "01 / 系列包装 · 云南风味",
+        "description": "用统一的品牌区域与差异化配色组织红糖、黄冰糖、葛根粉的系列识别。"
+      },
+      {
+        "index": 1,
+        "title": "02 / 产品表达 · 糖点与茶礼",
+        "description": "分别以传统场景插画、暖色山水、植物图像与莲花纹样呈现产品气质。"
+      }
+    ],
+    "summary": "围绕品名识别、品牌层级和图形主题建立包装表达，在系列统一与单品差异之间保持平衡。图片为包装应用效果展示，不将效果图作为实物生产证明。",
+    "pending": "项目时间、具体分工与实施状态待补充。"
+  },
+  {
     "id": "interior",
     "title": "吾人设计 · 绿色家装宣传",
     "category": "平面设计",
