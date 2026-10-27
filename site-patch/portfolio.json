@@ -1246,6 +1246,112 @@
     "pending": "项目时间、具体分工与实施状态待补充。"
   },
   {
+    "id": "nutrition-live-overlays",
+    "title": "饮食课堂 · 直播间视觉设计",
+    "category": "新媒体视觉 / 直播间贴片",
+    "tags": [
+      "visual",
+      "social"
+    ],
+    "bg": "#f2e5d5",
+    "intro": "以暖棕、奶油白与橙金色建立饮食课堂的统一直播视觉。围绕课程标题、内容权益、关注点与服务信息设计模块化贴片，在竖屏画面中预留主播区域，并通过手机和桌面场景呈现应用方式。展示图为应用效果示意。",
+    "focus": [
+      "直播视觉统筹",
+      "信息层级",
+      "模块化贴片"
+    ],
+    "presentation": "identity-case",
+    "overview": "8 张作品 / 3 张应用效果图 + 5 张贴片设计。",
+    "assets": [
+      {
+        "src": "assets/live-overlays/design-1.webp",
+        "preview": "assets/live-overlays/design-1.webp",
+        "mobilePreview": "assets/live-overlays/design-1-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "直播间整体应用 · 手机界面与场景效果",
+        "layout": "bao-wide"
+      },
+      {
+        "src": "assets/live-overlays/design-2.webp",
+        "preview": "assets/live-overlays/design-2.webp",
+        "mobilePreview": "assets/live-overlays/design-2-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "桌面推流场景 · 标题与课程权益贴片",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/live-overlays/design-3.webp",
+        "preview": "assets/live-overlays/design-3.webp",
+        "mobilePreview": "assets/live-overlays/design-3-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "左右信息贴片 · 手机应用与细节",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/live-overlays/design-4.webp",
+        "preview": "assets/live-overlays/design-4.webp",
+        "mobilePreview": "assets/live-overlays/design-4-mobile.webp",
+        "width": 900,
+        "height": 1600,
+        "caption": "完整竖屏贴片 · 主播区域与信息布局",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/live-overlays/design-5.webp",
+        "preview": "assets/live-overlays/design-5.webp",
+        "mobilePreview": "assets/live-overlays/design-5-mobile.webp",
+        "width": 1242,
+        "height": 805,
+        "caption": "课程标题贴片 · 主题与文字层级",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/live-overlays/design-6.webp",
+        "preview": "assets/live-overlays/design-6.webp",
+        "mobilePreview": "assets/live-overlays/design-6-mobile.webp",
+        "width": 1242,
+        "height": 1104,
+        "caption": "课程权益贴片 · 内容分组展示",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/live-overlays/design-7.webp",
+        "preview": "assets/live-overlays/design-7.webp",
+        "mobilePreview": "assets/live-overlays/design-7-mobile.webp",
+        "width": 1077,
+        "height": 1600,
+        "caption": "左侧信息贴片 · 关注点提示",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/live-overlays/design-8.webp",
+        "preview": "assets/live-overlays/design-8.webp",
+        "mobilePreview": "assets/live-overlays/design-8-mobile.webp",
+        "width": 900,
+        "height": 1600,
+        "caption": "右侧服务贴片 · 价格与服务说明",
+        "layout": "bao-pair"
+      }
+    ],
+    "sections": [
+      {
+        "index": 0,
+        "title": "01 / 应用场景 · 整体视觉",
+        "description": "通过手机竖屏与桌面推流场景，展示贴片和主播画面的空间关系。"
+      },
+      {
+        "index": 3,
+        "title": "02 / 贴片系统 · 整体与模块",
+        "description": "依次展示完整竖屏布局、课程标题、内容权益和两侧信息贴片，统一边框、配色与文字层级。"
+      }
+    ],
+    "summary": "以模块化结构区分主题、内容与服务信息，通过清晰的文字对比和固定区域分工建立直播画面的阅读顺序，同时为主播与互动区域保留空间。",
+    "pending": "创作时间、具体分工与投放情况待补充。"
+  },
+  {
     "id": "interior",
     "title": "吾人设计 · 绿色家装宣传",
     "category": "平面设计",
