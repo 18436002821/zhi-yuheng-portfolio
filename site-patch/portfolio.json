@@ -1261,7 +1261,7 @@
       "模块化贴片"
     ],
     "presentation": "identity-case",
-    "overview": "8 张作品 / 3 张应用效果图 + 5 张贴片设计。",
+    "overview": "4 张展示图 / 3 张应用效果图 + 1 张贴片系统整合图。",
     "assets": [
       {
         "src": "assets/live-overlays/design-1.webp",
@@ -1291,49 +1291,13 @@
         "layout": "bao-pair"
       },
       {
-        "src": "assets/live-overlays/design-4.webp",
-        "preview": "assets/live-overlays/design-4.webp",
-        "mobilePreview": "assets/live-overlays/design-4-mobile.webp",
-        "width": 900,
-        "height": 1600,
-        "caption": "完整竖屏贴片 · 主播区域与信息布局",
-        "layout": "bao-pair"
-      },
-      {
-        "src": "assets/live-overlays/design-5.webp",
-        "preview": "assets/live-overlays/design-5.webp",
-        "mobilePreview": "assets/live-overlays/design-5-mobile.webp",
-        "width": 1242,
-        "height": 805,
-        "caption": "课程标题贴片 · 主题与文字层级",
-        "layout": "bao-pair"
-      },
-      {
-        "src": "assets/live-overlays/design-6.webp",
-        "preview": "assets/live-overlays/design-6.webp",
-        "mobilePreview": "assets/live-overlays/design-6-mobile.webp",
-        "width": 1242,
-        "height": 1104,
-        "caption": "课程权益贴片 · 内容分组展示",
-        "layout": "bao-pair"
-      },
-      {
-        "src": "assets/live-overlays/design-7.webp",
-        "preview": "assets/live-overlays/design-7.webp",
-        "mobilePreview": "assets/live-overlays/design-7-mobile.webp",
-        "width": 1077,
-        "height": 1600,
-        "caption": "左侧信息贴片 · 关注点提示",
-        "layout": "bao-pair"
-      },
-      {
-        "src": "assets/live-overlays/design-8.webp",
-        "preview": "assets/live-overlays/design-8.webp",
-        "mobilePreview": "assets/live-overlays/design-8-mobile.webp",
-        "width": 900,
-        "height": 1600,
-        "caption": "右侧服务贴片 · 价格与服务说明",
-        "layout": "bao-pair"
+        "src": "assets/live-overlays/system-board-v2.webp",
+        "preview": "assets/live-overlays/system-board-v2.webp",
+        "mobilePreview": "assets/live-overlays/system-board-v2-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "贴片系统 · 整体布局、模块拆解与设计理念",
+        "layout": "bao-wide"
       }
     ],
     "sections": [
@@ -1345,7 +1309,7 @@
       {
         "index": 3,
         "title": "02 / 贴片系统 · 整体与模块",
-        "description": "依次展示完整竖屏布局、课程标题、内容权益和两侧信息贴片，统一边框、配色与文字层级。"
+        "description": "左侧展示完整竖屏布局，右侧并排拆解标题、课程权益与两侧信息模块，下方说明配色、阅读层级与主播留白的设计理念。"
       }
     ],
     "summary": "以模块化结构区分主题、内容与服务信息，通过清晰的文字对比和固定区域分工建立直播画面的阅读顺序，同时为主播与互动区域保留空间。",
