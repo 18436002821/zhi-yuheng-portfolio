@@ -454,10 +454,12 @@
         "layout": "poster"
       },
       {
-        "src": "assets/xingchengli/wechat-apartment-introduction-clean.webp",
+        "src": "assets/privacy-20261027/art-40.webp",
         "width": 1462,
         "height": 1500,
-        "caption": "公众号推文排版｜公寓介绍、配套信息与房型内容设计"
+        "caption": "公众号推文排版｜公寓介绍、配套信息与房型内容设计",
+        "preview": "assets/privacy-20261027/art-40.webp",
+        "mobilePreview": "assets/privacy-20261027/art-40-mobile.webp"
       },
       {
         "src": "assets/xingchengli/wechat-autumn-community.webp",
@@ -481,7 +483,7 @@
         "xingchengli-mid-autumn-banner.webp"
       ],
       "social": [
-        "wechat-apartment-introduction-clean.webp",
+        "art-40.webp",
         "wechat-autumn-community.webp",
         "xingchengli-rooftop-garden.webp",
         "xingchengli-mid-autumn-banner.webp",
@@ -542,18 +544,18 @@
         "layout": "xian-pair"
       },
       {
-        "src": "assets/xian-case/layout-files.webp",
-        "preview": "assets/xian-case/layout-files.webp",
-        "mobilePreview": "assets/xian-case/layout-files-mobile.webp",
+        "src": "assets/privacy-20261027/art-46.webp",
+        "preview": "assets/privacy-20261027/art-46.webp",
+        "mobilePreview": "assets/privacy-20261027/art-46-mobile.webp",
         "width": 1600,
         "height": 1000,
         "caption": "招聘展板文件 · 多版式编排记录",
         "layout": "xian-main"
       },
       {
-        "src": "assets/xian-case/recruitment-boards.webp",
-        "preview": "assets/xian-case/recruitment-boards.webp",
-        "mobilePreview": "assets/xian-case/recruitment-boards-mobile.webp",
+        "src": "assets/privacy-20261027/art-47.webp",
+        "preview": "assets/privacy-20261027/art-47.webp",
+        "mobilePreview": "assets/privacy-20261027/art-47-mobile.webp",
         "width": 1080,
         "height": 1440,
         "caption": "招聘展板 · 会场成列展示",
@@ -954,45 +956,45 @@
     ],
     "assets": [
       {
-        "src": "assets/anniversary-case/poster-01.webp",
-        "preview": "assets/anniversary-case/poster-01.webp",
-        "mobilePreview": "assets/anniversary-case/poster-01-mobile.webp",
+        "src": "assets/privacy-20261027/art-73.webp",
+        "preview": "assets/privacy-20261027/art-73.webp",
+        "mobilePreview": "assets/privacy-20261027/art-73-mobile.webp",
         "width": 1536,
         "height": 1024,
         "caption": "35周年庆 · 活动主视觉",
         "layout": "bao-wide"
       },
       {
-        "src": "assets/anniversary-case/poster-02.webp",
-        "preview": "assets/anniversary-case/poster-02.webp",
-        "mobilePreview": "assets/anniversary-case/poster-02-mobile.webp",
+        "src": "assets/privacy-20261027/art-74.webp",
+        "preview": "assets/privacy-20261027/art-74.webp",
+        "mobilePreview": "assets/privacy-20261027/art-74-mobile.webp",
         "width": 1536,
         "height": 1024,
         "caption": "第一波福利 · 到店礼品",
         "layout": "bao-pair"
       },
       {
-        "src": "assets/anniversary-case/poster-03.webp",
-        "preview": "assets/anniversary-case/poster-03.webp",
-        "mobilePreview": "assets/anniversary-case/poster-03-mobile.webp",
+        "src": "assets/privacy-20261027/art-75.webp",
+        "preview": "assets/privacy-20261027/art-75.webp",
+        "mobilePreview": "assets/privacy-20261027/art-75-mobile.webp",
         "width": 1536,
         "height": 1024,
         "caption": "第二波福利 · 手链佩戴展示",
         "layout": "bao-pair"
       },
       {
-        "src": "assets/anniversary-case/poster-04.webp",
-        "preview": "assets/anniversary-case/poster-04.webp",
-        "mobilePreview": "assets/anniversary-case/poster-04-mobile.webp",
+        "src": "assets/privacy-20261027/art-76.webp",
+        "preview": "assets/privacy-20261027/art-76.webp",
+        "mobilePreview": "assets/privacy-20261027/art-76-mobile.webp",
         "width": 1536,
         "height": 1024,
         "caption": "第二波福利 · 手链产品展示",
         "layout": "bao-pair"
       },
       {
-        "src": "assets/anniversary-case/poster-05.webp",
-        "preview": "assets/anniversary-case/poster-05.webp",
-        "mobilePreview": "assets/anniversary-case/poster-05-mobile.webp",
+        "src": "assets/privacy-20261027/art-77.webp",
+        "preview": "assets/privacy-20261027/art-77.webp",
+        "mobilePreview": "assets/privacy-20261027/art-77-mobile.webp",
         "width": 1536,
         "height": 1024,
         "caption": "第三波福利 · 精修与摆台",
@@ -1008,9 +1010,9 @@
         "layout": "bao-pair"
       },
       {
-        "src": "assets/anniversary-case/poster-07.webp",
-        "preview": "assets/anniversary-case/poster-07.webp",
-        "mobilePreview": "assets/anniversary-case/poster-07-mobile.webp",
+        "src": "assets/privacy-20261027/art-79.webp",
+        "preview": "assets/privacy-20261027/art-79.webp",
+        "mobilePreview": "assets/privacy-20261027/art-79-mobile.webp",
         "width": 1536,
         "height": 1024,
         "caption": "299元 · 专属福利套餐",
@@ -1091,9 +1093,9 @@
     "overview": "6 张应用效果图 / 环境视觉 / 导视标识。",
     "assets": [
       {
-        "src": "assets/service-packaging/service-01.webp",
-        "preview": "assets/service-packaging/service-01.webp",
-        "mobilePreview": "assets/service-packaging/service-01-mobile.webp",
+        "src": "assets/privacy-20261027/art-82.webp",
+        "preview": "assets/privacy-20261027/art-82.webp",
+        "mobilePreview": "assets/privacy-20261027/art-82-mobile.webp",
         "width": 1536,
         "height": 1024,
         "caption": "室内服务信息与安全提示 · 应用效果图",
