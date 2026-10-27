@@ -946,31 +946,98 @@
       "visual"
     ],
     "bg": "#fde3ef",
-    "intro": "以粉色庆典视觉统一主海报与套餐宣传页，通过大字号数字、摄影元素和分区排版，区分周年主题与活动信息。",
+    "intro": "以粉色、玫红与香槟金统一伊丽莎白摄影35周年庆视觉，从活动主视觉延展至分阶段福利和套餐宣传。通过大数字、标题与分区信息建立清晰层级，以场景样机展示系列物料。",
     "focus": [
-      "活动主视觉",
-      "数字字体表现",
-      "套餐信息排版"
+      "周年庆活动视觉",
+      "系列福利海报",
+      "套餐信息编排"
     ],
     "assets": [
       {
-        "src": "assets/works/work-07.jpg",
-        "width": 1447,
-        "height": 2048,
-        "caption": "35 周年店庆主视觉",
-        "mobilePreview": "assets/optimized/work-07-thumb.jpg",
-        "preview": "assets/optimized/work-07-screen.jpg"
+        "src": "assets/anniversary-case/poster-01.webp",
+        "preview": "assets/anniversary-case/poster-01.webp",
+        "mobilePreview": "assets/anniversary-case/poster-01-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "35周年庆 · 活动主视觉",
+        "layout": "bao-wide"
       },
       {
-        "src": "assets/works/work-15.jpg",
-        "width": 1449,
-        "height": 2048,
-        "caption": "同系列福利套餐海报",
-        "mobilePreview": "assets/optimized/work-15-thumb.jpg",
-        "preview": "assets/optimized/work-15-screen.jpg"
+        "src": "assets/anniversary-case/poster-02.webp",
+        "preview": "assets/anniversary-case/poster-02.webp",
+        "mobilePreview": "assets/anniversary-case/poster-02-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "第一波福利 · 到店礼品",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/anniversary-case/poster-03.webp",
+        "preview": "assets/anniversary-case/poster-03.webp",
+        "mobilePreview": "assets/anniversary-case/poster-03-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "第二波福利 · 手链佩戴展示",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/anniversary-case/poster-04.webp",
+        "preview": "assets/anniversary-case/poster-04.webp",
+        "mobilePreview": "assets/anniversary-case/poster-04-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "第二波福利 · 手链产品展示",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/anniversary-case/poster-05.webp",
+        "preview": "assets/anniversary-case/poster-05.webp",
+        "mobilePreview": "assets/anniversary-case/poster-05-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "第三波福利 · 精修与摆台",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/anniversary-case/poster-06.webp",
+        "preview": "assets/anniversary-case/poster-06.webp",
+        "mobilePreview": "assets/anniversary-case/poster-06-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "周年庆 · 综合优惠活动",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/anniversary-case/poster-07.webp",
+        "preview": "assets/anniversary-case/poster-07.webp",
+        "mobilePreview": "assets/anniversary-case/poster-07-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "299元 · 专属福利套餐",
+        "layout": "bao-pair"
       }
     ],
-    "pending": "制作时间、具体分工、使用工具与制作流程待补充。"
+    "pending": "制作时间、具体分工、使用工具与制作流程待补充。",
+    "presentation": "identity-case",
+    "overview": "7 张周年庆系列样机 / 主视觉、三波福利、综合优惠与专属套餐。",
+    "sections": [
+      {
+        "index": 0,
+        "title": "01 / 35周年庆 · 活动主视觉",
+        "description": "先展示周年庆主题，以立体数字、摄影与礼盒元素建立庆典氛围。"
+      },
+      {
+        "index": 1,
+        "title": "02 / 系列福利 · 第一波至第三波",
+        "description": "按活动顺序展开到店礼品、手链福利与精修摆台内容，保持配色和版式规则一致。"
+      },
+      {
+        "index": 5,
+        "title": "03 / 优惠活动 · 综合信息与套餐",
+        "description": "用编号分区和醒目价格整理优惠内容，区分活动总览与专属套餐。"
+      }
+    ],
+    "summary": "以统一的庆典视觉串联主海报、系列福利与套餐内容，再通过标题、价格数字和图片分区突出每张物料的传播重点。"
   },
   {
     "id": "restaurant",
