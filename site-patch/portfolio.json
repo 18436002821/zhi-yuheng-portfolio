@@ -846,18 +846,18 @@
   },
   {
     "id": "jiuzhangmen",
-    "title": "酒掌门 · 标志与名片视觉",
-    "category": "品牌视觉",
+    "title": "酒掌门 · 标志与 IP 应用",
+    "category": "品牌视觉 / 标志与 IP 延展",
     "tags": [
       "brand",
       "visual"
     ],
     "bg": "#f2eeee",
-    "intro": "以红色标志、酒瓶图形与卡通形象建立识别，并延展到名片正反面。展示从标志构成、配色到应用版式的衔接。",
+    "intro": "以红色文字标志、酒瓶图形与卡通人物建立品牌识别，并延展至名片、手提袋、杯垫与贴纸。通过平面设计稿与场景样机，呈现标志构成、品牌配色和 IP 在不同物料中的应用关系。",
     "focus": [
-      "标志设计",
-      "品牌配色",
-      "名片应用"
+      "标志与品牌配色",
+      "IP 形象应用",
+      "包装与周边延展"
     ],
     "assets": [
       {
@@ -866,10 +866,129 @@
         "height": 1055,
         "caption": "标志、色彩与名片应用展示",
         "mobilePreview": "assets/optimized/work-01-thumb.jpg",
-        "preview": "assets/optimized/work-01-screen.jpg"
+        "preview": "assets/optimized/work-01-screen.jpg",
+        "layout": "bao-wide"
+      },
+      {
+        "src": "assets/identity-cases/wine-ip-01.webp",
+        "preview": "assets/identity-cases/wine-ip-01.webp",
+        "mobilePreview": "assets/identity-cases/wine-ip-01-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "IP 延展 · 手提袋、杯垫与贴纸",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/identity-cases/wine-ip-02.webp",
+        "preview": "assets/identity-cases/wine-ip-02.webp",
+        "mobilePreview": "assets/identity-cases/wine-ip-02-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "品牌触点 · IP 应用与配色展示",
+        "layout": "bao-pair"
       }
     ],
-    "pending": "制作时间、具体分工、使用工具与制作流程待补充。"
+    "pending": "制作时间、具体分工、使用工具与制作流程待补充。",
+    "presentation": "identity-case",
+    "overview": "标志与名片设计稿 + 2 张 IP 应用样机。场景画面为应用效果展示。",
+    "sections": [
+      {
+        "index": 0,
+        "title": "01 / 基础识别 · 标志与名片",
+        "description": "以红色字标结合酒瓶图形和人物形象，组织品牌识别、色彩规范与名片应用。"
+      },
+      {
+        "index": 1,
+        "title": "02 / IP 延展 · 包装与周边",
+        "description": "将卡通 IP 延伸到手提袋、杯垫与贴纸，以朱红、奶油白和黑色形成连续的品牌触点。"
+      }
+    ],
+    "summary": "从标志与配色出发，将文字、酒瓶图形及人物形象组合为可延展的视觉语言，并通过多种物料展示一致的品牌识别。"
+  },
+  {
+    "id": "coffee-ideas",
+    "title": "咖啡脑袋 · 品牌与包装视觉",
+    "category": "品牌视觉 / 包装与门店应用",
+    "tags": [
+      "brand",
+      "visual"
+    ],
+    "bg": "#f7ecdf",
+    "intro": "以趣味人物表情为识别元素，结合暖橙、奶油白与深棕色，串联咖啡杯、包装袋、门店招牌和宣传海报。通过样机呈现品牌在包装与空间触点中的视觉延展。",
+    "focus": [
+      "人物标志应用",
+      "咖啡包装视觉",
+      "门店识别与海报"
+    ],
+    "assets": [
+      {
+        "src": "assets/identity-cases/coffee-packaging.webp",
+        "preview": "assets/identity-cases/coffee-packaging.webp",
+        "mobilePreview": "assets/identity-cases/coffee-packaging-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "包装视觉 · 咖啡杯与包装袋",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/identity-cases/coffee-store.webp",
+        "preview": "assets/identity-cases/coffee-store.webp",
+        "mobilePreview": "assets/identity-cases/coffee-store-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "门店视觉 · 招牌与宣传海报",
+        "layout": "bao-pair"
+      }
+    ],
+    "presentation": "identity-case",
+    "overview": "2 张品牌应用样机 / 包装与门店视觉。场景画面为应用效果展示。",
+    "sections": [
+      {
+        "index": 0,
+        "title": "品牌应用 · 从包装到门店",
+        "description": "统一人物表情、字体气质与品牌配色，再根据包装、招牌和海报的阅读距离调整视觉比例。"
+      }
+    ],
+    "summary": "将人物标志与日常咖啡场景结合，以有限配色和统一排版形成亲和、连贯的品牌语言。",
+    "pending": "项目时间、本人具体职责与实际制作情况待补充。"
+  },
+  {
+    "id": "smart-senior-care",
+    "title": "智慧养老 · 标志方案探索",
+    "category": "品牌视觉 / 标志探索",
+    "tags": [
+      "brand",
+      "visual"
+    ],
+    "bg": "#eaf4fe",
+    "intro": "围绕关爱、守护与科技连接展开标志方案探索，以人物、爱心、托举、屋檐和电路线条等元素传递智慧养老主题。以蓝色系统一多组方案，并用空间样机呈现其中一组标志的应用示意。",
+    "focus": [
+      "标志方案探索",
+      "图形语义表达",
+      "蓝色识别体系"
+    ],
+    "assets": [
+      {
+        "src": "assets/identity-cases/senior-care.webp",
+        "preview": "assets/identity-cases/senior-care.webp",
+        "mobilePreview": "assets/identity-cases/senior-care-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "智慧养老 · 标志方案与应用示意",
+        "layout": "bao-wide"
+      }
+    ],
+    "presentation": "identity-case",
+    "overview": "标志探索与空间应用示意；所示场景为样机效果。",
+    "sections": [
+      {
+        "index": 0,
+        "title": "方案探索 · 关爱与科技连接",
+        "description": "通过不同图形组合探索主题表达，以蓝色深浅变化统一方案气质，并观察标志在空间中的识别效果。"
+      }
+    ],
+    "summary": "以人物互动、爱心与科技线条构建主题图形，展示从概念语义到多方案组合，再到应用示意的探索过程。",
+    "pending": "项目时间、本人具体职责及最终采用方案待补充。"
   },
   {
     "id": "anniversary",
