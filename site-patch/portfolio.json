@@ -1,5 +1,529 @@
 [
   {
+    "id": "brand-identity-collection",
+    "title": "品牌标志与应用设计合集",
+    "category": "品牌视觉 / 标志、IP 与应用",
+    "tags": [
+      "brand",
+      "visual"
+    ],
+    "bg": "#f2eeee",
+    "intro": "汇集酒掌门、咖啡脑袋与智慧养老三个主题，展示标志、品牌配色、IP 延展、包装及空间应用的不同表达。各项目分组呈现，场景画面为样机与应用示意。",
+    "focus": [
+      "标志设计",
+      "IP 应用延展",
+      "包装与门店视觉",
+      "图形方案探索"
+    ],
+    "assets": [
+      {
+        "src": "assets/identity-cases/coffee-packaging.webp",
+        "preview": "assets/identity-cases/coffee-packaging.webp",
+        "mobilePreview": "assets/mobile-v3/94d9d24078a197.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "包装视觉 · 咖啡杯与包装袋",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/identity-cases/coffee-store.webp",
+        "preview": "assets/identity-cases/coffee-store.webp",
+        "mobilePreview": "assets/mobile-v3/daef821e0c1215.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "门店视觉 · 招牌与宣传海报",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/works/work-01.png",
+        "width": 1491,
+        "height": 1055,
+        "caption": "标志、色彩与名片应用展示",
+        "mobilePreview": "assets/mobile-v3/ae77d9e4fcb18a.webp",
+        "preview": "assets/optimized/work-01-screen.jpg",
+        "layout": "bao-wide"
+      },
+      {
+        "src": "assets/identity-cases/wine-ip-01.webp",
+        "preview": "assets/identity-cases/wine-ip-01.webp",
+        "mobilePreview": "assets/mobile-v3/71774ae2dff656.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "IP 延展 · 手提袋、杯垫与贴纸",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/identity-cases/wine-ip-02.webp",
+        "preview": "assets/identity-cases/wine-ip-02.webp",
+        "mobilePreview": "assets/mobile-v3/75f60ad901deaf.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "品牌触点 · IP 应用与配色展示",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/identity-cases/senior-care.webp",
+        "preview": "assets/identity-cases/senior-care.webp",
+        "mobilePreview": "assets/mobile-v3/50d1709dee320b.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "智慧养老 · 标志方案与应用示意",
+        "layout": "bao-wide"
+      }
+    ],
+    "pending": "制作时间、具体分工、使用工具与制作流程待补充。",
+    "presentation": "identity-case",
+    "overview": "3 个品牌主题 / 6 张设计与应用展示。保留设计稿、样机与方案探索的完整内容。",
+    "sections": [
+      {
+        "index": 0,
+        "title": "01 / 咖啡脑袋 · 品牌与包装视觉",
+        "description": "以趣味人物表情为识别元素，结合暖橙、奶油白与深棕色，串联咖啡杯、包装袋、门店招牌和宣传海报。通过样机呈现品牌在包装与空间触点中的视觉延展。"
+      },
+      {
+        "index": 2,
+        "title": "02 / 酒掌门 · 标志与 IP 应用",
+        "description": "以红色文字标志、酒瓶图形与卡通人物建立品牌识别，并延展至名片、手提袋、杯垫与贴纸。通过平面设计稿与场景样机，呈现标志构成、品牌配色和 IP 在不同物料中的应用关系。"
+      },
+      {
+        "index": 5,
+        "title": "03 / 智慧养老 · 标志方案探索",
+        "description": "围绕关爱、守护与科技连接展开标志方案探索，以人物、爱心、托举、屋檐和电路线条等元素传递智慧养老主题。以蓝色系统一多组方案，并用空间样机呈现其中一组标志的应用示意。"
+      }
+    ],
+    "summary": "从标志与配色出发，探索品牌在 IP、包装、宣传及空间中的多种应用关系。"
+  },
+  {
+    "id": "food-packaging",
+    "title": "食品包装 · 地域风味与礼盒视觉",
+    "category": "包装设计 / 食品与茶饮",
+    "tags": [
+      "visual"
+    ],
+    "bg": "#f1eadf",
+    "intro": "以地域风味和产品特征为线索，将插画、食材图像与品牌文字应用于食品礼盒。通过不同配色与图形语言区分品类，以完整包装效果图呈现系列关系与细节。",
+    "focus": [
+      "食品包装",
+      "插画与图形应用",
+      "系列化视觉"
+    ],
+    "presentation": "identity-case",
+    "overview": "5 张应用效果图 / 包装设计 / 食品与茶饮。",
+    "assets": [
+      {
+        "src": "assets/service-packaging/packaging-01.webp",
+        "preview": "assets/service-packaging/packaging-01.webp",
+        "mobilePreview": "assets/mobile-v3/fc383d4ce859e9.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "云南良品汇 · 红糖、黄冰糖与葛根粉系列包装",
+        "layout": "bao-wide"
+      },
+      {
+        "src": "assets/service-packaging/packaging-02.webp",
+        "preview": "assets/service-packaging/packaging-02.webp",
+        "mobilePreview": "assets/mobile-v3/ffbdcfe0545ef3.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "梨膏糖 · 包装效果图",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/service-packaging/packaging-03.webp",
+        "preview": "assets/service-packaging/packaging-03.webp",
+        "mobilePreview": "assets/mobile-v3/a8b4e1a5fe44f5.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "黄冰糖 · 包装效果图",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/service-packaging/packaging-04.webp",
+        "preview": "assets/service-packaging/packaging-04.webp",
+        "mobilePreview": "assets/mobile-v3/6a2a17a9bfaef7.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "迎河柑茶 · 包装效果图",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/service-packaging/packaging-05.webp",
+        "preview": "assets/service-packaging/packaging-05.webp",
+        "mobilePreview": "assets/mobile-v3/dcd023db91b896.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "荷花酥 · 包装效果图",
+        "layout": "bao-pair"
+      }
+    ],
+    "sections": [
+      {
+        "index": 0,
+        "title": "01 / 系列包装 · 云南风味",
+        "description": "用统一的品牌区域与差异化配色组织红糖、黄冰糖、葛根粉的系列识别。"
+      },
+      {
+        "index": 1,
+        "title": "02 / 产品表达 · 糖点与茶礼",
+        "description": "分别以传统场景插画、暖色山水、植物图像与莲花纹样呈现产品气质。"
+      }
+    ],
+    "summary": "围绕品名识别、品牌层级和图形主题建立包装表达，在系列统一与单品差异之间保持平衡。图片为包装应用效果展示，不将效果图作为实物生产证明。",
+    "pending": "项目时间、具体分工与实施状态待补充。"
+  },
+  {
+    "id": "xingzhixuan",
+    "title": "行知轩 · 教育与儿童成长视觉",
+    "category": "教育视觉 / 系列平面设计",
+    "tags": [
+      "visual"
+    ],
+    "bg": "#e5eff9",
+    "intro": "围绕行知轩儿童成长中心的品牌传播需求，整合宣传画册、招生海报与课程视觉。画册以蓝色为主调，结合明亮的辅助色与真实教学影像，通过目录、品牌介绍和课程跨页建立清晰的信息阅读路径；延展物料保持一致的视觉语言，兼顾品牌识别与招生信息传达。",
+    "focus": [
+      "画册版式设计",
+      "教育品牌视觉",
+      "招生宣传物料"
+    ],
+    "assets": [
+      {
+        "type": "book",
+        "src": "assets/xingzhixuan/flat-spread-01.webp",
+        "caption": "行知轩儿童成长中心 · 品牌宣传画册",
+        "pages": [
+          {
+            "src": "assets/xingzhixuan/flat-spread-01.webp",
+            "mobilePreview": "assets/xingzhixuan/flat-spread-01-mobile.webp",
+            "caption": "封面与封底 · 品牌第一印象",
+            "description": "以蓝色建立稳定的品牌识别，黄色与青色波形增加儿童教育主题的亲和力。封面用活动照片与醒目标题建立视觉焦点，封底集中呈现标志与品牌主张，形成完整的首尾呼应。",
+            "keywords": [
+              "品牌配色",
+              "封面构图",
+              "视觉识别"
+            ]
+          },
+          {
+            "src": "assets/xingzhixuan/flat-spread-02.webp",
+            "mobilePreview": "assets/xingzhixuan/flat-spread-02-mobile.webp",
+            "caption": "目录与品牌介绍 · 建立阅读路径",
+            "description": "左页通过清晰的目录层级与页码引导阅读，纵向 CONTENTS 形成醒目的视觉分区。右页以标题、问答式正文和蓝底信息区划分内容，兼顾机构介绍的完整性与阅读节奏。",
+            "keywords": [
+              "目录导航",
+              "信息层级",
+              "蓝白对比"
+            ]
+          },
+          {
+            "src": "assets/xingzhixuan/flat-spread-03.webp",
+            "mobilePreview": "assets/xingzhixuan/flat-spread-03-mobile.webp",
+            "caption": "早午晚托服务 · 场景化信息表达",
+            "description": "跨页分别呈现教学活动与餐食安排，将服务内容转化为可直观看到的日常场景。照片组合配合分栏文字与蓝色标题条，让课程流程、生活照护和餐食信息各有重点。",
+            "keywords": [
+              "图文分栏",
+              "服务说明",
+              "场景呈现"
+            ]
+          },
+          {
+            "src": "assets/xingzhixuan/flat-spread-04.webp",
+            "mobilePreview": "assets/xingzhixuan/flat-spread-04-mobile.webp",
+            "caption": "综合训练馆 · 课程与师资展示",
+            "description": "左页以训练照片和课程说明建立内容主线，右页集中呈现师资背景与资质素材。统一的蓝色标题带贯穿跨页，数字信息、照片与文字分区组织，增强阅读顺序与信息辨识度。",
+            "keywords": [
+              "跨页统筹",
+              "师资信息",
+              "模块编排"
+            ]
+          },
+          {
+            "src": "assets/xingzhixuan/flat-spread-05.webp",
+            "mobilePreview": "assets/xingzhixuan/flat-spread-05-mobile.webp",
+            "caption": "专业书法班 · 课程气质表达",
+            "description": "书法主题采用书写感标题、淡墨文字底纹与较大的留白，呼应课程内容。左页突出教师形象与教学介绍，右页将荣誉素材整齐归组，在品牌体系内形成具有课程特色的视觉变化。",
+            "keywords": [
+              "书法字体",
+              "留白节奏",
+              "课程差异化"
+            ]
+          },
+          {
+            "src": "assets/xingzhixuan/flat-spread-06.webp",
+            "mobilePreview": "assets/xingzhixuan/flat-spread-06-mobile.webp",
+            "caption": "少儿英语启蒙 · 学习体系可视化",
+            "description": "以活动照片连接课程介绍，通过明确的左右分区呈现教学场景与学习体系。右页的数字标题、条目和图片形成互补，让体系构成与课程特点更容易被快速浏览和理解。",
+            "keywords": [
+              "条目归纳",
+              "照片叙事",
+              "阅读效率"
+            ]
+          }
+        ]
+      },
+      {
+        "src": "assets/xingzhixuan/showcase-01.webp",
+        "preview": "assets/xingzhixuan/showcase-01.webp",
+        "mobilePreview": "assets/xingzhixuan/showcase-01-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "书法招生折页 · 文化视觉与版式"
+      },
+      {
+        "src": "assets/xingzhixuan/showcase-02.webp",
+        "preview": "assets/xingzhixuan/showcase-02.webp",
+        "mobilePreview": "assets/xingzhixuan/showcase-02-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "儿童成长中心 · 品牌展示"
+      },
+      {
+        "src": "assets/xingzhixuan/showcase-03.webp",
+        "preview": "assets/xingzhixuan/showcase-03.webp",
+        "mobilePreview": "assets/xingzhixuan/showcase-03-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "少年书法招生 · 易拉宝设计"
+      },
+      {
+        "src": "assets/xingzhixuan/showcase-04.webp",
+        "preview": "assets/xingzhixuan/showcase-04.webp",
+        "mobilePreview": "assets/xingzhixuan/showcase-04-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "中学生精品托管 · 招生视觉"
+      },
+      {
+        "src": "assets/xingzhixuan/showcase-05.webp",
+        "preview": "assets/xingzhixuan/showcase-05.webp",
+        "mobilePreview": "assets/xingzhixuan/showcase-05-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "儿童体适能 · 课程推广"
+      },
+      {
+        "src": "assets/xingzhixuan/showcase-06.webp",
+        "preview": "assets/xingzhixuan/showcase-06.webp",
+        "mobilePreview": "assets/xingzhixuan/showcase-06-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "优质住宿 · 服务视觉"
+      },
+      {
+        "src": "assets/xingzhixuan/showcase-07.webp",
+        "preview": "assets/xingzhixuan/showcase-07.webp",
+        "mobilePreview": "assets/xingzhixuan/showcase-07-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "精品托管 · 品牌折页"
+      },
+      {
+        "src": "assets/xingzhixuan/showcase-08.webp",
+        "preview": "assets/xingzhixuan/showcase-08.webp",
+        "mobilePreview": "assets/xingzhixuan/showcase-08-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "初中托班 · 精品小班招生"
+      }
+    ],
+    "pending": "项目时间、本人具体职责与实际投放效果待补充。"
+  },
+  {
+    "id": "book-cover-design",
+    "title": "书籍设计 · 封面与装帧视觉",
+    "category": "平面设计 / 书籍与封面",
+    "tags": [
+      "visual"
+    ],
+    "bg": "#e8ede4",
+    "intro": "围绕书法教育、文学阅读与商业计划书三类内容，探索字体、图形与色彩的不同表达。以下为封面与装帧应用效果示意。",
+    "focus": [
+      "封面设计",
+      "字体与版式",
+      "装帧视觉"
+    ],
+    "presentation": "identity-case",
+    "overview": "5 张作品 / 书法教育系列、文学封面与商业计划书。",
+    "assets": [
+      {
+        "src": "assets/book-covers/book-1.webp",
+        "preview": "assets/book-covers/book-1.webp",
+        "mobilePreview": "assets/mobile-v3/4e1830019e8af4.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "书法教育 · 青蓝卷轴封面",
+        "layout": "bao-wide"
+      },
+      {
+        "src": "assets/book-covers/book-2.webp",
+        "preview": "assets/book-covers/book-2.webp",
+        "mobilePreview": "assets/mobile-v3/d5db5c1d57e706.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "书法教育 · 竹影留白封面",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/book-covers/book-3.webp",
+        "preview": "assets/book-covers/book-3.webp",
+        "mobilePreview": "assets/mobile-v3/43c6a20e50364f.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "书法教育 · 书法肌理封面",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/book-covers/book-4.webp",
+        "preview": "assets/book-covers/book-4.webp",
+        "mobilePreview": "assets/mobile-v3/397c6a7339827f.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "似水流年 · 封面、书脊与封底",
+        "layout": "bao-wide"
+      },
+      {
+        "src": "assets/book-covers/book-5.webp",
+        "preview": "assets/book-covers/book-5.webp",
+        "mobilePreview": "assets/mobile-v3/8e91f9e51ecac0.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "商业计划书 · 几何线条封面",
+        "layout": "bao-wide"
+      }
+    ],
+    "sections": [
+      {
+        "index": 0,
+        "title": "01 / 书法教育 · 东方意象",
+        "description": "通过卷轴、竹叶与书法肌理构建系列封面，以竖排标题、低饱和底色与朱红印章突出文化氛围。"
+      },
+      {
+        "index": 3,
+        "title": "02 / 文学封面 · 留白与意境",
+        "description": "以奶油白纸感、淡雅竹影和疏朗书名形成阅读节奏，贯通封面、书脊与封底。"
+      },
+      {
+        "index": 4,
+        "title": "03 / 商业计划书 · 几何与秩序",
+        "description": "以玫红渐变和斜向几何线条增强动势，以清晰标题层级建立整体感。"
+      }
+    ],
+    "summary": "根据内容主题选择视觉语言，兼顾书名识别、版式秩序与装帧展示效果。"
+  },
+  {
+    "id": "anniversary",
+    "title": "伊丽莎白 · 35 周年店庆",
+    "category": "平面设计 / 活动视觉",
+    "tags": [
+      "visual"
+    ],
+    "bg": "#fde3ef",
+    "intro": "以粉色、玫红与香槟金统一伊丽莎白摄影35周年庆视觉，从活动主视觉延展至分阶段福利和套餐宣传。通过大数字、标题与分区信息建立清晰层级，以场景样机展示系列物料。",
+    "focus": [
+      "周年庆活动视觉",
+      "系列福利海报",
+      "套餐信息编排"
+    ],
+    "assets": [
+      {
+        "src": "assets/privacy-20261027/art-73.webp",
+        "preview": "assets/privacy-20261027/art-73.webp",
+        "mobilePreview": "assets/mobile-v3/9d74eb2349092b.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "35周年庆 · 活动主视觉",
+        "layout": "bao-wide"
+      },
+      {
+        "src": "assets/privacy-20261027/art-74.webp",
+        "preview": "assets/privacy-20261027/art-74.webp",
+        "mobilePreview": "assets/mobile-v3/4772520ad8994d.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "第一波福利 · 到店礼品",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/privacy-20261027/art-75.webp",
+        "preview": "assets/privacy-20261027/art-75.webp",
+        "mobilePreview": "assets/mobile-v3/cc22efc58512c8.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "第二波福利 · 手链佩戴展示",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/privacy-20261027/art-76.webp",
+        "preview": "assets/privacy-20261027/art-76.webp",
+        "mobilePreview": "assets/mobile-v3/39b75e81688517.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "第二波福利 · 手链产品展示",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/privacy-20261027/art-77.webp",
+        "preview": "assets/privacy-20261027/art-77.webp",
+        "mobilePreview": "assets/mobile-v3/ada24ed4cff561.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "第三波福利 · 精修与摆台",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/anniversary-case/poster-06.webp",
+        "preview": "assets/anniversary-case/poster-06.webp",
+        "mobilePreview": "assets/mobile-v3/1e582626baae25.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "周年庆 · 综合优惠活动",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/privacy-20261027/art-79.webp",
+        "preview": "assets/privacy-20261027/art-79.webp",
+        "mobilePreview": "assets/mobile-v3/ab89cee90b2e97.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "299元 · 专属福利套餐",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/commercial-cases/design-1.webp",
+        "preview": "assets/commercial-cases/design-1.webp",
+        "mobilePreview": "assets/commercial-cases/design-1-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "周年庆打卡装置 · 异形立牌应用效果",
+        "layout": "bao-wide"
+      }
+    ],
+    "pending": "制作时间、具体分工、使用工具与制作流程待补充。",
+    "presentation": "identity-case",
+    "overview": "8 张周年庆系列样机 / 主视觉、系列福利、套餐与打卡装置。",
+    "sections": [
+      {
+        "index": 0,
+        "title": "01 / 35周年庆 · 活动主视觉",
+        "description": "先展示周年庆主题，以立体数字、摄影与礼盒元素建立庆典氛围。"
+      },
+      {
+        "index": 1,
+        "title": "02 / 系列福利 · 第一波至第三波",
+        "description": "按活动顺序展开到店礼品、手链福利与精修摆台内容，保持配色和版式规则一致。"
+      },
+      {
+        "index": 5,
+        "title": "03 / 优惠活动 · 综合信息与套餐",
+        "description": "用编号分区和醒目价格整理优惠内容，区分活动总览与专属套餐。"
+      },
+      {
+        "index": 7,
+        "title": "04 / 空间延展 · 周年庆打卡装置",
+        "description": "以爱心、相机与箭头串联周年庆主题，将粉色视觉延展至门店打卡点。展示为应用效果示意。"
+      }
+    ],
+    "summary": "以统一的庆典视觉串联主海报、系列福利与套餐内容，再通过标题、价格数字和图片分区突出每张物料的传播重点。"
+  },
+  {
     "id": "xingchengli-culture-wall",
     "title": "星橙里公寓 · 社区品牌视觉整合",
     "category": "品牌视觉 / 社区项目",
@@ -343,333 +867,6 @@
     ]
   },
   {
-    "id": "xingzhixuan",
-    "title": "行知轩 · 教育与儿童成长视觉",
-    "category": "教育视觉 / 系列平面设计",
-    "tags": [
-      "visual"
-    ],
-    "bg": "#e5eff9",
-    "intro": "围绕行知轩儿童成长中心的品牌传播需求，整合宣传画册、招生海报与课程视觉。画册以蓝色为主调，结合明亮的辅助色与真实教学影像，通过目录、品牌介绍和课程跨页建立清晰的信息阅读路径；延展物料保持一致的视觉语言，兼顾品牌识别与招生信息传达。",
-    "focus": [
-      "画册版式设计",
-      "教育品牌视觉",
-      "招生宣传物料"
-    ],
-    "assets": [
-      {
-        "type": "book",
-        "src": "assets/xingzhixuan/flat-spread-01.webp",
-        "caption": "行知轩儿童成长中心 · 品牌宣传画册",
-        "pages": [
-          {
-            "src": "assets/xingzhixuan/flat-spread-01.webp",
-            "mobilePreview": "assets/xingzhixuan/flat-spread-01-mobile.webp",
-            "caption": "封面与封底 · 品牌第一印象",
-            "description": "以蓝色建立稳定的品牌识别，黄色与青色波形增加儿童教育主题的亲和力。封面用活动照片与醒目标题建立视觉焦点，封底集中呈现标志与品牌主张，形成完整的首尾呼应。",
-            "keywords": [
-              "品牌配色",
-              "封面构图",
-              "视觉识别"
-            ]
-          },
-          {
-            "src": "assets/xingzhixuan/flat-spread-02.webp",
-            "mobilePreview": "assets/xingzhixuan/flat-spread-02-mobile.webp",
-            "caption": "目录与品牌介绍 · 建立阅读路径",
-            "description": "左页通过清晰的目录层级与页码引导阅读，纵向 CONTENTS 形成醒目的视觉分区。右页以标题、问答式正文和蓝底信息区划分内容，兼顾机构介绍的完整性与阅读节奏。",
-            "keywords": [
-              "目录导航",
-              "信息层级",
-              "蓝白对比"
-            ]
-          },
-          {
-            "src": "assets/xingzhixuan/flat-spread-03.webp",
-            "mobilePreview": "assets/xingzhixuan/flat-spread-03-mobile.webp",
-            "caption": "早午晚托服务 · 场景化信息表达",
-            "description": "跨页分别呈现教学活动与餐食安排，将服务内容转化为可直观看到的日常场景。照片组合配合分栏文字与蓝色标题条，让课程流程、生活照护和餐食信息各有重点。",
-            "keywords": [
-              "图文分栏",
-              "服务说明",
-              "场景呈现"
-            ]
-          },
-          {
-            "src": "assets/xingzhixuan/flat-spread-04.webp",
-            "mobilePreview": "assets/xingzhixuan/flat-spread-04-mobile.webp",
-            "caption": "综合训练馆 · 课程与师资展示",
-            "description": "左页以训练照片和课程说明建立内容主线，右页集中呈现师资背景与资质素材。统一的蓝色标题带贯穿跨页，数字信息、照片与文字分区组织，增强阅读顺序与信息辨识度。",
-            "keywords": [
-              "跨页统筹",
-              "师资信息",
-              "模块编排"
-            ]
-          },
-          {
-            "src": "assets/xingzhixuan/flat-spread-05.webp",
-            "mobilePreview": "assets/xingzhixuan/flat-spread-05-mobile.webp",
-            "caption": "专业书法班 · 课程气质表达",
-            "description": "书法主题采用书写感标题、淡墨文字底纹与较大的留白，呼应课程内容。左页突出教师形象与教学介绍，右页将荣誉素材整齐归组，在品牌体系内形成具有课程特色的视觉变化。",
-            "keywords": [
-              "书法字体",
-              "留白节奏",
-              "课程差异化"
-            ]
-          },
-          {
-            "src": "assets/xingzhixuan/flat-spread-06.webp",
-            "mobilePreview": "assets/xingzhixuan/flat-spread-06-mobile.webp",
-            "caption": "少儿英语启蒙 · 学习体系可视化",
-            "description": "以活动照片连接课程介绍，通过明确的左右分区呈现教学场景与学习体系。右页的数字标题、条目和图片形成互补，让体系构成与课程特点更容易被快速浏览和理解。",
-            "keywords": [
-              "条目归纳",
-              "照片叙事",
-              "阅读效率"
-            ]
-          }
-        ]
-      },
-      {
-        "src": "assets/xingzhixuan/showcase-01.webp",
-        "preview": "assets/xingzhixuan/showcase-01.webp",
-        "mobilePreview": "assets/xingzhixuan/showcase-01-mobile.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "书法招生折页 · 文化视觉与版式"
-      },
-      {
-        "src": "assets/xingzhixuan/showcase-02.webp",
-        "preview": "assets/xingzhixuan/showcase-02.webp",
-        "mobilePreview": "assets/xingzhixuan/showcase-02-mobile.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "儿童成长中心 · 品牌展示"
-      },
-      {
-        "src": "assets/xingzhixuan/showcase-03.webp",
-        "preview": "assets/xingzhixuan/showcase-03.webp",
-        "mobilePreview": "assets/xingzhixuan/showcase-03-mobile.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "少年书法招生 · 易拉宝设计"
-      },
-      {
-        "src": "assets/xingzhixuan/showcase-04.webp",
-        "preview": "assets/xingzhixuan/showcase-04.webp",
-        "mobilePreview": "assets/xingzhixuan/showcase-04-mobile.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "中学生精品托管 · 招生视觉"
-      },
-      {
-        "src": "assets/xingzhixuan/showcase-05.webp",
-        "preview": "assets/xingzhixuan/showcase-05.webp",
-        "mobilePreview": "assets/xingzhixuan/showcase-05-mobile.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "儿童体适能 · 课程推广"
-      },
-      {
-        "src": "assets/xingzhixuan/showcase-06.webp",
-        "preview": "assets/xingzhixuan/showcase-06.webp",
-        "mobilePreview": "assets/xingzhixuan/showcase-06-mobile.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "优质住宿 · 服务视觉"
-      },
-      {
-        "src": "assets/xingzhixuan/showcase-07.webp",
-        "preview": "assets/xingzhixuan/showcase-07.webp",
-        "mobilePreview": "assets/xingzhixuan/showcase-07-mobile.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "精品托管 · 品牌折页"
-      },
-      {
-        "src": "assets/xingzhixuan/showcase-08.webp",
-        "preview": "assets/xingzhixuan/showcase-08.webp",
-        "mobilePreview": "assets/xingzhixuan/showcase-08-mobile.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "初中托班 · 精品小班招生"
-      }
-    ],
-    "pending": "项目时间、本人具体职责与实际投放效果待补充。"
-  },
-  {
-    "id": "brand-identity-collection",
-    "title": "品牌标志与应用设计合集",
-    "category": "品牌视觉 / 标志、IP 与应用",
-    "tags": [
-      "brand",
-      "visual"
-    ],
-    "bg": "#f2eeee",
-    "intro": "汇集酒掌门、咖啡脑袋与智慧养老三个主题，展示标志、品牌配色、IP 延展、包装及空间应用的不同表达。各项目分组呈现，场景画面为样机与应用示意。",
-    "focus": [
-      "标志设计",
-      "IP 应用延展",
-      "包装与门店视觉",
-      "图形方案探索"
-    ],
-    "assets": [
-      {
-        "src": "assets/identity-cases/coffee-packaging.webp",
-        "preview": "assets/identity-cases/coffee-packaging.webp",
-        "mobilePreview": "assets/mobile-v3/94d9d24078a197.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "包装视觉 · 咖啡杯与包装袋",
-        "layout": "bao-pair"
-      },
-      {
-        "src": "assets/identity-cases/coffee-store.webp",
-        "preview": "assets/identity-cases/coffee-store.webp",
-        "mobilePreview": "assets/mobile-v3/daef821e0c1215.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "门店视觉 · 招牌与宣传海报",
-        "layout": "bao-pair"
-      },
-      {
-        "src": "assets/works/work-01.png",
-        "width": 1491,
-        "height": 1055,
-        "caption": "标志、色彩与名片应用展示",
-        "mobilePreview": "assets/mobile-v3/ae77d9e4fcb18a.webp",
-        "preview": "assets/optimized/work-01-screen.jpg",
-        "layout": "bao-wide"
-      },
-      {
-        "src": "assets/identity-cases/wine-ip-01.webp",
-        "preview": "assets/identity-cases/wine-ip-01.webp",
-        "mobilePreview": "assets/mobile-v3/71774ae2dff656.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "IP 延展 · 手提袋、杯垫与贴纸",
-        "layout": "bao-pair"
-      },
-      {
-        "src": "assets/identity-cases/wine-ip-02.webp",
-        "preview": "assets/identity-cases/wine-ip-02.webp",
-        "mobilePreview": "assets/mobile-v3/75f60ad901deaf.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "品牌触点 · IP 应用与配色展示",
-        "layout": "bao-pair"
-      },
-      {
-        "src": "assets/identity-cases/senior-care.webp",
-        "preview": "assets/identity-cases/senior-care.webp",
-        "mobilePreview": "assets/mobile-v3/50d1709dee320b.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "智慧养老 · 标志方案与应用示意",
-        "layout": "bao-wide"
-      }
-    ],
-    "pending": "制作时间、具体分工、使用工具与制作流程待补充。",
-    "presentation": "identity-case",
-    "overview": "3 个品牌主题 / 6 张设计与应用展示。保留设计稿、样机与方案探索的完整内容。",
-    "sections": [
-      {
-        "index": 0,
-        "title": "01 / 咖啡脑袋 · 品牌与包装视觉",
-        "description": "以趣味人物表情为识别元素，结合暖橙、奶油白与深棕色，串联咖啡杯、包装袋、门店招牌和宣传海报。通过样机呈现品牌在包装与空间触点中的视觉延展。"
-      },
-      {
-        "index": 2,
-        "title": "02 / 酒掌门 · 标志与 IP 应用",
-        "description": "以红色文字标志、酒瓶图形与卡通人物建立品牌识别，并延展至名片、手提袋、杯垫与贴纸。通过平面设计稿与场景样机，呈现标志构成、品牌配色和 IP 在不同物料中的应用关系。"
-      },
-      {
-        "index": 5,
-        "title": "03 / 智慧养老 · 标志方案探索",
-        "description": "围绕关爱、守护与科技连接展开标志方案探索，以人物、爱心、托举、屋檐和电路线条等元素传递智慧养老主题。以蓝色系统一多组方案，并用空间样机呈现其中一组标志的应用示意。"
-      }
-    ],
-    "summary": "从标志与配色出发，探索品牌在 IP、包装、宣传及空间中的多种应用关系。"
-  },
-  {
-    "id": "food-packaging",
-    "title": "食品包装 · 地域风味与礼盒视觉",
-    "category": "包装设计 / 食品与茶饮",
-    "tags": [
-      "visual"
-    ],
-    "bg": "#f1eadf",
-    "intro": "以地域风味和产品特征为线索，将插画、食材图像与品牌文字应用于食品礼盒。通过不同配色与图形语言区分品类，以完整包装效果图呈现系列关系与细节。",
-    "focus": [
-      "食品包装",
-      "插画与图形应用",
-      "系列化视觉"
-    ],
-    "presentation": "identity-case",
-    "overview": "5 张应用效果图 / 包装设计 / 食品与茶饮。",
-    "assets": [
-      {
-        "src": "assets/service-packaging/packaging-01.webp",
-        "preview": "assets/service-packaging/packaging-01.webp",
-        "mobilePreview": "assets/mobile-v3/fc383d4ce859e9.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "云南良品汇 · 红糖、黄冰糖与葛根粉系列包装",
-        "layout": "bao-wide"
-      },
-      {
-        "src": "assets/service-packaging/packaging-02.webp",
-        "preview": "assets/service-packaging/packaging-02.webp",
-        "mobilePreview": "assets/mobile-v3/ffbdcfe0545ef3.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "梨膏糖 · 包装效果图",
-        "layout": "bao-pair"
-      },
-      {
-        "src": "assets/service-packaging/packaging-03.webp",
-        "preview": "assets/service-packaging/packaging-03.webp",
-        "mobilePreview": "assets/mobile-v3/a8b4e1a5fe44f5.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "黄冰糖 · 包装效果图",
-        "layout": "bao-pair"
-      },
-      {
-        "src": "assets/service-packaging/packaging-04.webp",
-        "preview": "assets/service-packaging/packaging-04.webp",
-        "mobilePreview": "assets/mobile-v3/6a2a17a9bfaef7.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "迎河柑茶 · 包装效果图",
-        "layout": "bao-pair"
-      },
-      {
-        "src": "assets/service-packaging/packaging-05.webp",
-        "preview": "assets/service-packaging/packaging-05.webp",
-        "mobilePreview": "assets/mobile-v3/dcd023db91b896.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "荷花酥 · 包装效果图",
-        "layout": "bao-pair"
-      }
-    ],
-    "sections": [
-      {
-        "index": 0,
-        "title": "01 / 系列包装 · 云南风味",
-        "description": "用统一的品牌区域与差异化配色组织红糖、黄冰糖、葛根粉的系列识别。"
-      },
-      {
-        "index": 1,
-        "title": "02 / 产品表达 · 糖点与茶礼",
-        "description": "分别以传统场景插画、暖色山水、植物图像与莲花纹样呈现产品气质。"
-      }
-    ],
-    "summary": "围绕品名识别、品牌层级和图形主题建立包装表达，在系列统一与单品差异之间保持平衡。图片为包装应用效果展示，不将效果图作为实物生产证明。",
-    "pending": "项目时间、具体分工与实施状态待补充。"
-  },
-  {
     "id": "kungfu-bao",
     "title": "功夫包子 · 门店与团购视觉",
     "category": "餐饮视觉 / 门店宣传",
@@ -901,88 +1098,6 @@
     "summary": "本项目围绕同一活动建立统一的视觉语言，再根据主会场背景、竖版宣传与招聘展板的阅读距离和信息密度调整版式。设计稿与现场照片对应呈现，重点展示多尺寸延展、信息整理，以及配合现场应用的实践能力。"
   },
   {
-    "id": "book-cover-design",
-    "title": "书籍设计 · 封面与装帧视觉",
-    "category": "平面设计 / 书籍与封面",
-    "tags": [
-      "visual"
-    ],
-    "bg": "#e8ede4",
-    "intro": "围绕书法教育、文学阅读与商业计划书三类内容，探索字体、图形与色彩的不同表达。以下为封面与装帧应用效果示意。",
-    "focus": [
-      "封面设计",
-      "字体与版式",
-      "装帧视觉"
-    ],
-    "presentation": "identity-case",
-    "overview": "5 张作品 / 书法教育系列、文学封面与商业计划书。",
-    "assets": [
-      {
-        "src": "assets/book-covers/book-1.webp",
-        "preview": "assets/book-covers/book-1.webp",
-        "mobilePreview": "assets/mobile-v3/4e1830019e8af4.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "书法教育 · 青蓝卷轴封面",
-        "layout": "bao-wide"
-      },
-      {
-        "src": "assets/book-covers/book-2.webp",
-        "preview": "assets/book-covers/book-2.webp",
-        "mobilePreview": "assets/mobile-v3/d5db5c1d57e706.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "书法教育 · 竹影留白封面",
-        "layout": "bao-pair"
-      },
-      {
-        "src": "assets/book-covers/book-3.webp",
-        "preview": "assets/book-covers/book-3.webp",
-        "mobilePreview": "assets/mobile-v3/43c6a20e50364f.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "书法教育 · 书法肌理封面",
-        "layout": "bao-pair"
-      },
-      {
-        "src": "assets/book-covers/book-4.webp",
-        "preview": "assets/book-covers/book-4.webp",
-        "mobilePreview": "assets/mobile-v3/397c6a7339827f.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "似水流年 · 封面、书脊与封底",
-        "layout": "bao-wide"
-      },
-      {
-        "src": "assets/book-covers/book-5.webp",
-        "preview": "assets/book-covers/book-5.webp",
-        "mobilePreview": "assets/mobile-v3/8e91f9e51ecac0.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "商业计划书 · 几何线条封面",
-        "layout": "bao-wide"
-      }
-    ],
-    "sections": [
-      {
-        "index": 0,
-        "title": "01 / 书法教育 · 东方意象",
-        "description": "通过卷轴、竹叶与书法肌理构建系列封面，以竖排标题、低饱和底色与朱红印章突出文化氛围。"
-      },
-      {
-        "index": 3,
-        "title": "02 / 文学封面 · 留白与意境",
-        "description": "以奶油白纸感、淡雅竹影和疏朗书名形成阅读节奏，贯通封面、书脊与封底。"
-      },
-      {
-        "index": 4,
-        "title": "03 / 商业计划书 · 几何与秩序",
-        "description": "以玫红渐变和斜向几何线条增强动势，以清晰标题层级建立整体感。"
-      }
-    ],
-    "summary": "根据内容主题选择视觉语言，兼顾书名识别、版式秩序与装帧展示效果。"
-  },
-  {
     "id": "nutrition-live-overlays",
     "title": "饮食课堂 · 直播间视觉设计",
     "category": "新媒体视觉 / 直播间贴片",
@@ -1175,121 +1290,6 @@
     ],
     "summary": "通过统一的角色、蓝黄配色、云朵与格纹元素，形成可识别的系列视觉；再以主标题、标签和辅助说明建立信息层级，让不同主题与横幅尺寸保持连贯。该项目重点展示商业推广画面的信息提炼与多尺寸延展能力。",
     "pending": "项目时间、投放平台、本人具体职责及素材制作方式待补充；暂不展示未经提供的投放效果数据。"
-  },
-  {
-    "id": "anniversary",
-    "title": "伊丽莎白 · 35 周年店庆",
-    "category": "平面设计 / 活动视觉",
-    "tags": [
-      "visual"
-    ],
-    "bg": "#fde3ef",
-    "intro": "以粉色、玫红与香槟金统一伊丽莎白摄影35周年庆视觉，从活动主视觉延展至分阶段福利和套餐宣传。通过大数字、标题与分区信息建立清晰层级，以场景样机展示系列物料。",
-    "focus": [
-      "周年庆活动视觉",
-      "系列福利海报",
-      "套餐信息编排"
-    ],
-    "assets": [
-      {
-        "src": "assets/privacy-20261027/art-73.webp",
-        "preview": "assets/privacy-20261027/art-73.webp",
-        "mobilePreview": "assets/mobile-v3/9d74eb2349092b.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "35周年庆 · 活动主视觉",
-        "layout": "bao-wide"
-      },
-      {
-        "src": "assets/privacy-20261027/art-74.webp",
-        "preview": "assets/privacy-20261027/art-74.webp",
-        "mobilePreview": "assets/mobile-v3/4772520ad8994d.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "第一波福利 · 到店礼品",
-        "layout": "bao-pair"
-      },
-      {
-        "src": "assets/privacy-20261027/art-75.webp",
-        "preview": "assets/privacy-20261027/art-75.webp",
-        "mobilePreview": "assets/mobile-v3/cc22efc58512c8.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "第二波福利 · 手链佩戴展示",
-        "layout": "bao-pair"
-      },
-      {
-        "src": "assets/privacy-20261027/art-76.webp",
-        "preview": "assets/privacy-20261027/art-76.webp",
-        "mobilePreview": "assets/mobile-v3/39b75e81688517.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "第二波福利 · 手链产品展示",
-        "layout": "bao-pair"
-      },
-      {
-        "src": "assets/privacy-20261027/art-77.webp",
-        "preview": "assets/privacy-20261027/art-77.webp",
-        "mobilePreview": "assets/mobile-v3/ada24ed4cff561.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "第三波福利 · 精修与摆台",
-        "layout": "bao-pair"
-      },
-      {
-        "src": "assets/anniversary-case/poster-06.webp",
-        "preview": "assets/anniversary-case/poster-06.webp",
-        "mobilePreview": "assets/mobile-v3/1e582626baae25.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "周年庆 · 综合优惠活动",
-        "layout": "bao-pair"
-      },
-      {
-        "src": "assets/privacy-20261027/art-79.webp",
-        "preview": "assets/privacy-20261027/art-79.webp",
-        "mobilePreview": "assets/mobile-v3/ab89cee90b2e97.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "299元 · 专属福利套餐",
-        "layout": "bao-pair"
-      },
-      {
-        "src": "assets/commercial-cases/design-1.webp",
-        "preview": "assets/commercial-cases/design-1.webp",
-        "mobilePreview": "assets/commercial-cases/design-1-mobile.webp",
-        "width": 1536,
-        "height": 1024,
-        "caption": "周年庆打卡装置 · 异形立牌应用效果",
-        "layout": "bao-wide"
-      }
-    ],
-    "pending": "制作时间、具体分工、使用工具与制作流程待补充。",
-    "presentation": "identity-case",
-    "overview": "8 张周年庆系列样机 / 主视觉、系列福利、套餐与打卡装置。",
-    "sections": [
-      {
-        "index": 0,
-        "title": "01 / 35周年庆 · 活动主视觉",
-        "description": "先展示周年庆主题，以立体数字、摄影与礼盒元素建立庆典氛围。"
-      },
-      {
-        "index": 1,
-        "title": "02 / 系列福利 · 第一波至第三波",
-        "description": "按活动顺序展开到店礼品、手链福利与精修摆台内容，保持配色和版式规则一致。"
-      },
-      {
-        "index": 5,
-        "title": "03 / 优惠活动 · 综合信息与套餐",
-        "description": "用编号分区和醒目价格整理优惠内容，区分活动总览与专属套餐。"
-      },
-      {
-        "index": 7,
-        "title": "04 / 空间延展 · 周年庆打卡装置",
-        "description": "以爱心、相机与箭头串联周年庆主题，将粉色视觉延展至门店打卡点。展示为应用效果示意。"
-      }
-    ],
-    "summary": "以统一的庆典视觉串联主海报、系列福利与套餐内容，再通过标题、价格数字和图片分区突出每张物料的传播重点。"
   },
   {
     "id": "service-area-signage",
