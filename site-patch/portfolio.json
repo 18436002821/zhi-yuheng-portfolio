@@ -24,25 +24,29 @@
         "src": "assets/xingchengli/smile-community-wall.webp",
         "width": 1500,
         "height": 852,
-        "caption": "社区文化墙｜主题视觉设计与实景落地"
+        "caption": "社区文化墙｜主题视觉设计与实景落地",
+        "mobilePreview": "assets/mobile-v3/3c7b7dff3b2e32.webp"
       },
       {
         "src": "assets/xingchengli/party-building-wall.webp",
         "width": 1500,
         "height": 852,
-        "caption": "党建文化墙｜版式设计与空间应用"
+        "caption": "党建文化墙｜版式设计与空间应用",
+        "mobilePreview": "assets/mobile-v3/990dd35df1a9aa.webp"
       },
       {
         "src": "assets/xingchengli/community-shopping-bag.webp",
         "width": 1500,
         "height": 852,
-        "caption": "品牌包装｜购物袋平面设计与效果展示"
+        "caption": "品牌包装｜购物袋平面设计与效果展示",
+        "mobilePreview": "assets/mobile-v3/456da870471f70.webp"
       },
       {
         "src": "assets/xingchengli/convenience-store-waistband.webp",
         "width": 1500,
         "height": 852,
-        "caption": "空间品牌应用｜便利店腰线设计与门店实景"
+        "caption": "空间品牌应用｜便利店腰线设计与门店实景",
+        "mobilePreview": "assets/mobile-v3/49d824d820b596.webp"
       },
       {
         "src": "assets/xingchengli/xingchengli-annual-gala.webp",
@@ -54,7 +58,8 @@
         "src": "assets/xingchengli/xingchengli-mid-autumn.webp",
         "width": 1400,
         "height": 787,
-        "caption": "节庆活动主视觉｜居信地产 × 星橙里公寓中秋主题"
+        "caption": "节庆活动主视觉｜居信地产 × 星橙里公寓中秋主题",
+        "mobilePreview": "assets/mobile-v3/836c94a5b4b25a.webp"
       },
       {
         "src": "assets/xingchengli/xingchengli-dormitory-upgrade.webp",
@@ -83,13 +88,14 @@
         "height": 1500,
         "caption": "公众号推文排版｜公寓介绍、配套信息与房型内容设计",
         "preview": "assets/privacy-20261027/art-40.webp",
-        "mobilePreview": "assets/privacy-20261027/art-40-mobile.webp"
+        "mobilePreview": "assets/mobile-v3/60be40a8e84f5d.webp"
       },
       {
         "src": "assets/xingchengli/wechat-autumn-community.webp",
         "width": 1462,
         "height": 1500,
-        "caption": "公众号推文排版｜秋日社区内容与租住福利主题设计"
+        "caption": "公众号推文排版｜秋日社区内容与租住福利主题设计",
+        "mobilePreview": "assets/mobile-v3/d6553ecf1a35be.webp"
       }
     ],
     "pending": "项目执行时间、本人具体职责与现场制作分工待补充。",
@@ -135,7 +141,7 @@
       {
         "src": "assets/petbox-wechat/launch-orange.webp",
         "preview": "assets/petbox-wechat/launch-orange.webp",
-        "mobilePreview": "assets/petbox-wechat/launch-orange-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/f63117e652804f.webp",
         "width": 1536,
         "height": 1024,
         "caption": "店铺官宣 · 活力橙色视觉",
@@ -145,7 +151,7 @@
       {
         "src": "assets/petbox-wechat/launch-cream.webp",
         "preview": "assets/petbox-wechat/launch-cream.webp",
-        "mobilePreview": "assets/petbox-wechat/launch-cream-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/d103251957e8cc.webp",
         "width": 1536,
         "height": 1024,
         "caption": "店铺官宣 · 奶油暖色视觉",
@@ -155,7 +161,7 @@
       {
         "src": "assets/petbox-wechat/service-guarantees.webp",
         "preview": "assets/petbox-wechat/service-guarantees.webp",
-        "mobilePreview": "assets/petbox-wechat/service-guarantees-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/fb4a66765c517c.webp",
         "width": 1536,
         "height": 1024,
         "caption": "服务内容 · 17 项检测与六大保障",
@@ -165,7 +171,7 @@
       {
         "src": "assets/petbox-wechat/cat-guide.webp",
         "preview": "assets/petbox-wechat/cat-guide.webp",
-        "mobilePreview": "assets/petbox-wechat/cat-guide-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/cb91e07e21cd7f.webp",
         "width": 1536,
         "height": 1024,
         "caption": "科普内容 · 本命小猫适配指南",
@@ -175,7 +181,7 @@
       {
         "src": "assets/petbox-social/brand-intro.webp",
         "preview": "assets/petbox-social/brand-intro.webp",
-        "mobilePreview": "assets/petbox-social/brand-intro-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/1aaaddc22e48e3.webp",
         "width": 1536,
         "height": 1024,
         "caption": "品牌介绍 · 门店形象与服务内容",
@@ -185,7 +191,7 @@
       {
         "src": "assets/petbox-social/grand-opening.webp",
         "preview": "assets/petbox-social/grand-opening.webp",
-        "mobilePreview": "assets/petbox-social/grand-opening-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/b220767edecfcf.webp",
         "width": 1536,
         "height": 1024,
         "caption": "开业宣传 · 品种与门店亮点",
@@ -195,7 +201,7 @@
       {
         "src": "assets/petbox-social/health-guarantees.webp",
         "preview": "assets/petbox-social/health-guarantees.webp",
-        "mobilePreview": "assets/petbox-social/health-guarantees-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/0dadca21ff1c37.webp",
         "width": 1536,
         "height": 1024,
         "caption": "健康保障 · 检测与服务信息",
@@ -205,7 +211,7 @@
       {
         "src": "assets/petbox-social/pet-matching.webp",
         "preview": "assets/petbox-social/pet-matching.webp",
-        "mobilePreview": "assets/petbox-social/pet-matching-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/717e84ddc56778.webp",
         "width": 1536,
         "height": 1024,
         "caption": "猫狗适配 · 品种选择指南",
@@ -215,7 +221,7 @@
       {
         "src": "assets/petbox-social/bathing-guide.webp",
         "preview": "assets/petbox-social/bathing-guide.webp",
-        "mobilePreview": "assets/petbox-social/bathing-guide-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/8bdf601ceed52d.webp",
         "width": 1536,
         "height": 1024,
         "caption": "洗澡教学 · 流程与护理提示",
@@ -225,7 +231,7 @@
       {
         "src": "assets/petbox-social/beginner-guide.webp",
         "preview": "assets/petbox-social/beginner-guide.webp",
-        "mobilePreview": "assets/petbox-social/beginner-guide-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/48412f128ea3af.webp",
         "width": 1536,
         "height": 1024,
         "caption": "新手养宠 · 避坑知识系列",
@@ -235,7 +241,7 @@
       {
         "src": "assets/petbox-groupbuy/dog-price.webp",
         "preview": "assets/petbox-groupbuy/dog-price.webp",
-        "mobilePreview": "assets/petbox-groupbuy/dog-price-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/11d9051f3ccb86.webp",
         "width": 1536,
         "height": 1024,
         "caption": "狗狗洗护 · 门店价目牌",
@@ -245,7 +251,7 @@
       {
         "src": "assets/petbox-groupbuy/dog-groupbuy.webp",
         "preview": "assets/petbox-groupbuy/dog-groupbuy.webp",
-        "mobilePreview": "assets/petbox-groupbuy/dog-groupbuy-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/253a6c8a62c03c.webp",
         "width": 1536,
         "height": 1024,
         "caption": "狗狗洗护 · 团购详情视觉",
@@ -255,7 +261,7 @@
       {
         "src": "assets/petbox-groupbuy/cat-price.webp",
         "preview": "assets/petbox-groupbuy/cat-price.webp",
-        "mobilePreview": "assets/petbox-groupbuy/cat-price-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/2542ec62ee8ac9.webp",
         "width": 1536,
         "height": 1024,
         "caption": "猫咪洗护 · 门店价目牌",
@@ -265,7 +271,7 @@
       {
         "src": "assets/petbox-groupbuy/cat-groupbuy.webp",
         "preview": "assets/petbox-groupbuy/cat-groupbuy.webp",
-        "mobilePreview": "assets/petbox-groupbuy/cat-groupbuy-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/a5a84efccb9271.webp",
         "width": 1536,
         "height": 1024,
         "caption": "猫咪洗护 · 团购详情视觉",
@@ -275,7 +281,7 @@
       {
         "src": "assets/petbox-groupbuy/cat-experience.webp",
         "preview": "assets/petbox-groupbuy/cat-experience.webp",
-        "mobilePreview": "assets/petbox-groupbuy/cat-experience-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/b71e3637de9fed.webp",
         "width": 1536,
         "height": 1024,
         "caption": "撸猫体验 · 团购内容展示",
@@ -285,7 +291,7 @@
       {
         "src": "assets/petbox-print/opening-banners.webp",
         "preview": "assets/petbox-print/opening-banners.webp",
-        "mobilePreview": "assets/petbox-print/opening-banners-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/a4a487814b37ee.webp",
         "width": 1536,
         "height": 1024,
         "caption": "开业活动 · 易拉宝与现场应用",
@@ -295,7 +301,7 @@
       {
         "src": "assets/petbox-print/brand-posters.webp",
         "preview": "assets/petbox-print/brand-posters.webp",
-        "mobilePreview": "assets/petbox-print/brand-posters-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/23075ec40f8fad.webp",
         "width": 1536,
         "height": 1024,
         "caption": "品牌宣传与招聘 · 系列海报",
@@ -511,7 +517,7 @@
       {
         "src": "assets/identity-cases/coffee-packaging.webp",
         "preview": "assets/identity-cases/coffee-packaging.webp",
-        "mobilePreview": "assets/identity-cases/coffee-packaging-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/94d9d24078a197.webp",
         "width": 1536,
         "height": 1024,
         "caption": "包装视觉 · 咖啡杯与包装袋",
@@ -520,7 +526,7 @@
       {
         "src": "assets/identity-cases/coffee-store.webp",
         "preview": "assets/identity-cases/coffee-store.webp",
-        "mobilePreview": "assets/identity-cases/coffee-store-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/daef821e0c1215.webp",
         "width": 1536,
         "height": 1024,
         "caption": "门店视觉 · 招牌与宣传海报",
@@ -531,14 +537,14 @@
         "width": 1491,
         "height": 1055,
         "caption": "标志、色彩与名片应用展示",
-        "mobilePreview": "assets/optimized/work-01-thumb.jpg",
+        "mobilePreview": "assets/mobile-v3/ae77d9e4fcb18a.webp",
         "preview": "assets/optimized/work-01-screen.jpg",
         "layout": "bao-wide"
       },
       {
         "src": "assets/identity-cases/wine-ip-01.webp",
         "preview": "assets/identity-cases/wine-ip-01.webp",
-        "mobilePreview": "assets/identity-cases/wine-ip-01-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/71774ae2dff656.webp",
         "width": 1536,
         "height": 1024,
         "caption": "IP 延展 · 手提袋、杯垫与贴纸",
@@ -547,7 +553,7 @@
       {
         "src": "assets/identity-cases/wine-ip-02.webp",
         "preview": "assets/identity-cases/wine-ip-02.webp",
-        "mobilePreview": "assets/identity-cases/wine-ip-02-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/75f60ad901deaf.webp",
         "width": 1536,
         "height": 1024,
         "caption": "品牌触点 · IP 应用与配色展示",
@@ -556,7 +562,7 @@
       {
         "src": "assets/identity-cases/senior-care.webp",
         "preview": "assets/identity-cases/senior-care.webp",
-        "mobilePreview": "assets/identity-cases/senior-care-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/50d1709dee320b.webp",
         "width": 1536,
         "height": 1024,
         "caption": "智慧养老 · 标志方案与应用示意",
@@ -605,7 +611,7 @@
       {
         "src": "assets/service-packaging/packaging-01.webp",
         "preview": "assets/service-packaging/packaging-01.webp",
-        "mobilePreview": "assets/service-packaging/packaging-01-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/fc383d4ce859e9.webp",
         "width": 1536,
         "height": 1024,
         "caption": "云南良品汇 · 红糖、黄冰糖与葛根粉系列包装",
@@ -614,7 +620,7 @@
       {
         "src": "assets/service-packaging/packaging-02.webp",
         "preview": "assets/service-packaging/packaging-02.webp",
-        "mobilePreview": "assets/service-packaging/packaging-02-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/ffbdcfe0545ef3.webp",
         "width": 1536,
         "height": 1024,
         "caption": "梨膏糖 · 包装效果图",
@@ -623,7 +629,7 @@
       {
         "src": "assets/service-packaging/packaging-03.webp",
         "preview": "assets/service-packaging/packaging-03.webp",
-        "mobilePreview": "assets/service-packaging/packaging-03-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/a8b4e1a5fe44f5.webp",
         "width": 1536,
         "height": 1024,
         "caption": "黄冰糖 · 包装效果图",
@@ -632,7 +638,7 @@
       {
         "src": "assets/service-packaging/packaging-04.webp",
         "preview": "assets/service-packaging/packaging-04.webp",
-        "mobilePreview": "assets/service-packaging/packaging-04-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/6a2a17a9bfaef7.webp",
         "width": 1536,
         "height": 1024,
         "caption": "迎河柑茶 · 包装效果图",
@@ -641,7 +647,7 @@
       {
         "src": "assets/service-packaging/packaging-05.webp",
         "preview": "assets/service-packaging/packaging-05.webp",
-        "mobilePreview": "assets/service-packaging/packaging-05-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/dcd023db91b896.webp",
         "width": 1536,
         "height": 1024,
         "caption": "荷花酥 · 包装效果图",
@@ -684,7 +690,7 @@
       {
         "src": "assets/kungfu-bao/counter.webp",
         "preview": "assets/kungfu-bao/counter.webp",
-        "mobilePreview": "assets/kungfu-bao/counter-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/27e7ea3638d458.webp",
         "width": 1536,
         "height": 1024,
         "caption": "门店前台 · 品牌宣传应用",
@@ -693,7 +699,7 @@
       {
         "src": "assets/kungfu-bao/groupbuy.webp",
         "preview": "assets/kungfu-bao/groupbuy.webp",
-        "mobilePreview": "assets/kungfu-bao/groupbuy-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/56e8c1ad0ac584.webp",
         "width": 1536,
         "height": 1024,
         "caption": "团购活动 · 海报场景样机",
@@ -702,7 +708,7 @@
       {
         "src": "assets/kungfu-bao/menu.webp",
         "preview": "assets/kungfu-bao/menu.webp",
-        "mobilePreview": "assets/kungfu-bao/menu-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/1d6f80d2c4fe54.webp",
         "width": 1536,
         "height": 1024,
         "caption": "门店价目表 · 菜单信息展示",
@@ -711,7 +717,7 @@
       {
         "src": "assets/kungfu-bao/egg-chive.webp",
         "preview": "assets/kungfu-bao/egg-chive.webp",
-        "mobilePreview": "assets/kungfu-bao/egg-chive-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/f0f8d0cd61c273.webp",
         "width": 1536,
         "height": 1024,
         "caption": "韭菜鸡蛋包 · 产品海报",
@@ -720,7 +726,7 @@
       {
         "src": "assets/kungfu-bao/cumin-lamb.webp",
         "preview": "assets/kungfu-bao/cumin-lamb.webp",
-        "mobilePreview": "assets/kungfu-bao/cumin-lamb-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/823d28529249a3.webp",
         "width": 1536,
         "height": 1024,
         "caption": "孜然羊肉包 · 产品海报",
@@ -729,7 +735,7 @@
       {
         "src": "assets/kungfu-bao/chicken.webp",
         "preview": "assets/kungfu-bao/chicken.webp",
-        "mobilePreview": "assets/kungfu-bao/chicken-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/d9eeb79830b96d.webp",
         "width": 1536,
         "height": 1024,
         "caption": "秘制鸡肉包 · 台牌展示",
@@ -738,7 +744,7 @@
       {
         "src": "assets/kungfu-bao/mushroom.webp",
         "preview": "assets/kungfu-bao/mushroom.webp",
-        "mobilePreview": "assets/kungfu-bao/mushroom-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/e30a7b04f70ee0.webp",
         "width": 1536,
         "height": 1024,
         "caption": "香菇青菜包 · 台牌展示",
@@ -747,7 +753,7 @@
       {
         "src": "assets/kungfu-bao/spicy-tofu.webp",
         "preview": "assets/kungfu-bao/spicy-tofu.webp",
-        "mobilePreview": "assets/kungfu-bao/spicy-tofu-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/cb3fb90c030937.webp",
         "width": 1536,
         "height": 1024,
         "caption": "麻辣豆腐包 · 产品海报",
@@ -795,7 +801,7 @@
         "width": 1454,
         "height": 1100,
         "caption": "活动主视觉 · 戎耀三秦 · 职等你来",
-        "mobilePreview": "assets/optimized/work-21-identity-thumb.jpg",
+        "mobilePreview": "assets/mobile-v3/41f7415cd13e1d.webp",
         "preview": "assets/preview/detail-work-21-identity.webp",
         "layout": "xian-main"
       },
@@ -804,7 +810,7 @@
         "width": 2048,
         "height": 716,
         "caption": "主会场横向背景设计",
-        "mobilePreview": "assets/optimized/work-21-stage-visual-thumb.jpg",
+        "mobilePreview": "assets/mobile-v3/9ad609635c36f7.webp",
         "preview": "assets/preview/detail-work-21-stage-visual.webp",
         "layout": "xian-banner"
       },
@@ -813,7 +819,7 @@
         "width": 1255,
         "height": 880,
         "caption": "主会场背景板 · 正面落地视角",
-        "mobilePreview": "assets/optimized/work-21-venue-thumb.jpg",
+        "mobilePreview": "assets/mobile-v3/c25a556ab1ecbd.webp",
         "preview": "assets/preview/detail-work-21-venue.webp",
         "layout": "xian-pair"
       },
@@ -822,14 +828,14 @@
         "width": 1190,
         "height": 1045,
         "caption": "会场环境与背景板 · 侧面视角",
-        "mobilePreview": "assets/optimized/work-21-entry-thumb.jpg",
+        "mobilePreview": "assets/mobile-v3/4cc1946ce38b2b.webp",
         "preview": "assets/preview/detail-work-21-entry.webp",
         "layout": "xian-pair"
       },
       {
         "src": "assets/privacy-20261027/art-46.webp",
         "preview": "assets/privacy-20261027/art-46.webp",
-        "mobilePreview": "assets/privacy-20261027/art-46-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/e22e6db540ffc0.webp",
         "width": 1600,
         "height": 1000,
         "caption": "招聘展板文件 · 多版式编排记录",
@@ -838,7 +844,7 @@
       {
         "src": "assets/privacy-20261027/art-47.webp",
         "preview": "assets/privacy-20261027/art-47.webp",
-        "mobilePreview": "assets/privacy-20261027/art-47-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/d737062b20f736.webp",
         "width": 1080,
         "height": 1440,
         "caption": "招聘展板 · 会场成列展示",
@@ -849,14 +855,14 @@
         "width": 948,
         "height": 1760,
         "caption": "倒计时海报 · 活动宣传延展",
-        "mobilePreview": "assets/optimized/work-21-countdown-clean-thumb.jpg",
+        "mobilePreview": "assets/mobile-v3/0383a59756b168.webp",
         "preview": "assets/preview/detail-work-21-countdown-clean.webp",
         "layout": "xian-portrait"
       },
       {
         "src": "assets/xian-case/production.webp",
         "preview": "assets/xian-case/production.webp",
-        "mobilePreview": "assets/xian-case/production-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/6d3fa5d2e0f110.webp",
         "width": 1200,
         "height": 1600,
         "caption": "现场工作记录 · 设计文件与会场物料",
@@ -914,7 +920,7 @@
       {
         "src": "assets/book-covers/book-1.webp",
         "preview": "assets/book-covers/book-1.webp",
-        "mobilePreview": "assets/book-covers/book-1-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/4e1830019e8af4.webp",
         "width": 1536,
         "height": 1024,
         "caption": "书法教育 · 青蓝卷轴封面",
@@ -923,7 +929,7 @@
       {
         "src": "assets/book-covers/book-2.webp",
         "preview": "assets/book-covers/book-2.webp",
-        "mobilePreview": "assets/book-covers/book-2-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/d5db5c1d57e706.webp",
         "width": 1536,
         "height": 1024,
         "caption": "书法教育 · 竹影留白封面",
@@ -932,7 +938,7 @@
       {
         "src": "assets/book-covers/book-3.webp",
         "preview": "assets/book-covers/book-3.webp",
-        "mobilePreview": "assets/book-covers/book-3-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/43c6a20e50364f.webp",
         "width": 1536,
         "height": 1024,
         "caption": "书法教育 · 书法肌理封面",
@@ -941,7 +947,7 @@
       {
         "src": "assets/book-covers/book-4.webp",
         "preview": "assets/book-covers/book-4.webp",
-        "mobilePreview": "assets/book-covers/book-4-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/397c6a7339827f.webp",
         "width": 1536,
         "height": 1024,
         "caption": "似水流年 · 封面、书脊与封底",
@@ -950,7 +956,7 @@
       {
         "src": "assets/book-covers/book-5.webp",
         "preview": "assets/book-covers/book-5.webp",
-        "mobilePreview": "assets/book-covers/book-5-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/8e91f9e51ecac0.webp",
         "width": 1536,
         "height": 1024,
         "caption": "商业计划书 · 几何线条封面",
@@ -997,7 +1003,7 @@
       {
         "src": "assets/live-overlays/design-1.webp",
         "preview": "assets/live-overlays/design-1.webp",
-        "mobilePreview": "assets/live-overlays/design-1-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/38dec35a9f4d98.webp",
         "width": 1536,
         "height": 1024,
         "caption": "直播间整体应用 · 手机界面与场景效果",
@@ -1006,7 +1012,7 @@
       {
         "src": "assets/live-overlays/design-2.webp",
         "preview": "assets/live-overlays/design-2.webp",
-        "mobilePreview": "assets/live-overlays/design-2-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/62ea10ebf29aa7.webp",
         "width": 1536,
         "height": 1024,
         "caption": "桌面推流场景 · 标题与课程权益贴片",
@@ -1015,7 +1021,7 @@
       {
         "src": "assets/live-overlays/design-3.webp",
         "preview": "assets/live-overlays/design-3.webp",
-        "mobilePreview": "assets/live-overlays/design-3-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/cbb37fc02c24ab.webp",
         "width": 1536,
         "height": 1024,
         "caption": "左右信息贴片 · 手机应用与细节",
@@ -1024,7 +1030,7 @@
       {
         "src": "assets/live-overlays/system-board-v2.webp",
         "preview": "assets/live-overlays/system-board-v2.webp",
-        "mobilePreview": "assets/live-overlays/system-board-v2-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/a6c089c6ccc902.webp",
         "width": 1536,
         "height": 1024,
         "caption": "贴片系统 · 整体布局、模块拆解与设计理念",
@@ -1064,7 +1070,7 @@
     "assets": [
       {
         "src": "assets/bead-groupbuy/freedom-blue.webp",
-        "mobilePreview": "assets/bead-groupbuy/freedom-blue-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/a1c1f4c52778f4.webp",
         "preview": "assets/bead-groupbuy/freedom-blue.webp",
         "width": 1600,
         "height": 900,
@@ -1073,7 +1079,7 @@
       },
       {
         "src": "assets/bead-groupbuy/freedom-yellow.webp",
-        "mobilePreview": "assets/bead-groupbuy/freedom-yellow-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/50ec293d7edc90.webp",
         "preview": "assets/bead-groupbuy/freedom-yellow.webp",
         "width": 1600,
         "height": 800,
@@ -1082,7 +1088,7 @@
       },
       {
         "src": "assets/bead-groupbuy/materials-blue.webp",
-        "mobilePreview": "assets/bead-groupbuy/materials-blue-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/687ae3d40c7e38.webp",
         "preview": "assets/bead-groupbuy/materials-blue.webp",
         "width": 1600,
         "height": 900,
@@ -1091,7 +1097,7 @@
       },
       {
         "src": "assets/bead-groupbuy/materials-yellow.webp",
-        "mobilePreview": "assets/bead-groupbuy/materials-yellow-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/9ffea20b0a11e6.webp",
         "preview": "assets/bead-groupbuy/materials-yellow.webp",
         "width": 1600,
         "height": 800,
@@ -1100,7 +1106,7 @@
       },
       {
         "src": "assets/bead-groupbuy/experience-blue.webp",
-        "mobilePreview": "assets/bead-groupbuy/experience-blue-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/0ab1acb66c9886.webp",
         "preview": "assets/bead-groupbuy/experience-blue.webp",
         "width": 1600,
         "height": 900,
@@ -1109,7 +1115,7 @@
       },
       {
         "src": "assets/bead-groupbuy/experience-yellow.webp",
-        "mobilePreview": "assets/bead-groupbuy/experience-yellow-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/71319c7e633102.webp",
         "preview": "assets/bead-groupbuy/experience-yellow.webp",
         "width": 1600,
         "height": 900,
@@ -1118,7 +1124,7 @@
       },
       {
         "src": "assets/bead-groupbuy/capacity-blue.webp",
-        "mobilePreview": "assets/bead-groupbuy/capacity-blue-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/634ff94818153e.webp",
         "preview": "assets/bead-groupbuy/capacity-blue.webp",
         "width": 1600,
         "height": 410,
@@ -1127,7 +1133,7 @@
       },
       {
         "src": "assets/bead-groupbuy/capacity-yellow.webp",
-        "mobilePreview": "assets/bead-groupbuy/capacity-yellow-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/2719c1b002628a.webp",
         "preview": "assets/bead-groupbuy/capacity-yellow.webp",
         "width": 1600,
         "height": 311,
@@ -1136,7 +1142,7 @@
       },
       {
         "src": "assets/bead-groupbuy/service-banner.webp",
-        "mobilePreview": "assets/bead-groupbuy/service-banner-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/0fb0a9a325e534.webp",
         "preview": "assets/bead-groupbuy/service-banner.webp",
         "width": 1600,
         "height": 230,
@@ -1188,7 +1194,7 @@
       {
         "src": "assets/privacy-20261027/art-73.webp",
         "preview": "assets/privacy-20261027/art-73.webp",
-        "mobilePreview": "assets/privacy-20261027/art-73-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/9d74eb2349092b.webp",
         "width": 1536,
         "height": 1024,
         "caption": "35周年庆 · 活动主视觉",
@@ -1197,7 +1203,7 @@
       {
         "src": "assets/privacy-20261027/art-74.webp",
         "preview": "assets/privacy-20261027/art-74.webp",
-        "mobilePreview": "assets/privacy-20261027/art-74-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/4772520ad8994d.webp",
         "width": 1536,
         "height": 1024,
         "caption": "第一波福利 · 到店礼品",
@@ -1206,7 +1212,7 @@
       {
         "src": "assets/privacy-20261027/art-75.webp",
         "preview": "assets/privacy-20261027/art-75.webp",
-        "mobilePreview": "assets/privacy-20261027/art-75-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/cc22efc58512c8.webp",
         "width": 1536,
         "height": 1024,
         "caption": "第二波福利 · 手链佩戴展示",
@@ -1215,7 +1221,7 @@
       {
         "src": "assets/privacy-20261027/art-76.webp",
         "preview": "assets/privacy-20261027/art-76.webp",
-        "mobilePreview": "assets/privacy-20261027/art-76-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/39b75e81688517.webp",
         "width": 1536,
         "height": 1024,
         "caption": "第二波福利 · 手链产品展示",
@@ -1224,7 +1230,7 @@
       {
         "src": "assets/privacy-20261027/art-77.webp",
         "preview": "assets/privacy-20261027/art-77.webp",
-        "mobilePreview": "assets/privacy-20261027/art-77-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/ada24ed4cff561.webp",
         "width": 1536,
         "height": 1024,
         "caption": "第三波福利 · 精修与摆台",
@@ -1233,7 +1239,7 @@
       {
         "src": "assets/anniversary-case/poster-06.webp",
         "preview": "assets/anniversary-case/poster-06.webp",
-        "mobilePreview": "assets/anniversary-case/poster-06-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/1e582626baae25.webp",
         "width": 1536,
         "height": 1024,
         "caption": "周年庆 · 综合优惠活动",
@@ -1242,7 +1248,7 @@
       {
         "src": "assets/privacy-20261027/art-79.webp",
         "preview": "assets/privacy-20261027/art-79.webp",
-        "mobilePreview": "assets/privacy-20261027/art-79-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/ab89cee90b2e97.webp",
         "width": 1536,
         "height": 1024,
         "caption": "299元 · 专属福利套餐",
@@ -1291,7 +1297,7 @@
       {
         "src": "assets/privacy-20261027/art-82.webp",
         "preview": "assets/privacy-20261027/art-82.webp",
-        "mobilePreview": "assets/privacy-20261027/art-82-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/bd67dbde850de3.webp",
         "width": 1536,
         "height": 1024,
         "caption": "室内服务信息与安全提示 · 应用效果图",
@@ -1300,7 +1306,7 @@
       {
         "src": "assets/service-packaging/service-02.webp",
         "preview": "assets/service-packaging/service-02.webp",
-        "mobilePreview": "assets/service-packaging/service-02-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/cd96a472c429e8.webp",
         "width": 1536,
         "height": 1024,
         "caption": "匝道安全警示 · 应用效果图",
@@ -1309,7 +1315,7 @@
       {
         "src": "assets/service-packaging/service-03.webp",
         "preview": "assets/service-packaging/service-03.webp",
-        "mobilePreview": "assets/service-packaging/service-03-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/da1f0bdeb1076a.webp",
         "width": 1536,
         "height": 1024,
         "caption": "停车场限速与安全提示 · 应用效果图",
@@ -1318,7 +1324,7 @@
       {
         "src": "assets/service-packaging/service-04.webp",
         "preview": "assets/service-packaging/service-04.webp",
-        "mobilePreview": "assets/service-packaging/service-04-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/c28993a7ff5ab7.webp",
         "width": 1536,
         "height": 1024,
         "caption": "公共设施门牌与温馨提示 · 应用效果图",
@@ -1327,7 +1333,7 @@
       {
         "src": "assets/service-packaging/service-05.webp",
         "preview": "assets/service-packaging/service-05.webp",
-        "mobilePreview": "assets/service-packaging/service-05-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/c90636701e27d8.webp",
         "width": 1536,
         "height": 1024,
         "caption": "停车场分流导视 · 应用效果图",
@@ -1336,7 +1342,7 @@
       {
         "src": "assets/service-packaging/service-06.webp",
         "preview": "assets/service-packaging/service-06.webp",
-        "mobilePreview": "assets/service-packaging/service-06-mobile.webp",
+        "mobilePreview": "assets/mobile-v3/3b9e7dcc38fc8d.webp",
         "width": 1536,
         "height": 1024,
         "caption": "服务区车流提醒 · 应用效果图",
@@ -1383,7 +1389,7 @@
         "width": 1264,
         "height": 2048,
         "caption": "开业倒计时 · 2 天",
-        "mobilePreview": "assets/optimized/work-11-thumb.jpg",
+        "mobilePreview": "assets/mobile-v3/dd3fe38f77b784.webp",
         "preview": "assets/optimized/work-11-screen.jpg"
       },
       {
@@ -1391,7 +1397,7 @@
         "width": 1264,
         "height": 2048,
         "caption": "开业倒计时 · 1 天",
-        "mobilePreview": "assets/optimized/work-16-thumb.jpg",
+        "mobilePreview": "assets/mobile-v3/45aa799a9e8970.webp",
         "preview": "assets/optimized/work-16-screen.jpg"
       }
     ],
@@ -1417,7 +1423,7 @@
         "width": 1447,
         "height": 2048,
         "caption": "绿色家装主题海报",
-        "mobilePreview": "assets/optimized/work-13-thumb.jpg",
+        "mobilePreview": "assets/mobile-v3/76f13bf45ea752.webp",
         "preview": "assets/optimized/work-13-screen.jpg"
       }
     ],
