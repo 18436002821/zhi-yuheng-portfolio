@@ -1253,11 +1253,20 @@
         "height": 1024,
         "caption": "299元 · 专属福利套餐",
         "layout": "bao-pair"
+      },
+      {
+        "src": "assets/commercial-cases/design-1.webp",
+        "preview": "assets/commercial-cases/design-1.webp",
+        "mobilePreview": "assets/commercial-cases/design-1-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "周年庆打卡装置 · 异形立牌应用效果",
+        "layout": "bao-wide"
       }
     ],
     "pending": "制作时间、具体分工、使用工具与制作流程待补充。",
     "presentation": "identity-case",
-    "overview": "7 张周年庆系列样机 / 主视觉、三波福利、综合优惠与专属套餐。",
+    "overview": "8 张周年庆系列样机 / 主视觉、系列福利、套餐与打卡装置。",
     "sections": [
       {
         "index": 0,
@@ -1273,6 +1282,11 @@
         "index": 5,
         "title": "03 / 优惠活动 · 综合信息与套餐",
         "description": "用编号分区和醒目价格整理优惠内容，区分活动总览与专属套餐。"
+      },
+      {
+        "index": 7,
+        "title": "04 / 空间延展 · 周年庆打卡装置",
+        "description": "以爱心、相机与箭头串联周年庆主题，将粉色视觉延展至门店打卡点。展示为应用效果示意。"
       }
     ],
     "summary": "以统一的庆典视觉串联主海报、系列福利与套餐内容，再通过标题、价格数字和图片分区突出每张物料的传播重点。"
@@ -1370,27 +1384,102 @@
     "pending": "项目时间、具体分工与实施状态待补充。"
   },
   {
-    "id": "restaurant",
-    "title": "蜀渝里 · 新店倒计时",
-    "category": "平面设计 / 系列海报",
+    "id": "commercial-applications",
+    "title": "商业活动 · 海报与空间物料合集",
+    "category": "平面设计 / 活动物料与空间应用",
     "tags": [
       "visual"
     ],
-    "bg": "#28231f",
-    "intro": "以深色场景、菜品图片与红色立体数字构建开业倒计时。两张同系列作品合并展示，突出数字焦点与统一的画面节奏。",
+    "bg": "#f3e6d5",
+    "intro": "围绕活动庆典、适老宣传、餐饮推广与文化空间，整合舞台背景、横幅、地贴、灯箱海报和易拉宝等不同载体。以场景效果图展示视觉在空间中的比例与阅读方式，并保留蜀渝里和家装海报原平面稿作对照。场景图片均为应用效果示意。",
     "focus": [
-      "商业合成",
-      "倒计时系列",
-      "对比与层次"
+      "商业海报",
+      "空间物料",
+      "信息层级"
     ],
+    "presentation": "identity-case",
+    "overview": "14 张作品 / 11 张新增应用效果图 + 3 张原平面稿。",
     "assets": [
+      {
+        "src": "assets/commercial-cases/design-2.webp",
+        "preview": "assets/commercial-cases/design-2.webp",
+        "mobilePreview": "assets/commercial-cases/design-2-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "慈善晚会 · 舞台背景应用效果",
+        "layout": "bao-wide"
+      },
+      {
+        "src": "assets/commercial-cases/design-9.webp",
+        "preview": "assets/commercial-cases/design-9.webp",
+        "mobilePreview": "assets/commercial-cases/design-9-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "新春主题 · 前台横幅应用效果",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/commercial-cases/design-11.webp",
+        "preview": "assets/commercial-cases/design-11.webp",
+        "mobilePreview": "assets/commercial-cases/design-11-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "新春主题 · 地贴应用效果",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/commercial-cases/design-6.webp",
+        "preview": "assets/commercial-cases/design-6.webp",
+        "mobilePreview": "assets/commercial-cases/design-6-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "稽山文化 · 空间长幅应用效果",
+        "layout": "bao-wide"
+      },
+      {
+        "src": "assets/commercial-cases/design-8.webp",
+        "preview": "assets/commercial-cases/design-8.webp",
+        "mobilePreview": "assets/commercial-cases/design-8-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "适老化焕新 · 横版宣传应用效果",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/commercial-cases/design-4.webp",
+        "preview": "assets/commercial-cases/design-4.webp",
+        "mobilePreview": "assets/commercial-cases/design-4-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "适老化焕新 · 易拉宝应用效果",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/commercial-cases/design-3.webp",
+        "preview": "assets/commercial-cases/design-3.webp",
+        "mobilePreview": "assets/commercial-cases/design-3-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "蜀渝里 · 开业倒计时2天应用效果",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/commercial-cases/design-10.webp",
+        "preview": "assets/commercial-cases/design-10.webp",
+        "mobilePreview": "assets/commercial-cases/design-10-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "蜀渝里 · 开业倒计时1天应用效果",
+        "layout": "bao-pair"
+      },
       {
         "src": "assets/works/work-11.jpg",
         "width": 1264,
         "height": 2048,
         "caption": "开业倒计时 · 2 天",
         "mobilePreview": "assets/mobile-v3/dd3fe38f77b784.webp",
-        "preview": "assets/optimized/work-11-screen.jpg"
+        "preview": "assets/optimized/work-11-screen.jpg",
+        "layout": "bao-pair"
       },
       {
         "src": "assets/works/work-16.jpg",
@@ -1398,36 +1487,69 @@
         "height": 2048,
         "caption": "开业倒计时 · 1 天",
         "mobilePreview": "assets/mobile-v3/45aa799a9e8970.webp",
-        "preview": "assets/optimized/work-16-screen.jpg"
-      }
-    ],
-    "pending": "制作时间、具体分工、使用工具与制作流程待补充。"
-  },
-  {
-    "id": "interior",
-    "title": "吾人设计 · 绿色家装宣传",
-    "category": "平面设计",
-    "tags": [
-      "visual"
-    ],
-    "bg": "#e5eee3",
-    "intro": "以浅绿色、植物元素、拱形空间图片和家具画面建立家装主题氛围，呈现清新配色与空间类商业海报的视觉组织。",
-    "focus": [
-      "商业海报",
-      "空间图像合成",
-      "色彩氛围"
-    ],
-    "assets": [
+        "preview": "assets/optimized/work-16-screen.jpg",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/commercial-cases/design-5.webp",
+        "preview": "assets/commercial-cases/design-5.webp",
+        "mobilePreview": "assets/commercial-cases/design-5-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "萌小旋 · 餐饮产品海报应用效果",
+        "layout": "bao-wide"
+      },
+      {
+        "src": "assets/commercial-cases/design-7.webp",
+        "preview": "assets/commercial-cases/design-7.webp",
+        "mobilePreview": "assets/commercial-cases/design-7-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "吾人设计 · 家装海报应用效果",
+        "layout": "bao-pair"
+      },
       {
         "src": "assets/works/work-13.jpg",
         "width": 1447,
         "height": 2048,
         "caption": "绿色家装主题海报",
         "mobilePreview": "assets/mobile-v3/76f13bf45ea752.webp",
-        "preview": "assets/optimized/work-13-screen.jpg"
+        "preview": "assets/optimized/work-13-screen.jpg",
+        "layout": "bao-pair"
+      },
+      {
+        "src": "assets/commercial-cases/design-12.webp",
+        "preview": "assets/commercial-cases/design-12.webp",
+        "mobilePreview": "assets/commercial-cases/design-12-mobile.webp",
+        "width": 1536,
+        "height": 1024,
+        "caption": "Maniac街舞社 · 活动曲目易拉宝应用效果",
+        "layout": "bao-wide"
       }
     ],
-    "pending": "制作时间、具体分工、使用工具与制作流程待补充。"
+    "sections": [
+      {
+        "index": 0,
+        "title": "01 / 庆典与文化 · 横向空间视觉",
+        "description": "用醒目主题、色彩与横向构图，组织舞台背景、节庆横幅、地贴和文化长幅在不同尺度下的视觉重点。"
+      },
+      {
+        "index": 4,
+        "title": "02 / 适老宣传 · 横竖版延展",
+        "description": "围绕橙色主题、产品与人物形象，在横版展板和竖版易拉宝间保持一致的标题与信息层级。"
+      },
+      {
+        "index": 6,
+        "title": "03 / 餐饮推广 · 倒计时与产品展示",
+        "description": "将倒计时系列平面稿与门店灯箱应用对应展示，结合产品海报呈现餐饮主题的图像合成与视觉焦点。"
+      },
+      {
+        "index": 11,
+        "title": "04 / 家装与社团 · 海报与易拉宝",
+        "description": "以家装海报平面稿和应用效果形成对照，并展示街舞社活动长信息的分栏编排。"
+      }
+    ],
+    "summary": "结合观看距离和载体比例调整标题、图像与信息密度，让同一视觉主题适配不同空间。通过平面稿和应用效果的对应展示，呈现从画面组织到使用场景的设计思考。"
   },
   {
     "id": "ai-campus-short",
