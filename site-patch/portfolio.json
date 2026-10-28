@@ -1391,14 +1391,14 @@
       "visual"
     ],
     "bg": "#f3e6d5",
-    "intro": "围绕活动庆典、适老宣传、餐饮推广与文化空间，整合舞台背景、横幅、地贴、灯箱海报和易拉宝等不同载体。以场景效果图展示视觉在空间中的比例与阅读方式，并保留蜀渝里和家装海报原平面稿作对照。场景图片均为应用效果示意。",
+    "intro": "围绕活动庆典、适老宣传、餐饮推广与文化空间，整合舞台背景、横幅、地贴、灯箱海报和易拉宝等不同载体，以场景效果图展示视觉在空间中的比例与阅读方式。场景图片均为应用效果示意。",
     "focus": [
       "商业海报",
       "空间物料",
       "信息层级"
     ],
     "presentation": "identity-case",
-    "overview": "14 张作品 / 11 张新增应用效果图 + 3 张原平面稿。",
+    "overview": "11 张作品 / 活动庆典、适老宣传、餐饮推广与空间展示应用效果。",
     "assets": [
       {
         "src": "assets/commercial-cases/design-2.webp",
@@ -1473,24 +1473,6 @@
         "layout": "bao-pair"
       },
       {
-        "src": "assets/works/work-11.jpg",
-        "width": 1264,
-        "height": 2048,
-        "caption": "开业倒计时 · 2 天",
-        "mobilePreview": "assets/mobile-v3/dd3fe38f77b784.webp",
-        "preview": "assets/optimized/work-11-screen.jpg",
-        "layout": "bao-pair"
-      },
-      {
-        "src": "assets/works/work-16.jpg",
-        "width": 1264,
-        "height": 2048,
-        "caption": "开业倒计时 · 1 天",
-        "mobilePreview": "assets/mobile-v3/45aa799a9e8970.webp",
-        "preview": "assets/optimized/work-16-screen.jpg",
-        "layout": "bao-pair"
-      },
-      {
         "src": "assets/commercial-cases/design-5.webp",
         "preview": "assets/commercial-cases/design-5.webp",
         "mobilePreview": "assets/commercial-cases/design-5-mobile.webp",
@@ -1506,15 +1488,6 @@
         "width": 1536,
         "height": 1024,
         "caption": "吾人设计 · 家装海报应用效果",
-        "layout": "bao-pair"
-      },
-      {
-        "src": "assets/works/work-13.jpg",
-        "width": 1447,
-        "height": 2048,
-        "caption": "绿色家装主题海报",
-        "mobilePreview": "assets/mobile-v3/76f13bf45ea752.webp",
-        "preview": "assets/optimized/work-13-screen.jpg",
         "layout": "bao-pair"
       },
       {
@@ -1541,15 +1514,15 @@
       {
         "index": 6,
         "title": "03 / 餐饮推广 · 倒计时与产品展示",
-        "description": "将倒计时系列平面稿与门店灯箱应用对应展示，结合产品海报呈现餐饮主题的图像合成与视觉焦点。"
+        "description": "通过开业倒计时系列灯箱与餐饮产品海报，呈现图像合成、系列一致性与门店场景中的视觉焦点。"
       },
       {
-        "index": 11,
+        "index": 9,
         "title": "04 / 家装与社团 · 海报与易拉宝",
-        "description": "以家装海报平面稿和应用效果形成对照，并展示街舞社活动长信息的分栏编排。"
+        "description": "以家装海报的空间应用展示绿色主题视觉，并通过街舞社活动易拉宝呈现长信息的分栏编排。"
       }
     ],
-    "summary": "结合观看距离和载体比例调整标题、图像与信息密度，让同一视觉主题适配不同空间。通过平面稿和应用效果的对应展示，呈现从画面组织到使用场景的设计思考。"
+    "summary": "结合观看距离和载体比例调整标题、图像与信息密度，让同一视觉主题适配不同空间，呈现从画面组织到使用场景的设计思考。"
   },
   {
     "id": "ai-campus-short",
