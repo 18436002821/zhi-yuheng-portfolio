@@ -36,7 +36,7 @@ function decodeModelImage(value) {
     throw new Error("AI 模型没有返回图片数据");
   }
 
-  const clean = value.replace(/^data:image\\/[^;]+;base64,/i, "").replace(/\\s/g, "");
+  const clean = value.replace(/^data:image\/[^;]+;base64,/i, "").replace(/\s/g, "");
   let binary;
   try {
     binary = atob(clean);
@@ -77,7 +77,7 @@ export default {
   async fetch(request, env) {
     const origin = request.headers.get("Origin") || "";
     const url = new URL(request.url);
-    const path = url.pathname.replace(/\\/+$/, "") || "/";
+    const path = url.pathname.replace(/\/+$/, "") || "/";
 
     if (request.method === "OPTIONS") {
       if (!ALLOWED_ORIGINS.has(origin)) return new Response(null, { status: 403 });
