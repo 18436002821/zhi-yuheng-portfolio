@@ -155,7 +155,15 @@ export default {
         if (action === "status" && request.method === "GET") {
           const stage = url.searchParams.get("stage") === "export" ? "export" : "edit";
           const suffix = stage === "export" ? "/export/status" : "/edit/status";
-          const payload = await imagen(env, "/projects/" + encodeURIComponent(projectUuid) + suffix, { method: "GET" });
+          let payload;
+          try {
+            payload = await imagen(env, "/projects/" + encodeURIComponent(projectUuid) + suffix, { method: "GET" });
+          } catch (error) {
+            if (stage === "export" && String(error && error.message || error).match(/Imagen API (400|404)/)) {
+              return json({ status: "Pending" }, 200, origin);
+            }
+            throw error;
+          }
           return json({ status: statusValue(payload), raw: payload }, 200, origin);
         }
 
