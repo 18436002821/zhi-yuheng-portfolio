@@ -129,6 +129,21 @@
  .compare input[type=range]{bottom:8px;left:5%;width:90%}
 }
 
+
+/* Dynamic comparison labels and a genuinely draggable center handle */
+.compare-label[hidden]{display:none!important}
+.compare-label{z-index:5;max-width:calc(100% - 28px);white-space:nowrap}
+.compare-divider{z-index:7}
+.compare-divider span{
+ pointer-events:auto!important;
+ cursor:ew-resize!important;
+ touch-action:none;
+ user-select:none;
+ -webkit-user-select:none;
+}
+.compare-divider span:active{cursor:grabbing!important;transform:translate(-50%,-50%) scale(1.06)}
+.compare{cursor:ew-resize}
+
 </style></head>
 <body><div class="app">
 <header class="topbar"><div class="brand"><img class="brand-logo" src="./assets/juxin-logo.svg" alt="居信地产 JUXIN ESTATE"><span class="brand-divider"></span><div>房源 AI 精修工作台<small>REAL ESTATE PHOTO STUDIO</small></div></div><div class="topright"><span><i class="statusdot"></i>本地处理模式</span><span>无需上传云端 · 原图保留</span></div></header>
@@ -136,7 +151,7 @@
 <div class="layout"><div class="maincol">
 <section class="panel upload" id="dropzone"><div class="upload-left"><div class="upload-icon">＋</div><div><h3>导入房源照片</h3><p>支持 JPG、PNG、WEBP，可一次选择多张照片</p></div></div><label class="btn btn-primary" for="fileInput">选择照片</label><input id="fileInput" type="file" accept="image/*" multiple></section>
 <section class="panel gallery"><div class="section-head"><h2>照片队列</h2><span id="countText">0 张照片</span></div><div class="empty" id="empty"><div class="big">▧</div><strong>工作区还是空的</strong><p>把房源照片拖到这里，或点击上方「选择照片」开始精修。</p></div><div class="thumbgrid" id="thumbgrid"></div></section>
-<section class="panel preview" id="preview"><div class="section-head"><h2>单张精修预览</h2><span id="previewState">先选择照片，再查看精修效果</span></div><div class="preview-body"><div class="compare" id="compare"><img id="compareBefore"><div class="after" id="afterWrap"><img id="compareAfter"></div><div class="compare-divider" id="compareDivider" aria-hidden="true"><span>↔</span></div><span class="compare-label before">原图</span><span class="compare-label afterlabel">精修后</span><input id="compareRange" type="range" min="0" max="100" value="50" aria-label="对比滑块"></div><p class="compare-help">拖动滑块查看原图与精修效果 · 图片按原始比例完整显示</p></div></section>
+<section class="panel preview" id="preview"><div class="section-head"><h2>单张精修预览</h2><span id="previewState">先选择照片，再查看精修效果</span></div><div class="preview-body"><div class="compare" id="compare"><img id="compareBefore"><div class="after" id="afterWrap"><img id="compareAfter"></div><div class="compare-divider" id="compareDivider" aria-hidden="true"><span>↔</span></div><span class="compare-label before" id="originalLabel">原图 · 精修前</span><span class="compare-label afterlabel" id="retouchedLabel">精修后</span><input id="compareRange" type="range" min="0" max="100" value="50" aria-label="对比滑块"></div><p class="compare-help">拖动滑块查看原图与精修效果 · 图片按原始比例完整显示</p></div></section>
 </div><aside class="sidebar">
 <section class="panel sidepanel"><h3 class="side-title">房源项目 <small>同一套房源统一管理</small></h3><div class="project-field"><label for="projectName">项目名称</label><input id="projectName" type="text" value="房源照片" maxlength="32" placeholder="例如：虹口区·两室一厅"></div><div class="workflow-chip">✦ 场景辅助判断 · 专业校色 · 统一风格</div><div class="toggle-row"><span>全组统一色调</span><input class="switch" id="syncStyle" type="checkbox" checked></div><div class="toggle-row"><span>逐张自动曝光校正</span><input class="switch" id="perPhotoAuto" type="checkbox" checked></div></section>
 <section class="panel sidepanel"><h3 class="side-title">精修风格 <small>选择统一色调</small></h3><div class="preset-list" id="presets"><button class="preset active" data-preset="natural"><div class="swatch"><i></i><i></i><i></i></div><b>自然真实</b><span>接近实景 · 清透耐看</span></button><button class="preset" data-preset="warm"><div class="swatch"><i style="background:#e8d5b5"></i><i style="background:#c6a477"></i><i style="background:#92765b"></i></div><b>奶油暖调</b><span>柔和温暖 · 木色更自然</span></button><button class="preset" data-preset="gray"><div class="swatch"><i style="background:#e4e5e4"></i><i style="background:#aeb4b7"></i><i style="background:#656b70"></i></div><b>高级灰白</b><span>中性克制 · 干净通透</span></button><button class="preset" data-preset="bright"><div class="swatch"><i style="background:#f4f3ed"></i><i style="background:#d8d8d2"></i><i style="background:#a6aaa5"></i></div><b>明亮通透</b><span>提亮空间 · 保留细节</span></button></div>
@@ -177,22 +192,33 @@ function setComparePosition(value){
  $('afterWrap').style.clipPath='inset(0 0 0 '+pct+'%)';
  $('compareDivider').style.left=pct+'%';
  $('compareRange').value=pct;
+ // Keep the label on the side that currently occupies most of the preview.
+ const balanced=pct>=45&&pct<=55;
+ $('originalLabel').hidden=!(pct>55||balanced);
+ $('retouchedLabel').hidden=!(pct<45||balanced);
 }
 $('compareRange').addEventListener('input',e=>setComparePosition(e.target.value));
 let compareDragging=false;
-$('compare').addEventListener('pointerdown',e=>{
+const compareStage=$('compare');
+function moveCompareFromPointer(e){
+ const rect=compareStage.getBoundingClientRect();
+ if(!rect.width)return;
+ setComparePosition((e.clientX-rect.left)/rect.width*100);
+}
+compareStage.addEventListener('pointerdown',e=>{
  if(e.target===$('compareRange'))return;
+ // The center handle is an active drag target too; pointer capture keeps
+ // the divider following the mouse even when the pointer leaves the handle.
  compareDragging=true;
- $('compare').setPointerCapture(e.pointerId);
- const rect=$('compare').getBoundingClientRect();
- setComparePosition((e.clientX-rect.left)/rect.width*100);
+ try{compareStage.setPointerCapture(e.pointerId)}catch(_){}
+ e.preventDefault();
+ moveCompareFromPointer(e);
 });
-$('compare').addEventListener('pointermove',e=>{
+compareStage.addEventListener('pointermove',e=>{
  if(!compareDragging)return;
- const rect=$('compare').getBoundingClientRect();
- setComparePosition((e.clientX-rect.left)/rect.width*100);
+ moveCompareFromPointer(e);
 });
-['pointerup','pointercancel','lostpointercapture'].forEach(name=>$('compare').addEventListener(name,()=>compareDragging=false));
+['pointerup','pointercancel','lostpointercapture'].forEach(name=>compareStage.addEventListener(name,()=>compareDragging=false));
 window.addEventListener('resize',()=>{const it=items.find(x=>x.id===selectedId);if(it)fitCompare(it)});
 function processImage(it,autoMode){return new Promise((resolve,reject)=>{const img=new Image();img.onload=()=>{try{
  const c=document.createElement('canvas'),ctx=c.getContext('2d',{willReadFrequently:true});c.width=img.naturalWidth;c.height=img.naturalHeight;ctx.drawImage(img,0,0);
