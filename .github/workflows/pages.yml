@@ -28,7 +28,12 @@ jobs:
         run: |
           mkdir -p _site
           unzip -q zhi-portfolio-pages.zip -d _site
-          if [ -d site-patch ]; then cp -a site-patch/. _site/; fi
+          if [ -d site-patch ]; then
+            cp -a site-patch/. _site/
+            # Keep the original patch-folder URL working as an alias too.
+            mkdir -p _site/site-patch/real-estate-ai-studio
+            cp -a site-patch/real-estate-ai-studio/. _site/site-patch/real-estate-ai-studio/
+          fi
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload site artifact
