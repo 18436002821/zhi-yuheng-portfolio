@@ -1,45 +1,61 @@
-# 居信地产 AI 精修后端（Imagen AI）
+# 居信地产 AI 精修后端（Cloudflare Workers AI）
 
-这个 Worker 为 GitHub Pages 前端提供安全的服务端代理。Imagen API Key 只保存在 Cloudflare Worker Secret 中，不会进入网页代码。
+本后端把 GitHub Pages 工作台连接到真正的图生图模型 **FLUX.2 Klein 4B**。它不是前端曝光/色温滤镜，而是把房源照片作为参考图交给 AI 模型重新处理，再把生成结果返回给浏览器。
 
-## 使用的 AI 引擎
+## 免费额度
 
-- Imagen AI Real Estate API
-- 预设：Natural Home（JPEG profile_key: 333757）
-- 默认工具：窗户曝光优化、室内透视校正
-- 默认关闭：天空替换、HDR 合成（普通单张 JPG 不应误开 HDR）
-- 只处理照片本身，不主动增加家具、装饰或更换空间风格
+- 使用 Cloudflare Workers AI 的免费额度：每天 10,000 Neurons。
+- 在 **Workers Free** 方案下，达到免费额度后请求会失败并等待额度重置，不会自动按超额用量收费。
+- 不要把 Worker 升级到 Workers Paid；付费方案超出免费额度后会按 Neurons 计费。
+- 免费额度、模型单价和可用性可能调整，请以 Cloudflare 账户中的最新显示为准。
+- FLUX.2 Klein 4B 当前按输入/输出图像分块计费：输入每个 512×512 tile 为 5.37 Neurons，输出每个 512×512 tile 为 26.05 Neurons。
 
-Imagen 按处理照片数量计费；官方文档说明新用户可先试用。实际免费额度和后续单张价格以账号内显示为准：
-https://api-docs.imagen-ai.com/docs/guides/real-estate
+官方说明：
+- 模型：https://developers.cloudflare.com/workers-ai/models/flux-2-klein-4b/
+- 免费额度与价格：https://developers.cloudflare.com/workers-ai/platform/pricing/
+- 数据使用说明：https://developers.cloudflare.com/workers-ai/platform/data-usage/
 
-## 部署
+## 部署前准备
 
-1. 在 Imagen 账号后台创建 API Key：https://account.imagen-ai.com/dashboard/
-2. 安装 Node.js 后，在本目录执行：
+1. 注册或登录 Cloudflare 免费账号：https://dash.cloudflare.com/
+2. 电脑安装 Node.js：https://nodejs.org/
+3. 打开终端，进入本目录：
+   `cd site-patch/real-estate-ai-studio/cloudflare-worker`
+4. 安装 Wrangler：
    `npm install -g wrangler`
-3. 登录 Cloudflare：
+5. 登录 Cloudflare：
    `npx wrangler login`
-4. 添加两个服务端密钥（不要把密钥写进网页或 GitHub）：
-   `npx wrangler secret put IMAGEN_API_KEY`
+6. 设置工作台访问码（自己生成一段较长、难猜的随机字符串；不要把它写入 GitHub）：
    `npx wrangler secret put STUDIO_ACCESS_TOKEN`
-   第二个访问码请自行设置为一段不易猜测的随机字符串。
-5. 部署：
+7. 部署 Worker：
    `npx wrangler deploy`
-6. 复制 Wrangler 输出的 Worker 地址，例如 `https://juxin-real-estate-ai.<你的账户>.workers.dev`
-7. 打开居信地产 AI 精修工作台，在「AI 引擎连接」中填入 Worker 地址和刚才设置的工作台访问码，点击「测试连接」。
 
-## API 路由
+部署成功后，终端会显示 Worker 地址，例如：
+`https://juxin-real-estate-ai.<你的Cloudflare子域>.workers.dev`
 
-- `GET /api/health`：验证服务端 Imagen API Key
-- `POST /api/retouch`：上传一组照片并启动 Natural Home 房产精修
-- `GET /api/projects/:uuid/status?stage=edit|export`：查询处理状态
-- `GET /api/projects/:uuid/download-links`：查询导出文件
-- `GET /api/projects/:uuid/download?file=...`：通过 Worker 代理下载 JPEG
+## 连接网页
 
-## 限制与说明
+1. 打开居信地产 AI 精修工作台：
+   https://18436002821.github.io/zhi-yuheng-portfolio/real-estate-ai-studio/
+2. 导入房源照片，点击「AI 一键精修全部照片」。
+3. 首次使用时，按提示输入上一步生成的 Worker 地址和工作台访问码。
+4. 连接信息只保存在当前浏览器本地；需要更换时，点击 AI 说明旁边的「重置 AI 连接」。
 
-- 单批最多 12 张照片；单张最大 18MB；单批总量最大 70MB。
-- 前端会将 PNG / WebP 转成 JPEG；原始上传文件不会被覆盖。
-- 当前 Worker 只允许来自 `https://18436002821.github.io` 的浏览器跨域请求。
-- 这是公司内部工作台，请不要把工作台访问码公开分享。
+## 技术说明
+
+- 模型：`@cf/black-forest-labs/flux-2-klein-4b`
+- 模型能力：图生图编辑；固定 4 步推理；本工作台每次提交 1 张照片，批量时逐张处理。
+- 输入照片在浏览器中缩放到最长边不超过 1920px，再以 JPEG 上传。
+- Worker 不把照片写入 R2、KV 或数据库；处理结果直接返回浏览器。
+- 仅允许来自 `https://18436002821.github.io` 的跨域请求。
+- API 访问码由 Cloudflare Worker Secret 保存，不放进网页源代码。
+- 照片会发送至 Cloudflare Workers AI 进行推理。Cloudflare 表示 Workers AI 客户内容不会提供给其他 Cloudflare 客户，也不会用于训练或改进其 AI 服务，除非获得明确同意。
+
+## 房源照片的重要提醒
+
+模型会尽力保留原始户型、家具、墙体、门窗和视角，但任何生成式图像模型都不能保证像素级不改变现场细节。请务必用原图核对窗景、家具、设备、空间尺寸和房屋实际状况；对外发布房源时，不要用 AI 生成结果掩盖真实瑕疵或误导看房者。
+
+## API
+
+- `GET /api/health`：检查访问码与 Workers AI 绑定。
+- `POST /api/retouch`：接收一张照片，执行 FLUX.2 Klein 4B 图生图精修，返回图片二进制。
