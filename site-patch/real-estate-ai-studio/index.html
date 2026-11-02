@@ -165,6 +165,41 @@
  #progressbox[style*="display: block"]{display:block!important;position:fixed;bottom:calc(66px + env(safe-area-inset-bottom));left:11px;right:11px;z-index:41;background:#fff;padding:7px 9px;border-radius:9px;box-shadow:0 2px 14px rgba(0,0,0,.12);margin:0}
  .foot{display:none}
 }
+
+
+/* Clear, prominent single-photo retouch and export actions */
+.quick-actions{order:3;margin-top:0;padding:18px;border:1px solid #cfe4f1;border-top:4px solid #007AC8;box-shadow:0 10px 28px rgba(0,83,135,.09)}
+.quick-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+.quick-head h2{margin:0;font-size:16px;color:#173247}
+.quick-head p{margin:4px 0 0;color:#71879a;font-size:12px}
+.quick-count{flex:0 0 auto;padding:6px 10px;border-radius:99px;background:#f1f8e4;color:#607c00;font-size:11px;font-weight:700}
+.quick-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.quick-card{min-width:0;padding:14px;border:1px solid #dce8ef;border-radius:12px;background:#f8fbfd}
+.quick-process{background:linear-gradient(145deg,#f2f9fe,#fff);border-color:#b9dcef}
+.quick-download{background:linear-gradient(145deg,#f7faed,#fff);border-color:#dce9b9}
+.quick-card-head{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.quick-icon{display:grid;place-items:center;flex:0 0 38px;width:38px;height:38px;border-radius:11px;background:#007AC8;color:#fff;font-size:20px;font-weight:700}
+.quick-download .quick-icon{background:#A7CC03;color:#173247}
+.quick-card-head strong{display:block;color:#173247;font-size:14px}
+.quick-card-head small{display:block;margin-top:3px;color:#71879a;font-size:11px;line-height:1.45;overflow-wrap:anywhere}
+.quick-btn{width:100%;min-height:48px;border:0;border-radius:9px;padding:10px 12px;font-size:14px;font-weight:750;letter-spacing:.2px;transition:transform .18s,filter .18s,box-shadow .18s}
+.quick-btn:not(:disabled):active{transform:scale(.985)}
+.process-btn{background:#007AC8;color:#fff;box-shadow:0 5px 14px rgba(0,122,200,.22)}
+.download-btn{background:#A7CC03;color:#173247;box-shadow:0 5px 14px rgba(145,181,0,.2)}
+.quick-btn:disabled{background:#e8edf1;color:#91a0aa;box-shadow:none;cursor:not-allowed}
+@media(max-width:620px){
+ .quick-actions{order:3;width:100%;padding:12px;border-radius:12px}
+ .quick-head{align-items:flex-start;margin-bottom:10px}
+ .quick-head h2{font-size:14px}.quick-head p{font-size:10px;line-height:1.45;max-width:230px}
+ .quick-count{font-size:10px;padding:5px 8px}
+ .quick-grid{grid-template-columns:1fr;gap:9px}
+ .quick-card{padding:10px;border-radius:10px}
+ .quick-card-head{margin-bottom:8px;gap:9px}
+ .quick-icon{width:34px;height:34px;flex-basis:34px;border-radius:9px;font-size:18px}
+ .quick-card-head strong{font-size:13px}.quick-card-head small{font-size:10px}
+ .quick-btn{min-height:46px;font-size:13px}
+ .sidebar{order:4}
+}
 </style></head>
 <body><div class="app">
 <header class="topbar"><div class="brand"><img class="brand-logo" src="./assets/juxin-logo.svg" alt="居信地产 JUXIN ESTATE"><span class="brand-divider"></span><div>房源 AI 精修工作台<small>REAL ESTATE PHOTO STUDIO</small></div></div><div class="topright"><span><i class="statusdot"></i>本地处理模式</span><span>无需上传云端 · 原图保留</span></div></header>
@@ -173,12 +208,28 @@
 <section class="panel upload" id="dropzone"><div class="upload-left"><div class="upload-icon">＋</div><div><h3>导入房源照片</h3><p>支持 JPG、PNG、WEBP，可一次选择多张照片</p></div></div><label class="btn btn-primary" for="fileInput">选择照片</label><input id="fileInput" type="file" accept="image/*" multiple></section>
 <section class="panel gallery"><div class="section-head"><h2>照片队列</h2><span id="countText">0 张照片</span></div><div class="empty" id="empty"><div class="big">▧</div><strong>工作区还是空的</strong><p>把房源照片拖到这里，或点击上方「选择照片」开始精修。</p></div><div class="thumbgrid" id="thumbgrid"></div></section>
 <section class="panel preview" id="preview"><div class="section-head"><h2>单张精修预览</h2><span id="previewState">先选择照片，再查看精修效果</span></div><div class="preview-body"><div class="compare" id="compare"><img id="compareBefore"><div class="after" id="afterWrap"><img id="compareAfter"></div><div class="compare-divider" id="compareDivider" aria-hidden="true"><span>↔</span></div><span class="compare-label before" id="originalLabel">原图 · 精修前</span><span class="compare-label afterlabel" id="retouchedLabel">精修后</span><input id="compareRange" type="range" min="0" max="100" value="50" aria-label="对比滑块"></div><p class="compare-help">拖动滑块查看原图与精修效果 · 图片按原始比例完整显示</p></div></section>
+<section class="panel quick-actions" aria-label="照片操作">
+ <div class="quick-head">
+  <div><h2>照片操作</h2><p>单张精修与成片下载都在这里，处理状态一目了然。</p></div>
+  <span class="quick-count" id="readyCount">0 张已精修</span>
+ </div>
+ <div class="quick-grid">
+  <article class="quick-card quick-process">
+   <div class="quick-card-head"><span class="quick-icon">✦</span><div><strong>精修当前照片</strong><small id="selectedActionHint">先在照片队列中点选一张照片</small></div></div>
+   <button class="quick-btn process-btn" id="processSelectedBtn" disabled>精修当前选中照片</button>
+  </article>
+  <article class="quick-card quick-download">
+   <div class="quick-card-head"><span class="quick-icon">↓</span><div><strong>下载精修照片</strong><small id="downloadActionHint">完成精修后，即可导出高清照片</small></div></div>
+   <button class="quick-btn download-btn" id="downloadAll" disabled>下载全部精修照片</button>
+  </article>
+ </div>
+</section>
 </div><aside class="sidebar">
 <section class="panel sidepanel"><h3 class="side-title">房源项目 <small>同一套房源统一管理</small></h3><div class="project-field"><label for="projectName">项目名称</label><input id="projectName" type="text" value="房源照片" maxlength="32" placeholder="例如：虹口区·两室一厅"></div><div class="workflow-chip">✦ 场景辅助判断 · 专业校色 · 统一风格</div><div class="toggle-row"><span>全组统一色调</span><input class="switch" id="syncStyle" type="checkbox" checked></div><div class="toggle-row"><span>逐张自动曝光校正</span><input class="switch" id="perPhotoAuto" type="checkbox" checked></div></section>
 <section class="panel sidepanel"><h3 class="side-title">精修风格 <small>选择统一色调</small></h3><div class="preset-list" id="presets"><button class="preset active" data-preset="natural"><div class="swatch"><i></i><i></i><i></i></div><b>自然真实</b><span>接近实景 · 清透耐看</span></button><button class="preset" data-preset="warm"><div class="swatch"><i style="background:#e8d5b5"></i><i style="background:#c6a477"></i><i style="background:#92765b"></i></div><b>奶油暖调</b><span>柔和温暖 · 木色更自然</span></button><button class="preset" data-preset="gray"><div class="swatch"><i style="background:#e4e5e4"></i><i style="background:#aeb4b7"></i><i style="background:#656b70"></i></div><b>高级灰白</b><span>中性克制 · 干净通透</span></button><button class="preset" data-preset="bright"><div class="swatch"><i style="background:#f4f3ed"></i><i style="background:#d8d8d2"></i><i style="background:#a6aaa5"></i></div><b>明亮通透</b><span>提亮空间 · 保留细节</span></button></div>
 <div class="setting"><label for="brightness">整体亮度 <output id="brightnessVal">+8</output></label><input id="brightness" type="range" min="-20" max="25" value="8"></div><div class="setting"><label for="contrast">对比度 <output id="contrastVal">+6</output></label><input id="contrast" type="range" min="-20" max="25" value="6"></div><div class="setting"><label for="warmth">色温 <output id="warmthVal">+2</output></label><input id="warmth" type="range" min="-20" max="20" value="2"></div><div class="setting"><label for="saturation">色彩浓度 <output id="saturationVal">+3</output></label><input id="saturation" type="range" min="-20" max="20" value="3"></div>
 <div class="toggle-row"><span>自动白平衡</span><input class="switch" id="whiteBalance" type="checkbox" checked></div><div class="toggle-row"><span>阴影细节增强</span><input class="switch" id="shadows" type="checkbox" checked></div><div class="toggle-row"><span>轻度锐化</span><input class="switch" id="sharpen" type="checkbox"></div>
-<div class="auto-actions"><button class="btn btn-gold" id="autoProcessBtn">✦ 自动精修全部</button><button class="btn btn-primary" id="processBtn">按参数精修全部</button></div><button class="btn btn-light full" id="processSelectedBtn" disabled>请先选择一张照片</button><button class="btn btn-light full" id="downloadAll" disabled>↓ 下载全部精修照片</button><div class="progressbox" id="progressbox"><div class="progresslabel"><span id="progressText">正在处理…</span><span id="progressNum">0%</span></div><div class="progressline"><i id="progressBar"></i></div></div><div class="feature-note"><b>当前处理能力</b><br>本地专业影像算法：分析曝光直方图、亮部与暗部，进行温和白平衡、动态范围压缩、阴影恢复和细节增强。原图保留，结果单独导出。</div><div class="ai-honesty"><strong>关于真正的 AI 精修</strong>当前版本尚未连接云端视觉模型，因此不会把普通滤镜冒充 AI。要实现窗景智能压高光、透视校正、杂物识别清理等生成式修复，需要再接入安全的后端 AI 服务。</div></section>
+<div class="auto-actions"><button class="btn btn-gold" id="autoProcessBtn">✦ 自动精修全部</button><button class="btn btn-primary" id="processBtn">按参数精修全部</button></div><div class="progressbox" id="progressbox"><div class="progresslabel"><span id="progressText">正在处理…</span><span id="progressNum">0%</span></div><div class="progressline"><i id="progressBar"></i></div></div><div class="feature-note"><b>当前处理能力</b><br>本地专业影像算法：分析曝光直方图、亮部与暗部，进行温和白平衡、动态范围压缩、阴影恢复和细节增强。原图保留，结果单独导出。</div><div class="ai-honesty"><strong>关于真正的 AI 精修</strong>当前版本尚未连接云端视觉模型，因此不会把普通滤镜冒充 AI。要实现窗景智能压高光、透视校正、杂物识别清理等生成式修复，需要再接入安全的后端 AI 服务。</div></section>
 <section class="panel sidepanel"><h3 class="side-title">导出设置</h3><div class="setting" style="margin-top:0"><label for="quality">JPG 画质 <output id="qualityVal">92%</output></label><input id="quality" type="range" min="70" max="100" value="92"></div><div class="setting"><label for="suffix">文件命名</label><select id="suffix" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;background:#fff;color:#444"><option value="_精修">原文件名_精修</option><option value="_自然真实">原文件名_自然真实</option><option value="_房源展示">原文件名_房源展示</option></select></div><p class="note">建议房源发布使用 90–95% JPG 画质。精修结果单独保存，不覆盖原始照片。</p></section>
 </aside></div><div class="foot">REAL ESTATE PHOTO STUDIO · 房源影像专业校色工作台</div></main><div class="toast" id="toast"></div></div>
 <script>
@@ -201,7 +252,18 @@ async function recognizeRoom(it){const fromName=filenameRoom(it.name);if(fromNam
 function addFiles(files){const accepted=[...files].filter(f=>f.type.startsWith('image/'));if(!accepted.length)return toast('请选择图片文件');accepted.forEach(file=>{const url=URL.createObjectURL(file),id=crypto.randomUUID?crypto.randomUUID():String(Date.now()+Math.random());const it={id,file,url,name:file.name,processed:null,canvas:null,status:'待精修',roomType:'识别中',roomConfidence:0,roomReason:'正在分析画面'};items.push(it);recognizeRoom(it).then(()=>render())});render();toast('已添加 '+accepted.length+' 张照片，正在识别场景')}
 $('fileInput').addEventListener('change',e=>{addFiles(e.target.files);e.target.value=''});$('topUpload').onclick=()=>$('fileInput').click();
 const dz=$('dropzone');['dragenter','dragover'].forEach(ev=>dz.addEventListener(ev,e=>{e.preventDefault();dz.style.borderColor='#a88e61'}));['dragleave','drop'].forEach(ev=>dz.addEventListener(ev,e=>{e.preventDefault();dz.style.borderColor='#cfd3da'}));dz.addEventListener('drop',e=>addFiles(e.dataTransfer.files));
-function renderSelection(){document.querySelectorAll('.photo').forEach(el=>el.classList.toggle('selected',el.dataset.id===selectedId));$('processSelectedBtn').disabled=!selectedId;$('processSelectedBtn').textContent=selectedId?'精修当前选中照片':'请先选择一张照片'}
+function renderSelection(){
+ document.querySelectorAll('.photo').forEach(el=>el.classList.toggle('selected',el.dataset.id===selectedId));
+ const selected=items.find(x=>x.id===selectedId);
+ $('processSelectedBtn').disabled=!selected||batchBusy;
+ $('processSelectedBtn').textContent=selected?'✦ 精修当前选中照片':'先选择一张照片';
+ $('selectedActionHint').textContent=selected?('当前选中：'+selected.name):'先在照片队列中点选一张照片';
+ const ready=items.filter(x=>x.processed).length;
+ $('readyCount').textContent=ready+' 张已精修';
+ $('downloadAll').disabled=!ready||batchBusy;
+ $('downloadAll').textContent=ready?'↓ 下载全部精修照片（'+ready+'）':'完成精修后可下载';
+ $('downloadActionHint').textContent=ready?'已完成 '+ready+' 张，点击即可导出':'精修完成后，自动汇总可下载照片';
+}
 function render(){$('countText').textContent=items.length+' 张照片';$('empty').style.display=items.length?'none':'flex';$('thumbgrid').innerHTML='';items.forEach(it=>{const card=document.createElement('article');card.className='photo'+(it.id===selectedId?' selected':'');card.dataset.id=it.id;const thumb=it.processed||it.url;const opts=roomTypes.map(r=>`<option value="${r}" ${it.roomType===r?'selected':''}>${r}</option>`).join('');card.innerHTML=`<div class="photo-img"><img src="${thumb}" alt="房源照片"><span class="photo-tag">${esc(it.status)}</span></div><div class="photo-info"><div class="photo-name" title="${esc(it.name)}">${esc(it.name)}</div><div class="photo-meta"><span>${it.processed?'已完成':'等待处理'}</span><span>${(it.file.size/1024/1024).toFixed(1)} MB</span></div><div class="room-row"><label>场景建议</label><select class="room-select" data-id="${it.id}" title="${esc(it.roomReason||'可手动调整房间类型')}">${opts}</select></div><div class="photo-meta"><span>${it.roomConfidence?`参考 ${Math.round(it.roomConfidence*100)}%`:'本地辅助判断'}</span><span>${esc(it.roomReason||'')}</span></div><div class="photo-actions"><button class="mini" data-action="preview" data-id="${it.id}">查看预览</button><button class="mini" data-action="download" data-id="${it.id}" ${it.processed?'':'disabled'}>下载</button><button class="mini" data-action="remove" data-id="${it.id}">移除</button></div></div>`;$('thumbgrid').appendChild(card)});$('downloadAll').disabled=!items.some(x=>x.processed);renderSelection()}
 $('thumbgrid').addEventListener('change',e=>{if(e.target.matches('.room-select')){const it=items.find(x=>x.id===e.target.dataset.id);if(it){it.roomType=e.target.value;it.roomReason='手动确认';it.roomConfidence=1;toast('已更新场景：'+it.roomType)}}});
 $('thumbgrid').addEventListener('click',e=>{const b=e.target.closest('button');if(b){const it=items.find(x=>x.id===b.dataset.id);if(!it)return;if(b.dataset.action==='remove'){URL.revokeObjectURL(it.url);if(it.processed)URL.revokeObjectURL(it.processed);items=items.filter(x=>x!==it);if(selectedId===it.id){selectedId=null;$('preview').style.display='none'}render();return}if(b.dataset.action==='download'&&it.processed){download(it);return}if(b.dataset.action==='preview'){showPreview(it);return}return}if(e.target.closest('select'))return;const card=e.target.closest('.photo');if(card){const it=items.find(x=>x.id===card.dataset.id);if(it)showPreview(it)}});
@@ -266,7 +328,7 @@ function processImage(it,autoMode){return new Promise((resolve,reject)=>{const i
  if(style.sharpen){const blur=document.createElement('canvas');blur.width=c.width;blur.height=c.height;const bx=blur.getContext('2d',{willReadFrequently:true});bx.filter='blur(1.1px)';bx.drawImage(c,0,0);bx.filter='none';const soft=bx.getImageData(0,0,c.width,c.height).data,sharp=ctx.getImageData(0,0,c.width,c.height),sd=sharp.data;for(let i=0;i<sd.length;i+=4){for(let k=0;k<3;k++)sd[i+k]=clamp(sd[i+k]+(sd[i+k]-soft[i+k])*.42,0,255)}ctx.putImageData(sharp,0,0)}
  c.toBlob(blob=>{if(!blob)return reject(new Error('导出失败'));resolve({url:URL.createObjectURL(blob),canvas:c})},'image/jpeg',+$('quality').value/100)
  }catch(err){reject(err)}};img.onerror=()=>reject(new Error('图片读取失败'));img.src=it.url})}
-async function runBatch(autoMode,target=items){if(batchBusy)return;if(!target.length)return toast('请先添加照片');batchBusy=true;const btn=autoMode?$('autoProcessBtn'):$('processBtn'),other=autoMode?$('processBtn'):$('autoProcessBtn');btn.disabled=true;other.disabled=true;btn.textContent=autoMode?'正在分析并校色…':'正在批量校色…';$('progressbox').style.display='block';$('progressBar').style.width='0%';let done=0;for(const it of target){try{const result=await processImage(it,autoMode);if(it.processed)URL.revokeObjectURL(it.processed);it.processed=result.url;it.canvas=result.canvas;it.status=autoMode?'自动校色完成':'精修完成'}catch(e){it.status='处理失败'}done++;const pct=Math.round(done/target.length*100);$('progressBar').style.width=pct+'%';$('progressNum').textContent=pct+'%';$('progressText').textContent=`${autoMode?'自动校色':'参数精修'} ${done}/${target.length}`;render()}batchBusy=false;btn.disabled=false;other.disabled=false;btn.textContent=autoMode?'✦ 自动精修全部':'按参数精修全部';$('progressText').textContent='处理完成';const success=target.filter(x=>x.processed).length;toast((autoMode?'自动专业校色':'参数精修')+'完成：'+success+' 张');const first=items.find(x=>x.processed);if(first)showPreview(first)}
+async function runBatch(autoMode,target=items){if(batchBusy)return;if(!target.length)return toast('请先添加照片');batchBusy=true;renderSelection();const btn=autoMode?$('autoProcessBtn'):$('processBtn'),other=autoMode?$('processBtn'):$('autoProcessBtn');btn.disabled=true;other.disabled=true;btn.textContent=autoMode?'正在分析并校色…':'正在批量校色…';$('progressbox').style.display='block';$('progressBar').style.width='0%';let done=0;for(const it of target){try{const result=await processImage(it,autoMode);if(it.processed)URL.revokeObjectURL(it.processed);it.processed=result.url;it.canvas=result.canvas;it.status=autoMode?'自动校色完成':'精修完成'}catch(e){it.status='处理失败'}done++;const pct=Math.round(done/target.length*100);$('progressBar').style.width=pct+'%';$('progressNum').textContent=pct+'%';$('progressText').textContent=`${autoMode?'自动校色':'参数精修'} ${done}/${target.length}`;render()}batchBusy=false;btn.disabled=false;other.disabled=false;btn.textContent=autoMode?'✦ 自动精修全部':'按参数精修全部';renderSelection();$('progressText').textContent='处理完成';const success=target.filter(x=>x.processed).length;toast((autoMode?'自动专业校色':'参数精修')+'完成：'+success+' 张');const first=items.find(x=>x.processed);if(first)showPreview(first)}
 $('autoProcessBtn').addEventListener('click',()=>runBatch(true));$('processBtn').addEventListener('click',()=>runBatch(false));$('processSelectedBtn').addEventListener('click',()=>{const it=items.find(x=>x.id===selectedId);if(!it)return toast('请先在照片队列中选择一张照片');runBatch(false,[it])});
 function safeProjectName(){return($('projectName').value.trim()||'房源照片').replace(/[\\/:*?"<>|]/g,'_')}
 function download(it){const a=document.createElement('a'),base=it.name.replace(/\.[^.]+$/,'');const room=it.roomType&&it.roomType!=='待确认'&&it.roomType!=='识别中'?'_'+it.roomType:'';a.href=it.processed;a.download=safeProjectName()+room+'_'+base+$('suffix').value+'.jpg';document.body.appendChild(a);a.click();a.remove()}
