@@ -275,7 +275,7 @@ function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;',
 const endpointStoreKey='juxin_ai_worker_endpoint_v1',tokenStoreKey='juxin_ai_studio_token_v1';
 $('aiEndpoint').value=localStorage.getItem(endpointStoreKey)||'';
 $('aiToken').value=localStorage.getItem(tokenStoreKey)||'';
-function aiEndpoint(){return $('aiEndpoint').value.trim().replace(/\\/+$/,'')}
+function aiEndpoint(){return $('aiEndpoint').value.trim().replace(/\/+$/,'')}
 function aiConfigReady(){return /^https:\/\//i.test(aiEndpoint())&&$('aiToken').value.trim().length>0}
 async function aiRequest(path,options={}){
  const endpoint=aiEndpoint(),token=$('aiToken').value.trim();
@@ -296,7 +296,7 @@ $('aiConnectBtn').addEventListener('click',async()=>{
  finally{button.disabled=false}
 });
 async function fileAsJpeg(file){
- if(file.type==='image/jpeg'||/\\.jpe?g$/i.test(file.name))return file;
+ if(file.type==='image/jpeg'||file.name.toLowerCase().endsWith('.jpg')||file.name.toLowerCase().endsWith('.jpeg'))return file;
  let bitmap;
  try{bitmap=await createImageBitmap(file)}catch(_){throw new Error(file.name+' 无法读取，请先转成 JPG')}
  const canvas=document.createElement('canvas');canvas.width=bitmap.width;canvas.height=bitmap.height;
