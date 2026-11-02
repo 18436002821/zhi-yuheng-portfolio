@@ -53,7 +53,7 @@ export default {
     }
 
     const url = new URL(request.url);
-    const path = url.pathname.replace(/\\/+$/, "") || "/";
+    let path = url.pathname; while (path.length > 1 && path.endsWith("/")) path = path.slice(0, -1);
     if (!path.startsWith("/api/")) return json({ error: "Not found" }, 404, origin);
     if (!ALLOWED_ORIGINS.has(origin)) return json({ error: "来源未授权" }, 403, origin);
     if (!env.STUDIO_ACCESS_TOKEN || request.headers.get("X-Studio-Token") !== env.STUDIO_ACCESS_TOKEN) {
@@ -85,7 +85,9 @@ export default {
 
         const names = files.map((file, index) => {
           const original = cleanName(file.name || ("photo_" + (index + 1) + ".jpg"));
-          return String(index + 1).padStart(3, "0") + "_" + original.replace(/\\.(png|webp|jpe?g)$/i, "") + ".jpg";
+          const dot = original.lastIndexOf(".");
+          const base = dot > 0 ? original.slice(0, dot) : original;
+          return String(index + 1).padStart(3, "0") + "_" + base + ".jpg";
         });
         const projectResponse = await imagen(env, "/projects/", {
           method: "POST",
@@ -145,10 +147,10 @@ export default {
         }, 202, origin);
       }
 
-      const match = path.match(/^\\/api\\/projects\\/([^/]+)\\/(status|download-links|download)$/);
+      const segments = path.split("/").filter(Boolean);
       if (match) {
-        const projectUuid = decodeURIComponent(match[1]);
-        const action = match[2];
+        const projectUuid = decodeURIComponent(segments[2]);
+        const action = segments[3];
 
         if (action === "status" && request.method === "GET") {
           const stage = url.searchParams.get("stage") === "export" ? "export" : "edit";
@@ -178,7 +180,7 @@ export default {
             headers: {
               ...cors(origin),
               "Content-Type": "image/jpeg",
-              "Content-Disposition": "attachment; filename*=UTF-8''" + encodeURIComponent(safe),
+              "Content-Disposition": (url.searchParams.get("inline") === "1" ? "inline" : "attachment") + "; filename*=UTF-8''" + encodeURIComponent(safe),
               "Cache-Control": "private, no-store"
             }
           });
