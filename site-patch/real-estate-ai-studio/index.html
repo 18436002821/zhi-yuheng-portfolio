@@ -400,8 +400,8 @@ function processImage(it,autoMode){return new Promise((resolve,reject)=>{
     let g=d[i+1]*wbG*exposure+warm*.10+bright;
     let b=d[i+2]*wbB*exposure-warm*.58+bright;
     let l=.2126*r+.7152*g+.0722*b;
-    if(autoMode&&style.shadows){
-     const shadow=1-smooth(30,155,l),lift=shadow*shadow*12;
+    if(style.shadows){
+     const shadow=1-smooth(30,155,l),lift=shadow*shadow*(autoMode?12:8);
      r+=lift;g+=lift;b+=lift;
     }
     r=(r-128)*contrast+128;g=(g-128)*contrast+128;b=(b-128)*contrast+128;
