@@ -208,6 +208,20 @@
 .gallery .section-head,.gallery .empty{cursor:pointer}
 .gallery .section-head:hover{background:#f7fbfe}
 .gallery .empty:hover{background:#f8fcff}
+
+/* Cloud AI connection panel */
+.ai-connection{border-top:3px solid #007AC8}
+.connection-status{float:right;font-size:11px;font-weight:600;color:#8a9299;background:#f0f3f5;border-radius:99px;padding:4px 8px}
+.connection-status.connected{color:#3d7510;background:#f0f7df}
+.connection-status.error{color:#a33b32;background:#fff0ee}
+.connection-copy{margin:5px 0 12px;color:var(--muted);font-size:11px}
+.ai-connection .setting{margin-top:10px}
+.ai-connection input{width:100%;padding:10px 11px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);font-size:12px;min-width:0}
+.connection-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:12px}
+.connection-actions a{font-size:11px;color:#007AC8;text-decoration:none}
+.connection-tip{margin:10px 0 0;color:var(--muted);font-size:10px;line-height:1.6}
+.ai-connection .btn{min-width:104px}
+@media(max-width:620px){.connection-actions .btn{flex:1}.connection-tip{font-size:10px}}
 </style></head>
 <body><div class="app">
 <header class="topbar"><div class="brand"><img class="brand-logo" src="./assets/juxin-logo.svg" alt="居信地产 JUXIN ESTATE"><span class="brand-divider"></span><div>房源 AI 精修工作台<small>REAL ESTATE PHOTO STUDIO</small></div></div><div class="topright"><span><i class="statusdot"></i>本地处理模式</span><span>无需上传云端 · 原图保留</span></div></header>
@@ -224,7 +238,7 @@
  <div class="quick-grid">
   <article class="quick-card quick-process">
    <div class="quick-card-head"><span class="quick-icon">✦</span><div><strong>精修当前照片</strong><small id="selectedActionHint">先在照片队列中点选一张照片</small></div></div>
-   <button class="quick-btn process-btn" id="processSelectedBtn" disabled>精修当前选中照片</button>
+   <button class="quick-btn process-btn" id="processSelectedBtn" disabled>AI 精修当前选中照片</button>
   </article>
   <article class="quick-card quick-download">
    <div class="quick-card-head"><span class="quick-icon">↓</span><div><strong>下载精修照片</strong><small id="downloadActionHint">完成精修后，即可导出高清照片</small></div></div>
@@ -233,11 +247,19 @@
  </div>
 </section>
 </div><aside class="sidebar">
+<section class="panel sidepanel ai-connection" id="aiConnection">
+ <h3 class="side-title">AI 引擎连接 <span class="connection-status" id="aiConnectionStatus">尚未连接</span></h3>
+ <p class="connection-copy">使用 Imagen AI · Natural Home 房产自然精修</p>
+ <div class="setting"><label for="aiEndpoint">AI 后端地址</label><input id="aiEndpoint" type="url" placeholder="https://你的Worker地址.workers.dev" autocomplete="url"></div>
+ <div class="setting"><label for="aiToken">工作台访问码</label><input id="aiToken" type="password" placeholder="Cloudflare 中设置的访问码" autocomplete="off"></div>
+ <div class="connection-actions"><button class="btn btn-primary" id="aiConnectBtn">测试连接</button><a href="https://account.imagen-ai.com/dashboard/" target="_blank" rel="noopener">申请 / 管理 Imagen API Key ↗</a></div>
+ <p class="connection-tip">API Key 只保存在服务端 Cloudflare Secret，不要粘贴到网页。首次配置请按后端部署说明操作。</p>
+</section>
 <section class="panel sidepanel"><h3 class="side-title">房源项目 <small>同一套房源统一管理</small></h3><div class="project-field"><label for="projectName">项目名称</label><input id="projectName" type="text" value="房源照片" maxlength="32" placeholder="例如：虹口区·两室一厅"></div><div class="workflow-chip">✦ 场景辅助判断 · 专业校色 · 统一风格</div><div class="toggle-row"><span>全组统一色调</span><input class="switch" id="syncStyle" type="checkbox" checked></div><div class="toggle-row"><span>逐张自动曝光校正</span><input class="switch" id="perPhotoAuto" type="checkbox" checked></div></section>
-<section class="panel sidepanel"><h3 class="side-title">精修风格 <small>选择统一色调</small></h3><div class="preset-list" id="presets"><button class="preset active" data-preset="natural"><div class="swatch"><i></i><i></i><i></i></div><b>自然真实</b><span>接近实景 · 清透耐看</span></button><button class="preset" data-preset="warm"><div class="swatch"><i style="background:#e8d5b5"></i><i style="background:#c6a477"></i><i style="background:#92765b"></i></div><b>奶油暖调</b><span>柔和温暖 · 木色更自然</span></button><button class="preset" data-preset="gray"><div class="swatch"><i style="background:#e4e5e4"></i><i style="background:#aeb4b7"></i><i style="background:#656b70"></i></div><b>高级灰白</b><span>中性克制 · 干净通透</span></button><button class="preset" data-preset="bright"><div class="swatch"><i style="background:#f4f3ed"></i><i style="background:#d8d8d2"></i><i style="background:#a6aaa5"></i></div><b>明亮通透</b><span>提亮空间 · 保留细节</span></button></div>
+<section class="panel sidepanel"><h3 class="side-title">本地校色（备用） <small>不影响 AI 一键精修</small></h3><div class="preset-list" id="presets"><button class="preset active" data-preset="natural"><div class="swatch"><i></i><i></i><i></i></div><b>自然真实</b><span>接近实景 · 清透耐看</span></button><button class="preset" data-preset="warm"><div class="swatch"><i style="background:#e8d5b5"></i><i style="background:#c6a477"></i><i style="background:#92765b"></i></div><b>奶油暖调</b><span>柔和温暖 · 木色更自然</span></button><button class="preset" data-preset="gray"><div class="swatch"><i style="background:#e4e5e4"></i><i style="background:#aeb4b7"></i><i style="background:#656b70"></i></div><b>高级灰白</b><span>中性克制 · 干净通透</span></button><button class="preset" data-preset="bright"><div class="swatch"><i style="background:#f4f3ed"></i><i style="background:#d8d8d2"></i><i style="background:#a6aaa5"></i></div><b>明亮通透</b><span>提亮空间 · 保留细节</span></button></div>
 <div class="setting"><label for="brightness">整体亮度 <output id="brightnessVal">+8</output></label><input id="brightness" type="range" min="-20" max="25" value="8"></div><div class="setting"><label for="contrast">对比度 <output id="contrastVal">+6</output></label><input id="contrast" type="range" min="-20" max="25" value="6"></div><div class="setting"><label for="warmth">色温 <output id="warmthVal">+2</output></label><input id="warmth" type="range" min="-20" max="20" value="2"></div><div class="setting"><label for="saturation">色彩浓度 <output id="saturationVal">+3</output></label><input id="saturation" type="range" min="-20" max="20" value="3"></div>
 <div class="toggle-row"><span>自动白平衡</span><input class="switch" id="whiteBalance" type="checkbox" checked></div><div class="toggle-row"><span>阴影细节增强</span><input class="switch" id="shadows" type="checkbox" checked></div><div class="toggle-row"><span>轻度锐化</span><input class="switch" id="sharpen" type="checkbox"></div>
-<div class="auto-actions"><button class="btn btn-gold" id="autoProcessBtn">✦ 自动精修全部</button><button class="btn btn-primary" id="processBtn">按参数精修全部</button></div><div class="progressbox" id="progressbox"><div class="progresslabel"><span id="progressText">正在处理…</span><span id="progressNum">0%</span></div><div class="progressline"><i id="progressBar"></i></div></div><div class="feature-note"><b>当前处理能力</b><br>本地专业影像算法：分析曝光直方图、亮部与暗部，进行温和白平衡、动态范围压缩、阴影恢复和细节增强。原图保留，结果单独导出。</div><div class="ai-honesty"><strong>关于真正的 AI 精修</strong>当前版本尚未连接云端视觉模型，因此不会把普通滤镜冒充 AI。要实现窗景智能压高光、透视校正、杂物识别清理等生成式修复，需要再接入安全的后端 AI 服务。</div></section>
+<div class="auto-actions"><button class="btn btn-gold" id="autoProcessBtn">✦ AI 一键精修全部</button><button class="btn btn-primary" id="processBtn">本地参数校色（备用）</button></div><div class="progressbox" id="progressbox"><div class="progresslabel"><span id="progressText">正在处理…</span><span id="progressNum">0%</span></div><div class="progressline"><i id="progressBar"></i></div></div><div class="feature-note"><b>AI 默认方案</b><br>Imagen Natural Home：自然曝光与色彩、窗户曝光优化、室内透视校正。默认不换天空、不改家具、不重构空间；单张 JPG 不启用 HDR 合成。</div><div class="ai-honesty"><strong>本地备用模式</strong>未连接云端 AI 时，可使用本地参数校色。它不是生成式 AI，不会冒充云端智能精修。</div></section>
 <section class="panel sidepanel"><h3 class="side-title">导出设置</h3><div class="setting" style="margin-top:0"><label for="quality">JPG 画质 <output id="qualityVal">92%</output></label><input id="quality" type="range" min="70" max="100" value="92"></div><div class="setting"><label for="suffix">文件命名</label><select id="suffix" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:8px;background:#fff;color:#444"><option value="_精修">原文件名_精修</option><option value="_自然真实">原文件名_自然真实</option><option value="_房源展示">原文件名_房源展示</option></select></div><p class="note">建议房源发布使用 90–95% JPG 画质。精修结果单独保存，不覆盖原始照片。</p></section>
 </aside></div><div class="foot">REAL ESTATE PHOTO STUDIO · 房源影像专业校色工作台</div></main><div class="toast" id="toast"></div></div>
 <script>
@@ -249,6 +271,95 @@ function toast(s){const t=$('toast');t.textContent=s;t.classList.add('show');cle
 function fmt(n){return(n>=0?'+':'')+n}
 function clamp(v,min,max){return Math.max(min,Math.min(max,v))}
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+
+const endpointStoreKey='juxin_ai_worker_endpoint_v1',tokenStoreKey='juxin_ai_studio_token_v1';
+$('aiEndpoint').value=localStorage.getItem(endpointStoreKey)||'';
+$('aiToken').value=localStorage.getItem(tokenStoreKey)||'';
+function aiEndpoint(){return $('aiEndpoint').value.trim().replace(/\\/+$/,'')}
+function aiConfigReady(){return /^https:\/\//i.test(aiEndpoint())&&$('aiToken').value.trim().length>0}
+async function aiRequest(path,options={}){
+ const endpoint=aiEndpoint(),token=$('aiToken').value.trim();
+ if(!endpoint||!token)throw new Error('请先填写 AI 后端地址和工作台访问码');
+ const headers=new Headers(options.headers||{});headers.set('X-Studio-Token',token);
+ const response=await fetch(endpoint+path,{...options,headers});
+ let payload={};try{payload=await response.json()}catch(_){}
+ if(!response.ok)throw new Error(payload.error||('AI 服务请求失败：'+response.status));
+ return payload;
+}
+$('aiConnectBtn').addEventListener('click',async()=>{
+ const endpoint=aiEndpoint(),token=$('aiToken').value.trim(),status=$('aiConnectionStatus');
+ if(!/^https:\/\//i.test(endpoint)||!token){toast('请填写 Worker 地址和工作台访问码');$('aiConnection').scrollIntoView({behavior:'smooth',block:'center'});return}
+ localStorage.setItem(endpointStoreKey,endpoint);localStorage.setItem(tokenStoreKey,token);
+ const button=$('aiConnectBtn');button.disabled=true;button.textContent='正在连接…';status.className='connection-status';status.textContent='连接中';
+ try{const result=await aiRequest('/api/health');status.className='connection-status connected';status.textContent='已连接';button.textContent='重新测试';toast('AI 引擎连接成功：'+(result.preset||'Natural Home'))}
+ catch(error){status.className='connection-status error';status.textContent='连接失败';button.textContent='重新测试';toast(error.message)}
+ finally{button.disabled=false}
+});
+async function fileAsJpeg(file){
+ if(file.type==='image/jpeg'||/\\.jpe?g$/i.test(file.name))return file;
+ let bitmap;
+ try{bitmap=await createImageBitmap(file)}catch(_){throw new Error(file.name+' 无法读取，请先转成 JPG')}
+ const canvas=document.createElement('canvas');canvas.width=bitmap.width;canvas.height=bitmap.height;
+ const ctx=canvas.getContext('2d');ctx.fillStyle='#fff';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.drawImage(bitmap,0,0);if(bitmap.close)bitmap.close();
+ const blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/jpeg',.96));
+ if(!blob)throw new Error(file.name+' 转换 JPG 失败');return blob;
+}
+const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+async function waitForAIStage(projectUuid,stage,target,baseProgress,rangeProgress){
+ for(let attempt=0;attempt<240;attempt++){
+  const result=await aiRequest('/api/projects/'+encodeURIComponent(projectUuid)+'/status?stage='+stage);
+  const status=String(result.status||'').toLowerCase();
+  const pct=Math.min(99,baseProgress+Math.round((attempt%12)/12*rangeProgress));
+  $('progressBar').style.width=pct+'%';$('progressNum').textContent=pct+'%';
+  $('progressText').textContent=(stage==='edit'?'AI 正在精修':'正在导出高清照片')+' · '+(result.status||'处理中');
+  target.forEach(it=>{it.status=stage==='edit'?'AI 精修中':'导出中'});
+  render();
+  if(status==='completed')return;
+  if(status==='failed'||status==='error')throw new Error('AI '+(stage==='edit'?'精修':'导出')+'失败，请稍后重试');
+  await sleep(4000);
+ }
+ throw new Error('AI 处理时间较长，请稍后检查任务状态');
+}
+async function runAIProcess(target=items){
+ if(batchBusy)return;
+ if(!target.length)return toast('请先添加照片');
+ if(!aiConfigReady()){toast('先配置 AI 引擎连接，再开始真正的 AI 精修');$('aiConnection').scrollIntoView({behavior:'smooth',block:'center'});return}
+ if(target.length>12)return toast('单次最多 AI 精修 12 张，请分批处理');
+ batchBusy=true;renderSelection();$('autoProcessBtn').disabled=true;$('processBtn').disabled=true;$('processSelectedBtn').disabled=true;
+ $('autoProcessBtn').textContent='AI 正在处理…';$('progressbox').style.display='block';$('progressBar').style.width='3%';$('progressNum').textContent='3%';$('progressText').textContent='正在准备照片…';
+ let projectUuid='';
+ try{
+  const form=new FormData();form.append('projectName',safeProjectName());
+  for(let i=0;i<target.length;i++){
+   const it=target[i];it.status='准备上传';render();
+   const blob=await fileAsJpeg(it.file);const base=it.name.replace(/\\.[^.]+$/,'').replace(/[\\/:*?"<>|]/g,'_').slice(0,48)||('photo_'+(i+1));
+   form.append('photos',blob,base+'.jpg');
+  }
+  $('progressText').textContent='正在安全上传照片并创建 AI 任务…';$('progressBar').style.width='12%';$('progressNum').textContent='12%';
+  const started=await aiRequest('/api/retouch',{method:'POST',body:form});projectUuid=started.project_uuid;
+  if(!projectUuid)throw new Error('AI 服务没有返回任务编号');
+  $('progressBar').style.width='20%';$('progressNum').textContent='20%';$('progressText').textContent='照片已上传，AI 正在分析房源画面…';
+  await waitForAIStage(projectUuid,'edit',target,22,48);
+  await waitForAIStage(projectUuid,'export',target,72,18);
+  const links=await aiRequest('/api/projects/'+encodeURIComponent(projectUuid)+'/download-links');
+  const files=links.files_list||[];
+  if(!files.length)throw new Error('AI 已完成，但暂未取得下载文件');
+  for(let i=0;i<target.length;i++){
+   const it=target[i],file=files.find(x=>x.file_name===started.files?.[i])||files[i];
+   if(!file?.file_name)continue;
+   it.processed=aiEndpoint()+'/api/projects/'+encodeURIComponent(projectUuid)+'/download?file='+encodeURIComponent(file.file_name);
+   it.processedAI=true;it.status='AI 精修完成';
+  }
+  $('progressBar').style.width='100%';$('progressNum').textContent='100%';$('progressText').textContent='AI 精修完成';
+  render();renderSelection();const first=target.find(x=>x.processed);if(first)showPreview(first);
+  toast('AI 自然真实精修完成：'+target.filter(x=>x.processed).length+' 张');
+ }catch(error){
+  target.forEach(it=>{if(!it.processed)it.status='处理失败'});render();toast(error.message||'AI 精修失败');
+ }finally{
+  batchBusy=false;$('autoProcessBtn').disabled=false;$('processBtn').disabled=false;
+  $('autoProcessBtn').textContent='✦ AI 一键精修全部';$('processBtn').textContent='本地参数校色（备用）';renderSelection();
+ }
+}
 function setPreset(p){activePreset=p;document.querySelectorAll('.preset').forEach(b=>b.classList.toggle('active',b.dataset.preset===p));const v={natural:[8,6,2,3],warm:[7,5,8,5],gray:[9,8,-3,-3],bright:[14,3,0,2]}[p];['brightness','contrast','warmth','saturation'].forEach((id,i)=>{$(id).value=v[i];settings[id]=v[i];$(id+'Val').textContent=fmt(v[i])})}
 document.querySelectorAll('.preset').forEach(b=>b.addEventListener('click',()=>setPreset(b.dataset.preset)));
 ['brightness','contrast','warmth','saturation'].forEach(id=>$(id).addEventListener('input',e=>{settings[id]=+e.target.value;$(id+'Val').textContent=fmt(settings[id])}));
@@ -280,7 +391,7 @@ function renderSelection(){
  document.querySelectorAll('.photo').forEach(el=>el.classList.toggle('selected',el.dataset.id===selectedId));
  const selected=items.find(x=>x.id===selectedId);
  $('processSelectedBtn').disabled=!selected||batchBusy;
- $('processSelectedBtn').textContent=selected?'✦ 精修当前选中照片':'先选择一张照片';
+ $('processSelectedBtn').textContent=selected?'✦ AI 精修当前选中照片':'先选择一张照片';
  $('selectedActionHint').textContent=selected?('当前选中：'+selected.name):'先在照片队列中点选一张照片';
  const ready=items.filter(x=>x.processed).length;
  $('readyCount').textContent=ready+' 张已精修';
@@ -352,10 +463,10 @@ function processImage(it,autoMode){return new Promise((resolve,reject)=>{const i
  if(style.sharpen){const blur=document.createElement('canvas');blur.width=c.width;blur.height=c.height;const bx=blur.getContext('2d',{willReadFrequently:true});bx.filter='blur(1.1px)';bx.drawImage(c,0,0);bx.filter='none';const soft=bx.getImageData(0,0,c.width,c.height).data,sharp=ctx.getImageData(0,0,c.width,c.height),sd=sharp.data;for(let i=0;i<sd.length;i+=4){for(let k=0;k<3;k++)sd[i+k]=clamp(sd[i+k]+(sd[i+k]-soft[i+k])*.42,0,255)}ctx.putImageData(sharp,0,0)}
  c.toBlob(blob=>{if(!blob)return reject(new Error('导出失败'));resolve({url:URL.createObjectURL(blob),canvas:c})},'image/jpeg',+$('quality').value/100)
  }catch(err){reject(err)}};img.onerror=()=>reject(new Error('图片读取失败'));img.src=it.url})}
-async function runBatch(autoMode,target=items){if(batchBusy)return;if(!target.length)return toast('请先添加照片');batchBusy=true;renderSelection();const btn=autoMode?$('autoProcessBtn'):$('processBtn'),other=autoMode?$('processBtn'):$('autoProcessBtn');btn.disabled=true;other.disabled=true;btn.textContent=autoMode?'正在分析并校色…':'正在批量校色…';$('progressbox').style.display='block';$('progressBar').style.width='0%';let done=0;for(const it of target){try{const result=await processImage(it,autoMode);if(it.processed)URL.revokeObjectURL(it.processed);it.processed=result.url;it.canvas=result.canvas;it.status=autoMode?'自动校色完成':'精修完成'}catch(e){it.status='处理失败'}done++;const pct=Math.round(done/target.length*100);$('progressBar').style.width=pct+'%';$('progressNum').textContent=pct+'%';$('progressText').textContent=`${autoMode?'自动校色':'参数精修'} ${done}/${target.length}`;render()}batchBusy=false;btn.disabled=false;other.disabled=false;btn.textContent=autoMode?'✦ 自动精修全部':'按参数精修全部';renderSelection();$('progressText').textContent='处理完成';const success=target.filter(x=>x.processed).length;toast((autoMode?'自动专业校色':'参数精修')+'完成：'+success+' 张');const first=items.find(x=>x.processed);if(first)showPreview(first)}
-$('autoProcessBtn').addEventListener('click',()=>runBatch(true));$('processBtn').addEventListener('click',()=>runBatch(false));$('processSelectedBtn').addEventListener('click',()=>{const it=items.find(x=>x.id===selectedId);if(!it)return toast('请先在照片队列中选择一张照片');runBatch(false,[it])});
+async function runBatch(autoMode,target=items){if(batchBusy)return;if(!target.length)return toast('请先添加照片');batchBusy=true;renderSelection();const btn=autoMode?$('autoProcessBtn'):$('processBtn'),other=autoMode?$('processBtn'):$('autoProcessBtn');btn.disabled=true;other.disabled=true;btn.textContent=autoMode?'正在分析并校色…':'正在批量校色…';$('progressbox').style.display='block';$('progressBar').style.width='0%';let done=0;for(const it of target){try{const result=await processImage(it,autoMode);if(it.processed)URL.revokeObjectURL(it.processed);it.processed=result.url;it.processedAI=false;it.canvas=result.canvas;it.status='本地校色完成'}catch(e){it.status='处理失败'}done++;const pct=Math.round(done/target.length*100);$('progressBar').style.width=pct+'%';$('progressNum').textContent=pct+'%';$('progressText').textContent=`${autoMode?'自动校色':'参数精修'} ${done}/${target.length}`;render()}batchBusy=false;btn.disabled=false;other.disabled=false;btn.textContent=autoMode?'✦ 自动精修全部':'按参数精修全部';renderSelection();$('progressText').textContent='处理完成';const success=target.filter(x=>x.processed).length;toast((autoMode?'自动专业校色':'参数精修')+'完成：'+success+' 张');const first=items.find(x=>x.processed);if(first)showPreview(first)}
+$('autoProcessBtn').addEventListener('click',()=>runAIProcess(items));$('processBtn').addEventListener('click',()=>runBatch(false));$('processSelectedBtn').addEventListener('click',()=>{const it=items.find(x=>x.id===selectedId);if(!it)return toast('请先在照片队列中选择一张照片');runAIProcess([it])});
 function safeProjectName(){return($('projectName').value.trim()||'房源照片').replace(/[\\/:*?"<>|]/g,'_')}
-function download(it){const a=document.createElement('a'),base=it.name.replace(/\.[^.]+$/,'');const room=it.roomType&&it.roomType!=='待确认'&&it.roomType!=='识别中'?'_'+it.roomType:'';a.href=it.processed;a.download=safeProjectName()+room+'_'+base+$('suffix').value+'.jpg';document.body.appendChild(a);a.click();a.remove()}
+function download(it){const a=document.createElement('a'),base=it.name.replace(/\.[^.]+$/,'');const room=it.roomType&&it.roomType!=='待确认'&&it.roomType!=='识别中'?'_'+it.roomType:'';a.href=it.processed;a.download=safeProjectName()+room+'_'+base+$('suffix').value+'.jpg';if(it.processedAI){a.target='_blank';a.rel='noopener'}document.body.appendChild(a);a.click();a.remove()}
 $('downloadAll').onclick=()=>{const done=items.filter(x=>x.processed);done.forEach((it,i)=>setTimeout(()=>download(it),i*400));toast('已开始下载 '+done.length+' 张照片')};
 $('clearBtn').onclick=()=>{items.forEach(x=>{URL.revokeObjectURL(x.url);if(x.processed)URL.revokeObjectURL(x.processed)});items=[];selectedId=null;$('preview').style.display='none';$('progressbox').style.display='none';$('progressBar').style.width='0';$('progressNum').textContent='0%';$('progressText').textContent='正在处理…';render();toast('工作区已清空')};
 
