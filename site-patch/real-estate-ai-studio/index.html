@@ -522,7 +522,7 @@ async function runBatch(target=items){
 }
 $('autoProcessBtn').addEventListener('click',()=>runBatch());\n$('resetAiConfig').addEventListener('click',e=>{e.preventDefault();localStorage.removeItem(AI_CONFIG_KEY);toast('AI 连接配置已清除，下次点击精修时重新设置')});\n
 function safeProjectName(){return($('projectName').value.trim()||'房源照片').replace(/[\\/:*?"<>|]/g,'_')}
-function download(it){const a=document.createElement('a'),base=it.name.replace(/\.[^.]+$/,'');const room=it.roomType&&it.roomType!=='待确认'&&it.roomType!=='识别中'?'_'+it.roomType:'';a.href=it.processedAI?it.processed.replace('&inline=1','&inline=0'):it.processed;a.download=safeProjectName()+room+'_'+base+$('suffix').value+'.jpg';document.body.appendChild(a);a.click();a.remove()}
+function download(it){const a=document.createElement('a'),base=it.name.replace(/\.[^.]+$/,'');const room=it.roomType&&it.roomType!=='待确认'&&it.roomType!=='识别中'?'_'+it.roomType:'';const ext=it.processedType==='image/png'?'png':it.processedType==='image/webp'?'webp':'jpg';a.href=it.processed;a.download=safeProjectName()+room+'_'+base+$('suffix').value+'.'+ext;document.body.appendChild(a);a.click();a.remove()}
 $('downloadAll').onclick=()=>{const done=items.filter(x=>x.processed);done.forEach((it,i)=>setTimeout(()=>download(it),i*400));toast('已开始下载 '+done.length+' 张照片')};
 $('clearBtn').onclick=()=>{items.forEach(x=>{URL.revokeObjectURL(x.url);if(x.processed)URL.revokeObjectURL(x.processed)});items=[];selectedId=null;resetPreview();$('progressbox').style.display='none';$('progressBar').style.width='0';$('progressNum').textContent='0%';$('progressText').textContent='正在处理…';render();toast('工作区已清空')};
 
