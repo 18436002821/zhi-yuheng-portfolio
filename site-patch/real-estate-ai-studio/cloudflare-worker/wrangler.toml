@@ -2,3 +2,6 @@ name = "juxin-real-estate-ai"
 main = "src/index.js"
 compatibility_date = "2026-11-02"
 workers_dev = true
+
+[ai]
+binding = "AI"
