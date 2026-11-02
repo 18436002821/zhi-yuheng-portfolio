@@ -471,7 +471,7 @@ $('downloadAll').onclick=()=>{const done=items.filter(x=>x.processed);done.forEa
 $('clearBtn').onclick=()=>{items.forEach(x=>{URL.revokeObjectURL(x.url);if(x.processed)URL.revokeObjectURL(x.processed)});items=[];selectedId=null;$('preview').style.display='none';$('progressbox').style.display='none';$('progressBar').style.width='0';$('progressNum').textContent='0%';$('progressText').textContent='正在处理…';render();toast('工作区已清空')};
 
 const mobileWorkspace=window.matchMedia('(max-width:620px)');
-const mobilePanels=[...document.querySelectorAll('.sidebar .sidepanel')];
+const mobilePanels=[...document.querySelectorAll('.sidebar .sidepanel:not(.ai-connection)')];
 mobilePanels.forEach(panel=>{
  const heading=panel.querySelector('.side-title');if(!heading)return;
  heading.setAttribute('role','button');heading.setAttribute('tabindex','0');heading.setAttribute('aria-expanded','true');
