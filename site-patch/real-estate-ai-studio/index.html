@@ -228,15 +228,47 @@
 .local-engine .connection-copy,.local-engine .connection-tip{font-size:11px;line-height:1.7;color:#6f8391;margin:8px 0 0}
 .local-engine .connection-tip{padding-top:9px;border-top:1px solid #e2edf4}
 .connection-status.connected{color:#5c7d00;background:#f1f8df;border-radius:20px;padding:4px 8px;font-size:10px}
+
+/* AI one-click panel positioned in the right-hand workflow column */
+.layout{display:grid!important;grid-template-columns:minmax(0,1fr) 370px!important;gap:20px!important;align-items:start!important}
+.maincol{min-width:0;display:flex;flex-direction:column}
+.maincol .gallery{order:0}
+.maincol .preview{order:1;margin-top:16px}
+.sidebar{display:block!important;position:sticky;top:82px;max-height:calc(100vh - 100px);overflow:auto;padding:0 3px 8px 0;min-width:0}
+.sidebar .quick-actions{margin:0;padding:18px;border-top:4px solid #007AC8}
+.sidebar .quick-grid{grid-template-columns:1fr;gap:12px}
+.sidebar .quick-card{padding:14px}
+.sidebar .quick-btn{min-height:54px;font-size:14px}
+.sidebar .quick-head{align-items:flex-start;flex-direction:column;gap:8px}
+.sidebar .quick-head h2{font-size:18px}
+.sidebar .quick-head p{font-size:12px;line-height:1.6}
+.sidebar .quick-count{align-self:flex-start}
+@media(max-width:980px){
+ .layout{grid-template-columns:minmax(0,1fr)!important}
+ .sidebar{position:static;max-height:none;overflow:visible;padding:0;order:0}
+ .maincol{order:1}
+ .sidebar .quick-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+ .sidebar .quick-grid{grid-template-columns:1fr}
+ .sidebar .quick-actions{padding:15px}
+ .sidebar .quick-btn{min-height:52px}
+}
 </style></head>
 <body><div class="app">
 <header class="topbar"><div class="brand"><img class="brand-logo" src="./assets/juxin-logo.svg" alt="居信地产 JUXIN ESTATE"><span class="brand-divider"></span><div>房源 AI 精修工作台<small>REAL ESTATE PHOTO STUDIO</small></div></div><div class="topright"><span><i class="statusdot"></i>本地处理模式</span><span>无需上传云端 · 原图保留</span></div></header>
 <main class="wrap"><section class="hero"><div><div class="eyebrow">PHOTO WORKFLOW / 01</div><h1><span class="desktop-hero">让每一张房源照片，都更专业。</span><span class="mobile-hero">房源照片精修</span></h1><p>批量导入 · 智能校色 · 统一风格 · 高清导出</p></div><div class="hero-actions"><button class="btn btn-light" id="clearBtn">清空工作区</button><button class="btn btn-primary" id="topUpload">＋ 添加照片</button></div></section>
-<div class="layout"><div class="maincol">
 <section class="panel upload" id="dropzone"><div class="upload-left"><div class="upload-icon">＋</div><div><h3>导入房源照片</h3><p>支持 JPG、PNG、WEBP，可一次选择多张照片</p></div></div><label class="btn btn-primary" for="fileInput">选择照片</label><input id="fileInput" type="file" accept="image/*" multiple></section>
-<section class="panel gallery"><div class="section-head"><h2>照片队列</h2><span id="countText">0 张照片</span></div><div class="empty" id="empty"><div class="big">▧</div><strong>工作区还是空的</strong><p>点击这里任意空白位置即可导入照片，也可以拖入照片开始精修。</p></div><div class="thumbgrid" id="thumbgrid"></div></section>
-<section class="panel preview" id="preview"><div class="section-head"><h2>单张精修预览</h2><span id="previewState">先选择照片，再查看精修效果</span></div><div class="preview-body"><div class="compare" id="compare"><img id="compareBefore"><div class="after" id="afterWrap"><img id="compareAfter"></div><div class="compare-divider" id="compareDivider" aria-hidden="true"><span>↔</span></div><span class="compare-label before" id="originalLabel">原图 · 精修前</span><span class="compare-label afterlabel" id="retouchedLabel">精修后</span><input id="compareRange" type="range" min="0" max="100" value="50" aria-label="对比滑块"></div><p class="compare-help">拖动滑块查看原图与精修效果 · 图片按原始比例完整显示</p></div></section>
-<section class="panel quick-actions" aria-label="AI 修图操作">
+
+<div class="layout">
+ <div class="maincol">
+  <section class="panel gallery"><div class="section-head"><h2>照片队列</h2><span id="countText">0 张照片</span></div><div class="empty" id="empty"><div class="big">▧</div><strong>工作区还是空的</strong><p>点击这里任意空白位置即可导入照片，也可以拖入照片开始精修。</p></div><div class="thumbgrid" id="thumbgrid"></div></section>
+
+  <section class="panel preview" id="preview"><div class="section-head"><h2>单张精修预览</h2><span id="previewState">先选择照片，再查看精修效果</span></div><div class="preview-body"><div class="compare" id="compare"><img id="compareBefore"><div class="after" id="afterWrap"><img id="compareAfter"></div><div class="compare-divider" id="compareDivider" aria-hidden="true"><span>↔</span></div><span class="compare-label before" id="originalLabel">原图 · 精修前</span><span class="compare-label afterlabel" id="retouchedLabel">精修后</span><input id="compareRange" type="range" min="0" max="100" value="50" aria-label="对比滑块"></div><p class="compare-help">拖动滑块查看原图与精修效果 · 图片按原始比例完整显示</p></div></section>
+
+ </div>
+ <aside class="sidebar" aria-label="AI 一键修图操作">
+  <section class="panel quick-actions" aria-label="AI 修图操作">
  <div class="quick-head">
   <div><h2>AI 一键修图</h2><p>上传房源照片后，点击一次即可自动精修全部照片。</p></div>
   <span class="quick-count" id="readyCount">0 张已精修</span>
@@ -254,7 +286,8 @@
  </div>
  <p class="note" style="margin:12px 2px 0">免费本地自动校色，不调用付费 API，照片不会上传。当前版本侧重自然曝光、白平衡和明暗优化，并非云端生成式 AI。</p>
 </section>
-</div><div id="hiddenConfig" style="display:none!important" aria-hidden="true">
+ </aside>
+ <div id="hiddenConfig" style="display:none!important" aria-hidden="true">
 <input id="projectName" type="text" value="房源照片">
 <input id="syncStyle" type="checkbox" checked>
 <input id="perPhotoAuto" type="checkbox" checked>
@@ -265,7 +298,8 @@
 <input id="warmth" type="range" value="2"><output id="warmthVal">+2</output>
 <input id="saturation" type="range" value="3"><output id="saturationVal">+3</output>
 <input id="whiteBalance" type="checkbox" checked><input id="shadows" type="checkbox" checked><input id="sharpen" type="checkbox">
-</div></div><div class="foot">REAL ESTATE PHOTO STUDIO · 房源影像专业校色工作台</div></main><div class="toast" id="toast"></div></div>
+</div>
+</div><div class="foot">REAL ESTATE PHOTO STUDIO · 房源影像专业校色工作台</div></main><div class="toast" id="toast"></div></div>
 <script>
 const $=id=>document.getElementById(id);
 let items=[],activePreset='natural',selectedId=null,batchBusy=false;
