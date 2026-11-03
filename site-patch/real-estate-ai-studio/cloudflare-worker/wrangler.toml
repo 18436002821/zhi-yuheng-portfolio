@@ -5,3 +5,19 @@ workers_dev = true
 
 [ai]
 binding = "AI"
+
+[[durable_objects.bindings]]
+name = "USAGE_COUNTER"
+class_name = "UsageCounter"
+
+[exports.UsageCounter]
+type = "durable-object"
+storage = "sqlite"
+
+[[ratelimits]]
+name = "RETOUCH_RATE_LIMITER"
+namespace_id = "6849217351"
+
+[ratelimits.simple]
+limit = 12
+period = 60
