@@ -1,61 +1,67 @@
 # 居信地产 AI 精修后端（Cloudflare Workers AI）
 
-本后端把 GitHub Pages 工作台连接到真正的图生图模型 **FLUX.2 Klein 4B**。它不是前端曝光/色温滤镜，而是把房源照片作为参考图交给 AI 模型重新处理，再把生成结果返回给浏览器。
+本后端把 GitHub Pages 工作台连接到真正的图生图模型 **FLUX.2 Klein 4B**。公开免验证模式下，同事打开网页即可使用，不需要输入 Worker 地址、访问码或登录。
 
-## 免费额度
+## 公开使用与防滥用
 
-- 使用 Cloudflare Workers AI 的免费额度：每天 10,000 Neurons。
-- 在 **Workers Free** 方案下，达到免费额度后请求会失败并等待额度重置，不会自动按超额用量收费。
-- 不要把 Worker 升级到 Workers Paid；付费方案超出免费额度后会按 Neurons 计费。
-- 免费额度、模型单价和可用性可能调整，请以 Cloudflare 账户中的最新显示为准。
-- FLUX.2 Klein 4B 当前按输入/输出图像分块计费：输入每个 512×512 tile 为 5.37 Neurons，输出每个 512×512 tile 为 26.05 Neurons。
+- 工作台固定连接：`https://juxin-real-estate-ai.3490705865.workers.dev`
+- 只接受来自 `https://18436002821.github.io` 的浏览器跨域请求。
+- 公开模式不使用 `STUDIO_ACCESS_TOKEN`；已有 Secret 可以保留，但新代码不会读取它。
+- 每个来源 IP 每分钟最多 12 次精修请求。Cloudflare Rate Limiting 是近似限流，并非全球严格计数。
+- 使用 SQLite Durable Object 维护全公司共享的每日工作台估算用量。
+- 本工作台每日预算上限设为 7,000 估算 Neurons，预留部分 Cloudflare 免费额度给账户内其他 Workers AI 调用。
+- 达到工作台预算后，服务会暂停当天的精修请求，次日北京时间 08:00（UTC 00:00）重置。
+- 照片不会写入 Durable Object；持久化的只有每日估算 Neurons、提交张数和成功张数。
 
-官方说明：
-- 模型：https://developers.cloudflare.com/workers-ai/models/flux-2-klein-4b/
-- 免费额度与价格：https://developers.cloudflare.com/workers-ai/platform/pricing/
-- 数据使用说明：https://developers.cloudflare.com/workers-ai/platform/data-usage/
+**重要：** Cloudflare Workers AI 免费额度是账户级每日 10,000 Neurons，其他 Worker 或其他项目的 AI 调用也会共同消耗。工作台的 7,000 Neurons 是本项目自己的估算上限，不是 Cloudflare 账户真实账单余额。网页显示的“预计还能精修”按 1920×1280 标准照片估算，实际张数会随照片尺寸、模型计费变化而变化。
 
-## 部署前准备
-
-1. 注册或登录 Cloudflare 免费账号：https://dash.cloudflare.com/
-2. 电脑安装 Node.js：https://nodejs.org/
-3. 打开终端，进入本目录：
-   `cd site-patch/real-estate-ai-studio/cloudflare-worker`
-4. 安装 Wrangler：
-   `npm install -g wrangler`
-5. 登录 Cloudflare：
-   `npx wrangler login`
-6. 设置工作台访问码（自己生成一段较长、难猜的随机字符串；不要把它写入 GitHub）：
-   `npx wrangler secret put STUDIO_ACCESS_TOKEN`
-7. 部署 Worker：
-   `npx wrangler deploy`
-
-部署成功后，终端会显示 Worker 地址，例如：
-`https://juxin-real-estate-ai.<你的Cloudflare子域>.workers.dev`
-
-## 连接网页
-
-1. 打开居信地产 AI 精修工作台：
-   https://18436002821.github.io/zhi-yuheng-portfolio/real-estate-ai-studio/
-2. 导入房源照片，点击「AI 一键精修全部照片」。
-3. 首次使用时，按提示输入上一步生成的 Worker 地址和工作台访问码。
-4. 连接信息只保存在当前浏览器本地；需要更换时，点击 AI 说明旁边的「重置 AI 连接」。
-
-## 技术说明
+## 模型与估算方式
 
 - 模型：`@cf/black-forest-labs/flux-2-klein-4b`
-- 模型能力：图生图编辑；固定 4 步推理；本工作台每次提交 1 张照片，批量时逐张处理。
-- 输入照片在浏览器中缩放到最长边不超过 1920px，再以 JPEG 上传。
-- Worker 不把照片写入 R2、KV 或数据库；处理结果直接返回浏览器。
-- 仅允许来自 `https://18436002821.github.io` 的跨域请求。
-- API 访问码由 Cloudflare Worker Secret 保存，不放进网页源代码。
-- 照片会发送至 Cloudflare Workers AI 进行推理。Cloudflare 表示 Workers AI 客户内容不会提供给其他 Cloudflare 客户，也不会用于训练或改进其 AI 服务，除非获得明确同意。
+- 按输入和输出 512×512 图像块价格估算：输入 5.37 Neurons / tile，输出 26.05 Neurons / tile。
+- 工作台在估算值上额外增加 10% 缓冲。
+- 每张照片在浏览器中先转换为 JPEG，最长边不超过 1920px，再提交给 Worker。
+- 任何生成式模型都不能保证像素级保持现场细节。对外发布前请核对窗景、家具、设备、空间尺寸和房屋真实状况。
 
-## 房源照片的重要提醒
+官方文档：
+- 模型与价格：https://developers.cloudflare.com/workers-ai/models/flux-2-klein-4b/
+- Workers AI 定价：https://developers.cloudflare.com/workers-ai/platform/pricing/
+- Rate Limiting：https://developers.cloudflare.com/workers/runtime-apis/bindings/rate-limit/
+- Durable Objects：https://developers.cloudflare.com/durable-objects/
 
-模型会尽力保留原始户型、家具、墙体、门窗和视角，但任何生成式图像模型都不能保证像素级不改变现场细节。请务必用原图核对窗景、家具、设备、空间尺寸和房屋实际状况；对外发布房源时，不要用 AI 生成结果掩盖真实瑕疵或误导看房者。
+## 首次部署 / 更新 Worker
+
+在电脑安装 Node.js 后，打开终端进入本目录：
+
+```bash
+npm install -g wrangler
+npx wrangler login
+npx wrangler deploy
+```
+
+部署时 Wrangler 会根据 `wrangler.toml`：
+1. 保留现有 Workers AI 绑定 `AI`；
+2. 创建并绑定 SQLite Durable Object `USAGE_COUNTER`；
+3. 创建每 IP 每分钟 12 次的 `RETOUCH_RATE_LIMITER`；
+4. 部署公开免验证版 Worker。
+
+如果你之前设置过 `STUDIO_ACCESS_TOKEN`，不需要删除；新版 Worker 不再检查该 Secret。
+
+## GitHub Pages 工作台
+
+工作台地址：
+https://18436002821.github.io/zhi-yuheng-portfolio/real-estate-ai-studio/
+
+前端代码已经固定 Worker 地址，GitHub Pages 更新后无需同事逐台输入连接信息。**GitHub Pages 的自动发布不会自动部署 Cloudflare Worker**；Worker 源码更新后，仍需按上面的命令部署一次。
 
 ## API
 
-- `GET /api/health`：检查访问码与 Workers AI 绑定。
-- `POST /api/retouch`：接收一张照片，执行 FLUX.2 Klein 4B 图生图精修，返回图片二进制。
+- `GET /api/health`：检查 Workers AI、共享额度统计和限流绑定。
+- `GET /api/usage`：读取全公司共享的每日估算用量。
+- `POST /api/retouch`：接收一张预处理后的 JPG，执行 FLUX.2 Klein 4B 图生图精修并返回图片二进制。
+
+## 数据与隐私
+
+- Worker 不把上传照片写入 R2、KV 或数据库；处理结果直接返回浏览器。
+- Durable Object 只保存每日汇总计数，不保存照片、文件名或用户身份信息。
+- 照片会发送至 Cloudflare Workers AI 进行推理。请在对外发布前人工核对精修结果。
