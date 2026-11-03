@@ -143,24 +143,24 @@ export class UsageCounter extends DurableObject {
     if (url.pathname === "/consume" && request.method === "POST") {
       const body = await request.json().catch(() => ({}));
       const neurons = clamp(Math.ceil(Number(body.neurons) || 0), 1, 5000);
-      const result = await this.ctx.storage.transaction(async txn => {
-        const stored = await txn.get("daily_usage");
+      const result = await this.ctx.storage.transaction(async () => {
+        const stored = await this.ctx.storage.get("daily_usage");
         const record = stored && stored.date === today ? stored : emptyUsage(today);
         if (record.estimatedUsedNeurons + neurons > DAILY_NEURON_BUDGET) return { allowed: false, record };
         record.estimatedUsedNeurons += neurons;
         record.attemptedPhotos += 1;
-        await txn.put("daily_usage", record);
+        await this.ctx.storage.put("daily_usage", record);
         return { allowed: true, record };
       });
       return json({ allowed: result.allowed, ...usageSnapshot(result.record) });
     }
 
     if (url.pathname === "/success" && request.method === "POST") {
-      const record = await this.ctx.storage.transaction(async txn => {
-        const stored = await txn.get("daily_usage");
+      const record = await this.ctx.storage.transaction(async () => {
+        const stored = await this.ctx.storage.get("daily_usage");
         const current = stored && stored.date === today ? stored : emptyUsage(today);
         current.successfulPhotos += 1;
-        await txn.put("daily_usage", current);
+        await this.ctx.storage.put("daily_usage", current);
         return current;
       });
       return json(usageSnapshot(record));
