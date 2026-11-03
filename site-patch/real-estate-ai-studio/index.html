@@ -298,6 +298,23 @@
  .sidebar .quick-grid{grid-template-columns:1fr}
 }
 
+
+/* Shared public-workspace AI quota panel */
+.usage-panel{margin:0 0 14px;padding:13px 14px;border:1px solid #d9eaf4;border-radius:12px;background:linear-gradient(145deg,#f3f9fd,#fff)}
+.usage-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:11px}
+.usage-head strong{font-size:12px;color:#173247}
+.usage-pill{padding:4px 8px;border-radius:20px;background:#edf4f7;color:#708696;font-size:10px;font-weight:700;white-space:nowrap}
+.usage-pill.ready{background:#f1f8df;color:#607c00}.usage-pill.empty{background:#fff0ee;color:#a33b32}
+.usage-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.usage-metric{min-width:0;padding:9px 8px;border-radius:9px;background:#fff;border:1px solid #e5eff5}
+.usage-metric small{display:block;color:#71879a;font-size:9px;line-height:1.4;min-height:25px}
+.usage-metric strong{display:block;color:#173247;font-size:19px;line-height:1.2;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.usage-metric em{display:block;margin-top:3px;color:#8a9aa5;font-size:9px;font-style:normal}
+.usage-track{height:6px;margin-top:10px;border-radius:20px;background:#e5eef3;overflow:hidden}
+.usage-track i{display:block;width:0;height:100%;border-radius:20px;background:linear-gradient(90deg,#007AC8,#A7CC03);transition:width .25s}
+.usage-foot{margin-top:8px;color:#71879a;font-size:9px;line-height:1.55}
+@media(max-width:620px){.usage-panel{margin-bottom:10px;padding:10px}.usage-metric{padding:7px 6px}.usage-metric strong{font-size:17px}.usage-metric small{font-size:8px;min-height:22px}.usage-foot{font-size:8px}}
+
 </style></head>
 <body><div class="app">
 <header class="topbar"><div class="brand"><img class="brand-logo" src="./assets/juxin-logo.svg" alt="居信地产 JUXIN ESTATE"><span class="brand-divider"></span><div>房源 AI 精修工作台<small>REAL ESTATE PHOTO STUDIO</small></div></div><div class="topright"><span><i class="statusdot"></i>Cloudflare AI 云端推理</span><span>真实图生图 · 处理完成后不在工作台留存</span></div></header>
@@ -317,6 +334,16 @@
   <div><h2>AI 一键修图</h2><p>上传房源照片后，点击一次即可自动精修全部照片。</p></div>
   <span class="quick-count" id="readyCount">0 张已精修</span>
  </div>
+ <div class="usage-panel" id="usagePanel" aria-live="polite">
+  <div class="usage-head"><strong>今日 AI 额度 · 本工作台估算</strong><span class="usage-pill" id="usageStatus">读取中</span></div>
+  <div class="usage-grid">
+   <div class="usage-metric"><small>今日已估算消耗</small><strong id="usageUsed">--</strong><em>Neurons</em></div>
+   <div class="usage-metric"><small>预计剩余额度</small><strong id="usageRemaining">--</strong><em>Neurons</em></div>
+   <div class="usage-metric"><small>预计还能精修</small><strong id="usagePhotos">--</strong><em>张 · 按 1920×1280</em></div>
+  </div>
+  <div class="usage-track"><i id="usageBar"></i></div>
+  <div class="usage-foot" id="usageFoot">正在读取公司共享使用情况……</div>
+ </div>
  <div class="quick-grid">
   <article class="quick-card quick-process">
    <div class="quick-card-head"><span class="quick-icon">✦</span><div><strong>自动分析并精修</strong><small>自然真实 · 自动校正光线、色温与明暗 · 保留房屋原貌</small></div></div>
@@ -328,7 +355,7 @@
    <button class="quick-btn download-btn" id="downloadAll" disabled>下载全部精修照片</button>
   </article>
  </div>
- <p class="note" style="margin:12px 2px 0">真实 AI 图生图：Cloudflare Workers AI · FLUX.2 Klein 4B。照片会发送至 Cloudflare 进行 AI 处理；免费额度为每日 10,000 Neurons，达到额度后免费方案会暂停处理。AI 可能改变少量场景细节，发布房源前请核对原图。<a href="#" id="resetAiConfig" style="color:#007AC8;font-weight:700;margin-left:6px">重置 AI 连接</a></p>
+ <p class="note" style="margin:12px 2px 0">公开免验证模式 · 打开网页即可使用。AI 图生图由 Cloudflare Workers AI · FLUX.2 Klein 4B 提供。额度面板统计本工作台的估算消耗，不等于 Cloudflare 账户总余额；同一账户的其他 AI 调用也会占用每日额度。AI 可能改变少量场景细节，发布房源前请核对原图。</p>
 </section>
  </aside>
  <div id="hiddenConfig" style="display:none!important" aria-hidden="true">
@@ -346,7 +373,7 @@
 </div><div class="foot">REAL ESTATE PHOTO STUDIO · 房源影像专业校色工作台</div></main><div class="toast" id="toast"></div></div>
 <script>
 const $=id=>document.getElementById(id);
-let items=[],activePreset='natural',selectedId=null,batchBusy=false;
+let items=[],activePreset='natural',selectedId=null,batchBusy=false,usageSnapshot=null;
 const settings={brightness:8,contrast:6,warmth:2,saturation:3,whiteBalance:true,shadows:true,sharpen:false};
 const roomTypes=['待确认','卧室','客厅','厨房','卫生间','阳台','其他'];
 function toast(s){const t=$('toast');t.textContent=s;t.classList.add('show');clearTimeout(toast.timer);toast.timer=setTimeout(()=>t.classList.remove('show'),2400)}
@@ -426,35 +453,42 @@ compareStage.addEventListener('pointermove',e=>{
 });
 ['pointerup','pointercancel','lostpointercapture'].forEach(name=>compareStage.addEventListener(name,()=>compareDragging=false));
 window.addEventListener('resize',()=>{const it=items.find(x=>x.id===selectedId);if(it)fitCompare(it)});
-const AI_CONFIG_KEY='juxin_real_estate_ai_worker_v1';
-function readAiConfig(){
- try{
-  const value=JSON.parse(localStorage.getItem(AI_CONFIG_KEY)||'null');
-  if(value&&value.url&&value.token)return value;
- }catch(_){}
- return null;
-}
-async function getAiConfig(){
- let config=readAiConfig();
- if(config)return config;
- const enteredUrl=prompt('首次使用需要连接 AI 后端。请粘贴 Cloudflare Worker 地址（例如 https://juxin-real-estate-ai.你的账号.workers.dev）：');
- if(!enteredUrl)throw new Error('已取消 AI 连接设置');
- const url=enteredUrl.trim().replace(/\/+$/,'');
- if(!url.startsWith('https://'))throw new Error('Worker 地址必须以 https:// 开头');
- const token=prompt('请输入 Cloudflare Worker 中设置的工作台访问码：');
- if(!token)throw new Error('未填写工作台访问码');
- config={url,token:token.trim()};
- localStorage.setItem(AI_CONFIG_KEY,JSON.stringify(config));
- return config;
-}
+const AI_BASE_URL='https://juxin-real-estate-ai.3490705865.workers.dev';
+function getAiConfig(){return{url:AI_BASE_URL}}
 async function testAiConnection(config){
  let response;
- try{
-  response=await fetch(config.url+'/api/health',{method:'GET',headers:{'X-Studio-Token':config.token}});
- }catch(_){throw new Error('连接不到 AI 后端，请检查 Worker 地址或部署状态')}
+ try{response=await fetch(config.url+'/api/health',{method:'GET',cache:'no-store'})}
+ catch(_){throw new Error('连接不到 AI 后端，请检查 Worker 部署状态')}
  const payload=await response.json().catch(()=>({}));
- if(!response.ok||!payload.connected)throw new Error(payload.error||'AI 后端连接失败，请检查访问码和 Workers AI 绑定');
+ if(!response.ok||!payload.connected)throw new Error(payload.error||'AI 后端连接失败，请检查 Workers AI 绑定');
  return payload;
+}
+async function refreshUsage(){
+ try{
+  const response=await fetch(AI_BASE_URL+'/api/usage',{method:'GET',cache:'no-store'});
+  const payload=await response.json().catch(()=>({}));
+  if(!response.ok)throw new Error(payload.error||'额度读取失败');
+  usageSnapshot=payload;
+  const used=Math.max(0,Math.round(Number(payload.estimatedUsedNeurons)||0));
+  const remaining=Math.max(0,Math.round(Number(payload.remainingNeurons)||0));
+  const limit=Math.max(1,Math.round(Number(payload.dailyLimitNeurons)||7000));
+  $('usageUsed').textContent=used.toLocaleString('zh-CN');
+  $('usageRemaining').textContent=remaining.toLocaleString('zh-CN');
+  $('usagePhotos').textContent=Math.max(0,Math.floor(Number(payload.estimatedRemainingPhotos)||0))+' 张';
+  $('usageBar').style.width=Math.min(100,used/limit*100)+'%';
+  const status=$('usageStatus');
+  status.textContent=remaining>0?'额度可用':'今日额度已用完';
+  status.classList.toggle('ready',remaining>0);
+  status.classList.toggle('empty',remaining<=0);
+  $('usageFoot').textContent='今日提交 '+(payload.attemptedPhotos||0)+' 张 · 成功 '+(payload.successfulPhotos||0)+' 张 · 北京时间 08:00 重置。按标准房源照片估算，实际张数随分辨率变化。';
+  const processButton=$('autoProcessBtn');
+  if(processButton&&!batchBusy)processButton.disabled=remaining<=0;
+ }catch(error){
+  const status=$('usageStatus');
+  if(status){status.textContent='暂不可用';status.classList.remove('ready','empty')}
+  const foot=$('usageFoot');
+  if(foot)foot.textContent='额度暂时无法读取，请检查 AI 后端是否已部署最新版本。';
+ }
 }
 async function prepareAiUpload(file){
  const bitmap=await createImageBitmap(file);
@@ -478,7 +512,7 @@ async function processImage(it,aiConfig){
  try{
   response=await fetch(aiConfig.url+'/api/retouch',{
    method:'POST',
-   headers:{'X-Studio-Token':aiConfig.token},
+   
    body:form
   });
  }catch(_){throw new Error('AI 服务暂时无法连接，请稍后重试')}
@@ -526,10 +560,11 @@ async function runBatch(target=items){
    $('progressBar').style.width=pct+'%';$('progressNum').textContent=pct+'%';
    $('progressText').textContent='AI 正在精修 '+done+'/'+target.length+' 张';
    render();
+   await refreshUsage();
   }
  }finally{
   batchBusy=false;
-  btn.disabled=false;
+  btn.disabled=!!(usageSnapshot&&usageSnapshot.remainingNeurons<=0);
   btn.textContent='✦ AI 一键精修全部照片';
   renderSelection();
  }
@@ -539,11 +574,6 @@ async function runBatch(target=items){
  if(first)showPreview(first);
 }
 $('autoProcessBtn').addEventListener('click',()=>runBatch());
-$('resetAiConfig').addEventListener('click',e=>{
- e.preventDefault();
- localStorage.removeItem(AI_CONFIG_KEY);
- toast('AI 连接配置已清除，下次点击精修时重新设置');
-});
 function safeProjectName(){return($('projectName').value.trim()||'房源照片').replace(/[\\/:*?"<>|]/g,'_')}
 function download(it){const a=document.createElement('a'),base=it.name.replace(/\.[^.]+$/,'');const room=it.roomType&&it.roomType!=='待确认'&&it.roomType!=='识别中'?'_'+it.roomType:'';const ext=it.processedType==='image/png'?'png':it.processedType==='image/webp'?'webp':'jpg';a.href=it.processed;a.download=safeProjectName()+room+'_'+base+$('suffix').value+'.'+ext;document.body.appendChild(a);a.click();a.remove()}
 $('downloadAll').onclick=()=>{const done=items.filter(x=>x.processed);done.forEach((it,i)=>setTimeout(()=>download(it),i*400));toast('已开始下载 '+done.length+' 张照片')};
@@ -562,4 +592,5 @@ function applyMobilePanelState(){mobilePanels.forEach(panel=>{const heading=pane
 applyMobilePanelState();window.addEventListener('resize',applyMobilePanelState);
 
 render();
+refreshUsage();
 </script></body></html>
