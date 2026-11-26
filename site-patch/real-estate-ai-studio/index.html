@@ -315,11 +315,74 @@
 .usage-foot{margin-top:8px;color:#71879a;font-size:9px;line-height:1.55}
 @media(max-width:620px){.usage-panel{margin-bottom:10px;padding:10px}.usage-metric{padding:7px 6px}.usage-metric strong{font-size:17px}.usage-metric small{font-size:8px;min-height:22px}.usage-foot{font-size:8px}}
 
+
+/* 2026 output-ratio and simplified workflow refresh */
+.workflow-strip{display:flex;align-items:center;gap:12px;margin:-8px 0 14px;padding:10px 14px;border:1px solid #e1edf4;border-radius:11px;background:#fff;color:#6e8392;font-size:11px}
+.workflow-strip span{display:flex;align-items:center;gap:7px;white-space:nowrap}
+.workflow-strip b{display:grid;place-items:center;width:21px;height:21px;border-radius:50%;background:#eaf5fb;color:#007AC8;font-size:10px}
+.workflow-strip i{height:1px;flex:1;min-width:10px;background:#dceaf2}
+.format-panel{margin:0 0 16px;padding:17px 19px}
+.format-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:13px}
+.format-kicker{font-size:9px;letter-spacing:2px;font-weight:800;color:#007AC8}
+.format-heading h2{font-size:16px;margin:3px 0 4px;color:#173247}
+.format-heading p{font-size:11px;color:#71879a;margin:0;line-height:1.6}
+.format-summary{flex-shrink:0;padding:6px 10px;border-radius:20px;background:#edf7fc;color:#17618a;font-size:10px;font-weight:700}
+.format-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.format-option{display:flex;align-items:center;gap:11px;min-width:0;min-height:76px;padding:11px 12px;border:1px solid #dce9f1;border-radius:11px;background:#fff;color:#173247;text-align:left;transition:border-color .18s,background .18s,box-shadow .18s}
+.format-option.active{border:1.5px solid #007AC8;background:#f1f9fe;box-shadow:0 0 0 3px rgba(0,122,200,.08)}
+.format-option>span:nth-child(2){display:flex;flex-direction:column;gap:4px;min-width:0}
+.format-option b{font-size:12px}
+.format-option small{font-size:10px;color:#71879a;line-height:1.4}
+.format-option em{margin-left:auto;align-self:flex-start;padding:3px 6px;border-radius:10px;background:#e7f4fb;color:#007AC8;font-size:9px;font-style:normal;white-space:nowrap}
+.format-ratio-icon{width:34px;height:38px;flex:0 0 34px;display:grid;place-items:center;border-radius:7px;background:#eaf5fb}
+.format-ratio-icon i{display:block;border:2px solid #007AC8;border-radius:3px}
+.ratio-portrait i{width:17px;height:23px}
+.ratio-landscape i{width:26px;height:15px}
+.ratio-auto i{width:17px;height:23px;box-shadow:9px 0 0 -2px #eaf5fb,9px 0 0 0 #007AC8}
+.format-note{display:flex;align-items:flex-start;gap:7px;margin-top:11px;color:#71879a;font-size:10px;line-height:1.6}
+.format-note span{color:#6f9c00;font-weight:800}
+.process-actions{display:grid;grid-template-columns:1fr 1.15fr;gap:8px;margin-top:12px}
+.process-actions .quick-btn{width:100%;min-width:0;min-height:48px;padding:10px 8px;border-radius:10px;font-size:12px;font-weight:750}
+.process-selected-btn{background:#edf6fb;color:#17618a;border:1px solid #cfe5f2}
+.process-selected-btn:disabled{opacity:.45;cursor:not-allowed}
+.process-btn:disabled{opacity:.45;cursor:not-allowed}
+.photo-ratio-tag{position:absolute;right:7px;top:7px;padding:4px 6px;border-radius:5px;background:rgba(0,122,200,.88);color:#fff;font-size:9px;font-weight:700;z-index:3}
+.output-meta strong{color:#007AC8;font-size:10px}
+.photo-extra{margin-top:7px;border-top:1px solid #edf1f4;padding-top:6px}
+.photo-extra summary{color:#71879a;font-size:10px;cursor:pointer}
+.photo-extra-note{margin-top:5px;color:#8998a2;font-size:9px;line-height:1.5}
+@media(max-width:980px){.format-panel{margin-bottom:13px}.format-options{gap:8px}}
+@media(max-width:700px){
+ .workflow-strip{gap:6px;margin:-4px 0 11px;padding:9px 8px;font-size:9px;justify-content:space-between}
+ .workflow-strip span{gap:4px}
+ .workflow-strip b{width:18px;height:18px;font-size:9px}
+ .format-panel{padding:13px 12px;margin-bottom:12px}
+ .format-heading{flex-direction:column;gap:7px;margin-bottom:10px}
+ .format-heading h2{font-size:15px}
+ .format-summary{align-self:flex-start}
+ .format-options{grid-template-columns:1fr;gap:7px}
+ .format-option{min-height:60px;padding:8px 10px}
+ .format-ratio-icon{width:31px;height:34px;flex-basis:31px}
+ .ratio-portrait i{width:15px;height:21px}
+ .ratio-landscape i{width:24px;height:14px}
+ .ratio-auto i{width:15px;height:21px;box-shadow:8px 0 0 -2px #eaf5fb,8px 0 0 0 #007AC8}
+ .format-note{font-size:9px;margin-top:8px}
+ .layout{display:flex!important;flex-direction:column!important}
+ .sidebar{order:1!important}
+ .gallery{order:2!important}
+ .preview{order:3!important}
+ .process-actions{position:fixed;left:0;right:0;bottom:0;z-index:60;grid-template-columns:.9fr 1.1fr;padding:9px 12px calc(9px + env(safe-area-inset-bottom));margin:0;background:rgba(255,255,255,.97);backdrop-filter:blur(16px);box-shadow:0 -5px 22px rgba(23,50,71,.13)}
+ .process-actions .quick-btn{min-height:46px;font-size:12px}
+ .wrap{padding-bottom:115px}
+}
+
 </style></head>
 <body><div class="app">
 <header class="topbar"><div class="brand"><img class="brand-logo" src="./assets/juxin-logo.svg" alt="居信地产 JUXIN ESTATE"><span class="brand-divider"></span><div>房源 AI 精修工作台<small>REAL ESTATE PHOTO STUDIO</small></div></div><div class="topright"><span><i class="statusdot"></i>Cloudflare AI 云端推理</span><span>真实图生图 · 处理完成后不在工作台留存</span></div></header>
 <main class="wrap"><section class="hero"><div><div class="eyebrow">PHOTO WORKFLOW / 01</div><h1><span class="desktop-hero">让每一张房源照片，都更专业。</span><span class="mobile-hero">房源照片精修</span></h1><p>批量导入 · 智能校色 · 统一风格 · 高清导出</p></div><div class="hero-actions"><button class="btn btn-light" id="clearBtn">清空工作区</button><button class="btn btn-primary" id="topUpload">＋ 添加照片</button></div></section>
-<section class="panel upload" id="dropzone"><div class="upload-left"><div class="upload-icon">＋</div><div><h3>导入房源照片</h3><p>支持 JPG、PNG、WEBP，可一次选择多张照片</p></div></div><label class="btn btn-primary" for="fileInput">选择照片</label><input id="fileInput" type="file" accept="image/*" multiple></section>
+<div class="workflow-strip" aria-label="操作步骤"><span><b>01</b> 导入照片</span><i></i><span><b>02</b> 设置比例</span><i></i><span><b>03</b> AI 精修</span><i></i><span><b>04</b> 下载成片</span></div>
+<section class="panel upload" id="dropzone"><div class="upload-left"><div class="upload-icon">＋</div><div><h3>导入房源照片</h3><p>支持 JPG、PNG、WEBP，可一次选择多张照片；可拖入或点击整个区域</p></div></div><label class="btn btn-primary" for="fileInput">选择照片</label><input id="fileInput" type="file" accept="image/*" multiple></section>
+<section class="panel format-panel" aria-label="导出比例设置"><div class="format-heading"><div><span class="format-kicker">OUTPUT FORMAT / 02</span><h2>精修后输出比例</h2><p>智能识别默认开启：竖图输出 3:4，横图输出 16:9。</p></div><span class="format-summary" id="formatSummary">导入照片后自动统计方向</span></div><div class="format-options" role="group" aria-label="输出比例"><button type="button" class="format-option active" data-format="auto" aria-pressed="true"><span class="format-ratio-icon ratio-auto"><i></i></span><span><b>智能识别</b><small>竖图 3:4 · 横图 16:9</small></span><em>推荐</em></button><button type="button" class="format-option" data-format="portrait" aria-pressed="false"><span class="format-ratio-icon ratio-portrait"><i></i></span><span><b>统一竖图 3:4</b><small>适合小红书竖版房源图</small></span></button><button type="button" class="format-option" data-format="landscape" aria-pressed="false"><span class="format-ratio-icon ratio-landscape"><i></i></span><span><b>统一横图 16:9</b><small>适合横版展示和视频封面</small></span></button></div><div class="format-note"><span>✓</span> 尽量保留原图完整主体；比例不足的边缘使用同图柔和背景补足，不直接裁掉家具和窗户。</div></section>
 
 <div class="layout">
  <div class="maincol">
@@ -331,7 +394,7 @@
  <aside class="sidebar" aria-label="AI 一键修图操作">
   <section class="panel quick-actions" aria-label="AI 修图操作">
  <div class="quick-head">
-  <div><h2>AI 一键修图</h2><p>上传房源照片后，点击一次即可自动精修全部照片。</p></div>
+  <div><h2>AI 一键修图</h2><p>可精修当前选中照片，也可以一次处理全部照片。</p></div>
   <span class="quick-count" id="readyCount">0 张已精修</span>
  </div>
  <div class="usage-panel" id="usagePanel" aria-live="polite">
@@ -339,7 +402,7 @@
   <div class="usage-grid">
    <div class="usage-metric"><small>今日已估算消耗</small><strong id="usageUsed">--</strong><em>Neurons</em></div>
    <div class="usage-metric"><small>预计剩余额度</small><strong id="usageRemaining">--</strong><em>Neurons</em></div>
-   <div class="usage-metric"><small>预计还能精修</small><strong id="usagePhotos">--</strong><em>张 · 按 1920×1280</em></div>
+   <div class="usage-metric"><small>预计还能精修</small><strong id="usagePhotos">--</strong><em>张 · 按标准输出估算</em></div>
   </div>
   <div class="usage-track"><i id="usageBar"></i></div>
   <div class="usage-foot" id="usageFoot">正在读取公司共享使用情况……</div>
@@ -347,7 +410,7 @@
  <div class="quick-grid">
   <article class="quick-card quick-process">
    <div class="quick-card-head"><span class="quick-icon">✦</span><div><strong>自动分析并精修</strong><small>自然真实 · 自动校正光线、色温与明暗 · 保留房屋原貌</small></div></div>
-   <button class="quick-btn process-btn" id="autoProcessBtn">✦ AI 一键精修全部照片</button>
+   <div class="process-actions" id="processActions"><button class="quick-btn process-selected-btn" id="processSelectedBtn" disabled>先选择一张照片</button><button class="quick-btn process-btn" id="autoProcessBtn" disabled>✦ 精修全部照片</button></div>
    <div class="progressbox" id="progressbox"><div class="progresslabel"><span id="progressText">等待开始</span><span id="progressNum">0%</span></div><div class="progressline"><i id="progressBar"></i></div></div>
   </article>
   <article class="quick-card quick-download">
@@ -373,20 +436,26 @@
 </div><div class="foot">REAL ESTATE PHOTO STUDIO · 房源影像专业校色工作台</div></main><div class="toast" id="toast"></div></div>
 <script>
 const $=id=>document.getElementById(id);
-let items=[],activePreset='natural',selectedId=null,batchBusy=false,usageSnapshot=null;
+let items=[],activePreset='natural',selectedId=null,batchBusy=false,usageSnapshot=null,formatMode='auto';
 const settings={brightness:8,contrast:6,warmth:2,saturation:3,whiteBalance:true,shadows:true,sharpen:false};
 const roomTypes=['待确认','卧室','客厅','厨房','卫生间','阳台','其他'];
 function toast(s){const t=$('toast');t.textContent=s;t.classList.add('show');clearTimeout(toast.timer);toast.timer=setTimeout(()=>t.classList.remove('show'),2400)}
 function fmt(n){return(n>=0?'+':'')+n}
 function clamp(v,min,max){return Math.max(min,Math.min(max,v))}
 function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function getOutputFormat(it){if(formatMode==='portrait'||formatMode==='landscape')return formatMode;return Number(it.originalWidth||0)>0&&Number(it.originalHeight||0)>0&&it.originalHeight>it.originalWidth?'portrait':'landscape'}
+function formatSpec(format){return format==='portrait'?{width:1440,height:1920,ratio:'3:4',label:'竖图 3:4'}:{width:1920,height:1080,ratio:'16:9',label:'横图 16:9'}}
+function formatLabel(format){return formatSpec(format).label}
+function updateFormatSummary(){const el=$('formatSummary');if(!el)return;if(!items.length){el.textContent='导入照片后自动统计方向';return}if(formatMode!=='auto'){el.textContent='全部 '+items.length+' 张 · '+formatLabel(formatMode);return}const waiting=items.filter(it=>!it.originalWidth||!it.originalHeight).length;const portrait=items.filter(it=>it.originalWidth&&it.originalHeight&&it.originalHeight>it.originalWidth).length;const landscape=items.filter(it=>it.originalWidth&&it.originalHeight&&it.originalWidth>=it.originalHeight).length;el.textContent=waiting?'正在识别方向 · 已导入 '+items.length+' 张':portrait+' 张竖图 · '+landscape+' 张横图'}
+function setFormatMode(mode){if(batchBusy)return toast('精修过程中不能更改输出比例');formatMode=mode;document.querySelectorAll('.format-option').forEach(btn=>{const active=btn.dataset.format===mode;btn.classList.toggle('active',active);btn.setAttribute('aria-pressed',String(active))});render();toast('输出比例已设置：'+(mode==='auto'?'智能识别':formatLabel(mode)))}
+document.querySelectorAll('.format-option').forEach(btn=>btn.addEventListener('click',()=>setFormatMode(btn.dataset.format)));
 
 // 免费本地模式：不连接任何第三方 AI API，所有处理均在浏览器内完成。
 function setPreset(p){activePreset=p;document.querySelectorAll('.preset').forEach(b=>b.classList.toggle('active',b.dataset.preset===p));const v={natural:[8,6,2,3],warm:[7,5,8,5],gray:[9,8,-3,-3],bright:[14,3,0,2]}[p];['brightness','contrast','warmth','saturation'].forEach((id,i)=>{$(id).value=v[i];settings[id]=v[i];$(id+'Val').textContent=fmt(v[i])})}
 function filenameRoom(name){const n=name.toLowerCase();const groups=[['卧室',['卧室','主卧','次卧','bedroom','master bedroom','bed']],['客厅',['客厅','起居室','living','lounge','sofa']],['厨房',['厨房','灶台','橱柜','kitchen']],['卫生间',['卫生间','浴室','厕所','淋浴','马桶','bathroom','toilet','shower']],['阳台',['阳台','露台','balcony','terrace']]];for(const [room,words] of groups){if(words.some(w=>n.includes(w)))return{room,confidence:.98,reason:'根据文件名识别'}}return null}
-function inspectScene(url){return new Promise(resolve=>{const img=new Image();img.onload=()=>{try{const c=document.createElement('canvas'),ctx=c.getContext('2d',{willReadFrequently:true});c.width=72;c.height=72;ctx.drawImage(img,0,0,72,72);const d=ctx.getImageData(0,0,72,72).data;let lum=0,sat=0,blue=0,green=0,bright=0,edge=0,count=0;for(let y=1;y<71;y+=2){for(let x=1;x<71;x+=2){const i=(y*72+x)*4,r=d[i],g=d[i+1],b=d[i+2],mx=Math.max(r,g,b),mn=Math.min(r,g,b),l=.2126*r+.7152*g+.0722*b;lum+=l;sat+=(mx-mn)/(mx||1);blue+=b>r*1.12&&b>g*1.06?1:0;green+=g>r*1.12&&g>b*1.04?1:0;bright+=l>205?1:0;const j=(y*72+x-1)*4;edge+=Math.abs(l-(.2126*d[j]+.7152*d[j+1]+.0722*d[j+2]));count++}}resolve({lum:lum/count,sat:sat/count,blue:blue/count,green:green/count,bright:bright/count,edge:edge/count})}catch(e){resolve(null)}};img.onerror=()=>resolve(null);img.src=url})}
-async function recognizeRoom(it){const fromName=filenameRoom(it.name);if(fromName){it.roomType=fromName.room;it.roomConfidence=fromName.confidence;it.roomReason=fromName.reason;return}const m=await inspectScene(it.url);if(!m){it.roomType='待确认';it.roomConfidence=.2;it.roomReason='无法读取画面';return}let guess='待确认',confidence=.32,reason='画面线索不足，建议手动确认';if(m.green>.13&&m.sat>.13){guess='阳台';confidence=clamp(.48+m.green*.7,.48,.72);reason='识别到较多绿色/户外色彩'}else if(m.blue>.19&&m.lum>125){guess='阳台';confidence=.49;reason='识别到较明显的蓝色窗景线索'}else if(m.lum>178&&m.sat<.105&&m.bright>.42&&m.edge>7.5){guess='卫生间';confidence=.56;reason='明亮低饱和画面，具有瓷砖/洁具空间特征'}else if(m.lum>155&&m.sat<.13&&m.edge>8.5){guess='厨房';confidence=.45;reason='明亮中性画面，可能为橱柜/操作台空间'}it.roomType=guess;it.roomConfidence=confidence;it.roomReason=reason}
-function addFiles(files){const accepted=[...files].filter(f=>f.type.startsWith('image/'));if(!accepted.length)return toast('请选择图片文件');accepted.forEach(file=>{const url=URL.createObjectURL(file),id=crypto.randomUUID?crypto.randomUUID():String(Date.now()+Math.random());const it={id,file,url,name:file.name,processed:null,canvas:null,status:'待精修',roomType:'识别中',roomConfidence:0,roomReason:'正在分析画面'};items.push(it);recognizeRoom(it).then(()=>render())});render();toast('已添加 '+accepted.length+' 张照片，正在识别场景')}
+function inspectScene(url){return new Promise(resolve=>{const img=new Image();img.onload=()=>{try{const c=document.createElement('canvas'),ctx=c.getContext('2d',{willReadFrequently:true});c.width=72;c.height=72;ctx.drawImage(img,0,0,72,72);const d=ctx.getImageData(0,0,72,72).data;let lum=0,sat=0,blue=0,green=0,bright=0,edge=0,count=0;for(let y=1;y<71;y+=2){for(let x=1;x<71;x+=2){const i=(y*72+x)*4,r=d[i],g=d[i+1],b=d[i+2],mx=Math.max(r,g,b),mn=Math.min(r,g,b),l=.2126*r+.7152*g+.0722*b;lum+=l;sat+=(mx-mn)/(mx||1);blue+=b>r*1.12&&b>g*1.06?1:0;green+=g>r*1.12&&g>b*1.04?1:0;bright+=l>205?1:0;const j=(y*72+x-1)*4;edge+=Math.abs(l-(.2126*d[j]+.7152*d[j+1]+.0722*d[j+2]));count++}}resolve({lum:lum/count,sat:sat/count,blue:blue/count,green:green/count,bright:bright/count,edge:edge/count,width:img.naturalWidth,height:img.naturalHeight})}catch(e){resolve(null)}};img.onerror=()=>resolve(null);img.src=url})}
+async function recognizeRoom(it){const m=await inspectScene(it.url);if(m){it.originalWidth=m.width;it.originalHeight=m.height}const fromName=filenameRoom(it.name);if(fromName){it.roomType=fromName.room;it.roomConfidence=fromName.confidence;it.roomReason=fromName.reason;return}if(!m){it.roomType='待确认';it.roomConfidence=.2;it.roomReason='无法读取画面';return}let guess='待确认',confidence=.32,reason='画面线索不足，建议手动确认';if(m.green>.13&&m.sat>.13){guess='阳台';confidence=clamp(.48+m.green*.7,.48,.72);reason='识别到较多绿色/户外色彩'}else if(m.blue>.19&&m.lum>125){guess='阳台';confidence=.49;reason='识别到较明显的蓝色窗景线索'}else if(m.lum>178&&m.sat<.105&&m.bright>.42&&m.edge>7.5){guess='卫生间';confidence=.56;reason='明亮低饱和画面，具有瓷砖/洁具空间特征'}else if(m.lum>155&&m.sat<.13&&m.edge>8.5){guess='厨房';confidence=.45;reason='明亮中性画面，可能为橱柜/操作台特征'}it.roomType=guess;it.roomConfidence=confidence;it.roomReason=reason}
+function addFiles(files){const accepted=[...files].filter(f=>f.type.startsWith('image/'));if(!accepted.length)return toast('请选择图片文件');accepted.forEach(file=>{const url=URL.createObjectURL(file),id=crypto.randomUUID?crypto.randomUUID():String(Date.now()+Math.random());const it={id,file,url,name:file.name,processed:null,previewSource:null,canvas:null,status:'待精修',roomType:'识别中',roomConfidence:0,roomReason:'正在分析画面',originalWidth:0,originalHeight:0};items.push(it);recognizeRoom(it).then(()=>{updateFormatSummary();render()})});if(!selectedId&&items.length)selectedId=items[0].id;render();updateFormatSummary();const first=items.find(it=>it.id===selectedId);if(first)showPreview(first);toast('已添加 '+accepted.length+' 张照片，正在识别方向和场景')}
 $('fileInput').addEventListener('change',e=>{addFiles(e.target.files);e.target.value=''});$('topUpload').onclick=()=>$('fileInput').click();
 const dz=$('dropzone'),gallery=document.querySelector('.gallery');
 const openPhotoPicker=()=> $('fileInput').click();
@@ -408,17 +477,37 @@ dz.addEventListener('drop',e=>addFiles(e.dataTransfer.files));
 function renderSelection(){
  document.querySelectorAll('.photo').forEach(el=>el.classList.toggle('selected',el.dataset.id===selectedId));
  const ready=items.filter(x=>x.processed).length;
+ const selected=items.find(x=>x.id===selectedId);
+ const quotaEmpty=!!(usageSnapshot&&Number(usageSnapshot.remainingNeurons)<=0);
  $('readyCount').textContent=ready+' 张已精修';
  $('downloadAll').disabled=!ready||batchBusy;
  $('downloadAll').textContent=ready?'↓ 下载全部精修照片（'+ready+'）':'完成精修后可下载';
  $('downloadActionHint').textContent=ready?'已完成 '+ready+' 张，点击即可导出':'精修完成后，可下载全部高清照片';
+ $('processSelectedBtn').disabled=!selected||batchBusy||quotaEmpty;
+ $('processSelectedBtn').textContent=selected?'✦ 精修选中照片':'先在照片队列选择一张';
+ $('autoProcessBtn').disabled=!items.length||batchBusy||quotaEmpty;
 }
-function render(){$('countText').textContent=items.length+' 张照片';$('empty').style.display=items.length?'none':'flex';$('thumbgrid').innerHTML='';items.forEach(it=>{const card=document.createElement('article');card.className='photo'+(it.id===selectedId?' selected':'');card.dataset.id=it.id;const thumb=it.processed||it.url;const opts=roomTypes.map(r=>`<option value="${r}" ${it.roomType===r?'selected':''}>${r}</option>`).join('');card.innerHTML=`<div class="photo-img"><img src="${thumb}" alt="房源照片"><span class="photo-tag">${esc(it.status)}</span></div><div class="photo-info"><div class="photo-name" title="${esc(it.name)}">${esc(it.name)}</div><div class="photo-meta"><span>${it.processed?'已完成':'等待处理'}</span><span>${(it.file.size/1024/1024).toFixed(1)} MB</span></div><div class="room-row"><label>场景建议</label><select class="room-select" data-id="${it.id}" title="${esc(it.roomReason||'可手动调整房间类型')}">${opts}</select></div><div class="photo-meta"><span>${it.roomConfidence?`参考 ${Math.round(it.roomConfidence*100)}%`:'本地辅助判断'}</span><span>${esc(it.roomReason||'')}</span></div><div class="photo-actions"><button class="mini" data-action="preview" data-id="${it.id}">查看预览</button><button class="mini" data-action="download" data-id="${it.id}" ${it.processed?'':'disabled'}>下载</button><button class="mini" data-action="remove" data-id="${it.id}">移除</button></div></div>`;$('thumbgrid').appendChild(card)});$('downloadAll').disabled=!items.some(x=>x.processed);renderSelection()}
+function render(){
+ $('countText').textContent=items.length+' 张照片';
+ $('empty').style.display=items.length?'none':'flex';
+ $('thumbgrid').innerHTML='';
+ items.forEach(it=>{
+  const card=document.createElement('article');card.className='photo'+(it.id===selectedId?' selected':'');card.dataset.id=it.id;
+  const thumb=it.processed||it.url;
+  const outputFormat=it.processed&&it.outputFormat?it.outputFormat:getOutputFormat(it);
+  const outputLabel=formatLabel(outputFormat);
+  const opts=roomTypes.map(r=>'<option value="'+r+'" '+(it.roomType===r?'selected':'')+'>'+r+'</option>').join('');
+  card.innerHTML='<div class="photo-img"><img src="'+thumb+'" alt="房源照片"><span class="photo-tag">'+esc(it.status)+'</span><span class="photo-ratio-tag">'+outputLabel+'</span></div><div class="photo-info"><div class="photo-name" title="'+esc(it.name)+'">'+esc(it.name)+'</div><div class="photo-meta"><span>'+(it.processed?'已完成':'等待处理')+'</span><span>'+(it.file.size/1024/1024).toFixed(1)+' MB</span></div><div class="photo-meta output-meta"><span>输出比例</span><strong>'+outputLabel+'</strong></div><details class="photo-extra"><summary>场景分类（可选）</summary><div class="room-row"><label>场景建议</label><select class="room-select" data-id="'+it.id+'" title="'+esc(it.roomReason||'可手动调整房间类型')+'">'+opts+'</select></div><div class="photo-extra-note">'+(it.roomConfidence?'参考 '+Math.round(it.roomConfidence*100)+'% · ':'')+esc(it.roomReason||'可手动确认')+'</div></details><div class="photo-actions"><button class="mini" data-action="preview" data-id="'+it.id+'">查看预览</button><button class="mini" data-action="download" data-id="'+it.id+'" '+(it.processed?'':'disabled')+'>下载</button><button class="mini" data-action="remove" data-id="'+it.id+'">移除</button></div></div>';
+  $('thumbgrid').appendChild(card);
+ });
+ $('downloadAll').disabled=!items.some(x=>x.processed);
+ renderSelection();updateFormatSummary();
+}
 $('thumbgrid').addEventListener('change',e=>{if(e.target.matches('.room-select')){const it=items.find(x=>x.id===e.target.dataset.id);if(it){it.roomType=e.target.value;it.roomReason='手动确认';it.roomConfidence=1;toast('已更新场景：'+it.roomType)}}});
-$('thumbgrid').addEventListener('click',e=>{const b=e.target.closest('button');if(b){const it=items.find(x=>x.id===b.dataset.id);if(!it)return;if(b.dataset.action==='remove'){URL.revokeObjectURL(it.url);if(it.processed)URL.revokeObjectURL(it.processed);items=items.filter(x=>x!==it);if(selectedId===it.id){selectedId=null;resetPreview()}render();return}if(b.dataset.action==='download'&&it.processed){download(it);return}if(b.dataset.action==='preview'){showPreview(it);return}return}if(e.target.closest('select'))return;const card=e.target.closest('.photo');if(card){const it=items.find(x=>x.id===card.dataset.id);if(it)showPreview(it)}});
-function fitCompare(it){const img=new Image();img.onload=()=>{const frame=$('compare'),parent=$('preview').querySelector('.preview-body');const maxH=Math.min(window.innerHeight*.68,620),maxW=Math.max(220,parent.clientWidth-4),ratio=img.naturalWidth/img.naturalHeight;let h=Math.min(maxH,maxW/ratio),w=h*ratio;frame.style.width=Math.round(w)+'px';frame.style.height=Math.round(h)+'px';frame.style.setProperty('--compare-width',Math.round(w)+'px');frame.style.aspectRatio=img.naturalWidth+'/'+img.naturalHeight};img.src=it.url}
+$('thumbgrid').addEventListener('click',e=>{const b=e.target.closest('button');if(b){const it=items.find(x=>x.id===b.dataset.id);if(!it)return;if(b.dataset.action==='remove'){URL.revokeObjectURL(it.url);if(it.processed)URL.revokeObjectURL(it.processed);if(it.previewSource)URL.revokeObjectURL(it.previewSource);items=items.filter(x=>x!==it);if(selectedId===it.id){selectedId=null;resetPreview()}render();return}if(b.dataset.action==='download'&&it.processed){download(it);return}if(b.dataset.action==='preview'){showPreview(it);return}return}if(e.target.closest('select'))return;const card=e.target.closest('.photo');if(card){const it=items.find(x=>x.id===card.dataset.id);if(it)showPreview(it)}});
+function fitCompare(it){const img=new Image();img.onload=()=>{const frame=$('compare'),parent=$('preview').querySelector('.preview-body');const maxH=Math.min(window.innerHeight*.68,620),maxW=Math.max(220,parent.clientWidth-4),ratio=img.naturalWidth/img.naturalHeight;let h=Math.min(maxH,maxW/ratio),w=h*ratio;frame.style.width=Math.round(w)+'px';frame.style.height=Math.round(h)+'px';frame.style.setProperty('--compare-width',Math.round(w)+'px');frame.style.aspectRatio=img.naturalWidth+'/'+img.naturalHeight};img.src=it.previewSource||it.url}
 function resetPreview(){ $('preview').style.display='block'; $('compare').style.display='none'; $('previewEmpty').style.display='flex'; $('compareHelp').style.display='none'; $('previewState').textContent='选择照片后显示精修前后对比'; }
-function showPreview(it){selectedId=it.id;$('preview').style.display='block';$('previewEmpty').style.display='none';$('compare').style.display='block';$('compareHelp').style.display='block';$('compareBefore').src=it.url;$('compareAfter').src=it.processed||it.url;$('previewState').textContent=it.processed?'已完成精修 · 拖动滑块对比':'尚未精修 · 当前显示原图';setComparePosition(50);$('compareAfter').style.opacity=it.processed?'1':'.35';fitCompare(it);renderSelection();if(window.innerWidth<620)$('preview').scrollIntoView({behavior:'smooth',block:'start'})}
+function showPreview(it){selectedId=it.id;$('preview').style.display='block';$('previewEmpty').style.display='none';$('compare').style.display='block';$('compareHelp').style.display='block';const source=it.previewSource||it.url;$('compareBefore').src=source;$('compareAfter').src=it.processed||source;$('previewState').textContent=it.processed?'已完成精修 · '+formatLabel(it.outputFormat||getOutputFormat(it))+' · 拖动滑块对比':'尚未精修 · 预计输出 '+formatLabel(getOutputFormat(it));setComparePosition(50);$('compareAfter').style.opacity=it.processed?'1':'.35';fitCompare(it);renderSelection();if(window.innerWidth<620)$('preview').scrollIntoView({behavior:'smooth',block:'start'})}
 function setComparePosition(value){
  const pct=clamp(Number(value)||0,0,100),stage=$('compare');
  stage.style.setProperty('--split',pct+'%');
@@ -483,7 +572,8 @@ async function refreshUsage(){
   status.classList.toggle('empty',remaining<=0);
   $('usageFoot').textContent='今日提交 '+(payload.attemptedPhotos||0)+' 张 · 成功 '+(payload.successfulPhotos||0)+' 张 · 北京时间 08:00 重置。按标准房源照片估算，实际张数随分辨率变化。';
   const processButton=$('autoProcessBtn');
-  if(processButton&&!batchBusy)processButton.disabled=remaining<=0;
+  if(processButton&&!batchBusy)processButton.disabled=remaining<=0||!items.length;
+   const selectedButton=$('processSelectedBtn');if(selectedButton&&!batchBusy)selectedButton.disabled=remaining<=0||!items.some(it=>it.id===selectedId);
  }catch(error){
   const status=$('usageStatus');
   if(status){status.textContent='暂不可用';status.classList.remove('ready','empty')}
@@ -491,39 +581,46 @@ async function refreshUsage(){
   if(foot)foot.textContent='额度暂时无法读取，请检查 AI 后端是否已部署最新版本。';
  }
 }
-async function prepareAiUpload(file){
+async function prepareAiUpload(file,mode){
  const bitmap=await createImageBitmap(file);
- const scale=Math.min(1,1920/Math.max(bitmap.width,bitmap.height));
- const width=Math.max(256,Math.round(bitmap.width*scale));
- const height=Math.max(256,Math.round(bitmap.height*scale));
+ const format=mode==='portrait'||mode==='landscape'?mode:(bitmap.height>bitmap.width?'portrait':'landscape');
+ const spec=formatSpec(format),width=spec.width,height=spec.height;
  const canvas=document.createElement('canvas');canvas.width=width;canvas.height=height;
  const ctx=canvas.getContext('2d');
- ctx.drawImage(bitmap,0,0,width,height);
+ if(!ctx){if(bitmap.close)bitmap.close();throw new Error('当前浏览器无法处理图片，请更换浏览器重试')}
+ ctx.fillStyle='#eef3f6';ctx.fillRect(0,0,width,height);
+ const coverScale=Math.max(width/bitmap.width,height/bitmap.height);
+ const coverW=bitmap.width*coverScale,coverH=bitmap.height*coverScale;
+ const coverX=(width-coverW)/2,coverY=(height-coverH)/2;
+ ctx.save();ctx.filter='blur(34px)';ctx.globalAlpha=.88;ctx.drawImage(bitmap,coverX,coverY,coverW,coverH);ctx.restore();
+ ctx.fillStyle='rgba(244,249,252,.10)';ctx.fillRect(0,0,width,height);
+ const fitScale=Math.min(width/bitmap.width,height/bitmap.height);
+ const drawW=bitmap.width*fitScale,drawH=bitmap.height*fitScale;
+ const x=(width-drawW)/2,y=(height-drawH)/2;
+ ctx.save();ctx.filter='blur(16px)';ctx.globalAlpha=.42;ctx.drawImage(bitmap,x-18,y-18,drawW+36,drawH+36);ctx.restore();
+ ctx.drawImage(bitmap,x,y,drawW,drawH);
  if(bitmap.close)bitmap.close();
  const blob=await new Promise((resolve,reject)=>canvas.toBlob(value=>value?resolve(value):reject(new Error('照片预处理失败')),'image/jpeg',.94));
- return{blob,width,height};
+ return{blob,width,height,format,ratio:spec.ratio};
 }
 async function processImage(it,aiConfig){
- const prepared=await prepareAiUpload(it.file);
+ const prepared=await prepareAiUpload(it.file,formatMode);
+ const previewUrl=URL.createObjectURL(prepared.blob);
  const form=new FormData();
- form.append('photo',prepared.blob,it.name.replace(/\.[^.]+$/,'')+'.jpg');
+ form.append('photo',prepared.blob,it.name.replace(/\\.[^.]+$/,'')+'.jpg');
  form.append('width',String(prepared.width));
  form.append('height',String(prepared.height));
  let response;
  try{
-  response=await fetch(aiConfig.url+'/api/retouch',{
-   method:'POST',
-   
-   body:form
-  });
- }catch(_){throw new Error('AI 服务暂时无法连接，请稍后重试')}
+  response=await fetch(aiConfig.url+'/api/retouch',{method:'POST',body:form});
+ }catch(_){URL.revokeObjectURL(previewUrl);throw new Error('AI 服务暂时无法连接，请稍后重试')}
  if(!response.ok){
-  const detail=await response.json().catch(()=>({}));
+  const detail=await response.json().catch(()=>({}));URL.revokeObjectURL(previewUrl);
   throw new Error(detail.error||('AI 精修失败（HTTP '+response.status+'）'));
  }
  const blob=await response.blob();
- if(!blob.type.startsWith('image/'))throw new Error('AI 服务没有返回有效图片');
- return{url:URL.createObjectURL(blob),type:blob.type};
+ if(!blob.type.startsWith('image/')){URL.revokeObjectURL(previewUrl);throw new Error('AI 服务没有返回有效图片')}
+ return{url:URL.createObjectURL(blob),type:blob.type,previewUrl,format:prepared.format,ratio:prepared.ratio};
 }
 async function runBatch(target=items){
  if(batchBusy)return;
@@ -548,6 +645,10 @@ async function runBatch(target=items){
     const result=await processImage(it,aiConfig);
     if(it.processed&&String(it.processed).startsWith('blob:'))URL.revokeObjectURL(it.processed);
     it.processed=result.url;
+    if(it.previewSource)URL.revokeObjectURL(it.previewSource);
+    it.previewSource=result.previewUrl;
+    it.outputFormat=result.format;
+    it.outputRatio=result.ratio;
     it.processedAI=true;
     it.processedType=result.type;
     it.canvas=null;
@@ -575,10 +676,11 @@ async function runBatch(target=items){
  if(first)showPreview(first);
 }
 $('autoProcessBtn').addEventListener('click',()=>runBatch());
+$('processSelectedBtn').addEventListener('click',()=>{const selected=items.find(it=>it.id===selectedId);if(!selected)return toast('请先在照片队列中选择一张照片');runBatch([selected])});
 function safeProjectName(){return($('projectName').value.trim()||'房源照片').replace(/[\\/:*?"<>|]/g,'_')}
 function download(it){const a=document.createElement('a'),base=it.name.replace(/\.[^.]+$/,'');const room=it.roomType&&it.roomType!=='待确认'&&it.roomType!=='识别中'?'_'+it.roomType:'';const ext=it.processedType==='image/png'?'png':it.processedType==='image/webp'?'webp':'jpg';a.href=it.processed;a.download=safeProjectName()+room+'_'+base+$('suffix').value+'.'+ext;document.body.appendChild(a);a.click();a.remove()}
 $('downloadAll').onclick=()=>{const done=items.filter(x=>x.processed);done.forEach((it,i)=>setTimeout(()=>download(it),i*400));toast('已开始下载 '+done.length+' 张照片')};
-$('clearBtn').onclick=()=>{items.forEach(x=>{URL.revokeObjectURL(x.url);if(x.processed)URL.revokeObjectURL(x.processed)});items=[];selectedId=null;resetPreview();$('progressbox').style.display='none';$('progressBar').style.width='0';$('progressNum').textContent='0%';$('progressText').textContent='正在处理…';render();toast('工作区已清空')};
+$('clearBtn').onclick=()=>{items.forEach(x=>{URL.revokeObjectURL(x.url);if(x.processed)URL.revokeObjectURL(x.processed);if(x.previewSource)URL.revokeObjectURL(x.previewSource)});items=[];selectedId=null;updateFormatSummary();resetPreview();$('progressbox').style.display='none';$('progressBar').style.width='0';$('progressNum').textContent='0%';$('progressText').textContent='正在处理…';render();toast('工作区已清空')};
 
 const mobileWorkspace=window.matchMedia('(max-width:620px)');
 const mobilePanels=[...document.querySelectorAll('.sidebar .sidepanel:not(.ai-connection)')];
