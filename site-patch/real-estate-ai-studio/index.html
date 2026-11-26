@@ -667,7 +667,7 @@ async function runBatch(target=items){
  }finally{
   batchBusy=false;
   btn.disabled=!!(usageSnapshot&&usageSnapshot.remainingNeurons<=0);
-  btn.textContent='✦ AI 一键精修全部照片';
+  btn.textContent='✦ 精修全部照片';
   renderSelection();
  }
  $('progressText').textContent='AI 处理完成';
