@@ -453,7 +453,8 @@ compareStage.addEventListener('pointermove',e=>{
 });
 ['pointerup','pointercancel','lostpointercapture'].forEach(name=>compareStage.addEventListener(name,()=>compareDragging=false));
 window.addEventListener('resize',()=>{const it=items.find(x=>x.id===selectedId);if(it)fitCompare(it)});
-const AI_BASE_URL='https://juxin-real-estate-ai.3490705865.workers.dev';
+const WORKER_DIRECT_URL='https://juxin-real-estate-ai.3490705865.workers.dev';
+const AI_BASE_URL=window.location.hostname.endsWith('.github.io')?WORKER_DIRECT_URL:window.location.origin;
 function getAiConfig(){return{url:AI_BASE_URL}}
 async function testAiConnection(config){
  let response;
