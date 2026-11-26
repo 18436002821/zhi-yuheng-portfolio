@@ -4,8 +4,9 @@
 
 ## 公开使用与防滥用
 
-- 工作台固定连接：`https://juxin-real-estate-ai.3490705865.workers.dev`
-- 只接受来自 `https://18436002821.github.io` 的浏览器跨域请求。
+- AI 后端：`https://juxin-real-estate-ai.3490705865.workers.dev`
+- Cloudflare Pages 正式站 `https://zhi-yuheng-portfolio.pages.dev` 通过同域名 `/api/*` Pages Functions 代理访问后端，手机浏览器不再直接请求 `workers.dev`。
+- GitHub Pages 备用站仍可直接请求 Worker；Worker 允许 `https://18436002821.github.io` 与 `https://zhi-yuheng-portfolio.pages.dev` 两个来源。
 - 公开模式不使用 `STUDIO_ACCESS_TOKEN`；已有 Secret 可以保留，但新代码不会读取它。
 - 每个来源 IP 每分钟最多 12 次精修请求。Cloudflare Rate Limiting 是近似限流，并非全球严格计数。
 - 使用 SQLite Durable Object 维护全公司共享的每日工作台估算用量。
@@ -47,12 +48,21 @@ npx wrangler deploy
 
 如果你之前设置过 `STUDIO_ACCESS_TOKEN`，不需要删除；新版 Worker 不再检查该 Secret。
 
-## GitHub Pages 工作台
+## Cloudflare Pages 工作台（手机推荐）
 
-工作台地址：
+正式工作台地址：
+https://zhi-yuheng-portfolio.pages.dev/
+
+前端在 `pages.dev` 域名下统一请求同源 `/api/health`、`/api/usage`、`/api/retouch`。对应代理代码位于本目录的 `functions/api/`，由 Pages Functions 转发到现有 Worker，避免手机网络直接访问 `workers.dev`。
+
+若使用 Git 集成部署，请确认 Cloudflare Pages 项目的 Root directory 为 `site-patch/real-estate-ai-studio`，Build command 留空，Build output directory 填 `.`。`functions` 目录必须位于 Pages 项目根目录，不能放在静态输出目录之外。推送到 GitHub 后等待 Pages 自动部署完成。
+
+## GitHub Pages 备用工作台
+
+备用地址：
 https://18436002821.github.io/zhi-yuheng-portfolio/real-estate-ai-studio/
 
-前端代码已经固定 Worker 地址，GitHub Pages 更新后无需同事逐台输入连接信息。**GitHub Pages 的自动发布不会自动部署 Cloudflare Worker**；Worker 源码更新后，仍需按上面的命令部署一次。
+GitHub Pages 不运行 Pages Functions，因此前端会自动改为直接请求 Worker。GitHub Pages 自动发布不会自动部署 Cloudflare Worker；Worker 源码更新后，仍需按上面的命令部署一次。
 
 ## API
 
