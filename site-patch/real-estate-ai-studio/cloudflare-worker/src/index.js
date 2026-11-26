@@ -1,7 +1,7 @@
 import { DurableObject } from "cloudflare:workers";
 
 const MODEL = "@cf/black-forest-labs/flux-2-klein-4b";
-const ALLOWED_ORIGINS = new Set(["https://18436002821.github.io"]);
+const ALLOWED_ORIGINS = new Set(["https://18436002821.github.io", "https://zhi-yuheng-portfolio.pages.dev"]);
 const MAX_IMAGE_BYTES = 12 * 1024 * 1024;
 const DAILY_NEURON_BUDGET = 7000;
 const INPUT_NEURONS_PER_TILE = 5.37;
